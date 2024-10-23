@@ -26,7 +26,7 @@ subplot(2,1,1)
 plot(temps, y);
 xlabel('Temps (s)')
 ylabel('signal')
-title(['Tracé du signal généré 1']);
+title('Tracé du signal généré 1');
 
 subplot(2,1,2)
 Y1 = pwelch(y,[],[],[],Fe,'twosided');
@@ -34,7 +34,7 @@ frequence = linspace(-Fe/2,Fe/2,length(Y1));
 semilogy(frequence,fftshift(Y1));
 xlabel('Frequence (Hz)')
 ylabel('Densite spectrale de puissance')
-title(['Modulateur 1']);
+title('Modulateur 1');
 
 %% modulateur 2
 m = 4;
@@ -67,14 +67,14 @@ subplot(2,1,1)
 plot(temps, y);
 xlabel('Temps (s)')
 ylabel('signal')
-title(['Tracé du signal généré 2']);
+title('Tracé du signal généré 2');
 
 subplot(2,1,2)
 Y2 = pwelch(y,[],[],[],Fe,'twosided');
 semilogy(frequence,fftshift(Y2));
 xlabel('Frequence (Hz)')
 ylabel('Densite spectrale de puissance')
-title(['Modulateur 2']);
+title('Modulateur 2');
 
 
 %% modulateur 3
@@ -94,14 +94,14 @@ subplot(2,1,1)
 plot(temps, y);
 xlabel('Temps (s)')
 ylabel('signal')
-title(['Tracé du signal généré 3']);
+title('Tracé du signal généré 3');
 
 subplot(2,1,2)
 Y3 = pwelch(y,[],[],[],Fe,'twosided');
 semilogy(frequence,fftshift(Y3));
 xlabel('Frequence (Hz)')
 ylabel('Densite spectrale de puissance')
-title(['Modulateur 3']);
+title('Modulateur 3');
 
 %% Comparaison
 figure;
@@ -110,7 +110,7 @@ hold on
 semilogy(frequence,fftshift(Y2));
 hold on
 semilogy(frequence,fftshift(Y3));
-title(['comparaison des 3 DSP'])
+title('comparaison des 3 DSP')
 xlabel('Frequence (Hz)')
 ylabel('DSP')
 legend('DSP 1','DSP 2', 'DSP 3')

@@ -1,0 +1,83 @@
+network:
+  name: ProjetReseaux
+  version: 0.1
+  hosts:
+    - Client1
+      mode : netns
+      init : ./scripts/Client1
+ 
+    - Serveur-Web-Prive1
+      mode : docker
+      image : apache_n7:latest
+      files : ./files/Serveur-Web-Prive1/var:/
+ 
+ 
+    - Box1
+      mode : docker
+      image : dhcp_n7:latest
+      files : ./files/Box1/etc:/
+ 
+    - Client2
+      mode : netns
+      init : ./scripts/Client2
+ 
+    - Box2
+      mode : docker
+      image : dhcp_n7:latest
+      files : ./files/Box2/etc:/
+ 
+ 
+    - Routeur-FAI
+      mode : docker
+      image : quagga_n7:latest
+      files : ./files/Routeur-FAI/etc:/
+ 
+ 
+    - Routeur1
+      mode : docker
+      image : quagga_n7:latest
+      files : ./files/Routeur1/etc:/
+ 
+    - Routeur2
+      mode : docker
+      image : quagga_n7:latest
+      files : ./files/Routeur2/etc:/
+ 
+    - Routeur-Services-Reseaux
+      mode : docker
+      image : quagga_n7:latest
+      files : ./files/Routeur-Services-Reseaux/etc:/
+ 
+    - Routeur-Services
+      mode : docker
+      image : quagga_n7:latest
+      files : ./files/Routeur-Services/etc:/
+ 
+    - Serveur-Web
+      mode : docker
+      image : apache_n7:latest
+      files : ./files/Serveur-Web/var:/
+ 
+    - Serveur-DNS
+      mode : docker
+      image : dns_n7:latest
+      files : ./files/Serveur-DNS/etc:/
+ 
+  links :
+    - Client2:eth0!Box2:eth0
+    - Routeur1:eth1!Routeur-Services:eth1
+    - Routeur-Services-Reseaux:eth1!Routeur2:eth1
+    - Routeur-Services-Reseaux:eth0!Routeur-Services:eth0
+    - Routeur-Services:eth2!Serveur-Web:eth0
+    - Routeur-Services-Reseaux:eth2!Serveur-DNS:eth0
+ 
+  bridges:
+    - Switch0
+      interfaces: Box1:eth0!Client1:eth0!Serveur-Web-Prive1:eth0!
+    - Switch1
+      interfaces: Routeur-FAI:eth1!Box1:eth1!Box2:eth1!
+    - Switch2
+      interfaces: Routeur1:eth0!Routeur2:eth0!Routeur-FAI:eth0!
+ 
+  consoles :
+    - all

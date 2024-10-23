@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="generator" content="hevea 2.35">
+<link rel="stylesheet" type="text/css" href="to-1sn-2023-deroulement-corrige.css">
+<title>Mini-projet</title>
+</head>
+<body >
+<a href="to-1sn-2023-deroulement-corrige027.html"><img src="previous_motif.svg" alt="Previous"></a>
+<a href="to-1sn-2023-deroulement-corrige-index.html"><img src="contents_motif.svg" alt="Up"></a>
+<a href="to-1sn-2023-deroulement-corrige029.html"><img src="next_motif.svg" alt="Next"></a>
+<hr>
+<h3 id="sec64" class="subsection">1.3.1&#X2003;Mini-projet</h3>
+<h4 id="sec65" class="subsubsection">Le sujet</h4>
+<p>Le <a href="CONTENU/to-1sn-2023-pr-01-sujet.pdf">mini-projet</a>
+propose d&#X2019;&#XE9;crire une classe Cercle (y
+compris son programme de test et sa documentation !).</p><p><span style="font-weight:bold">Organisation :</span>
+Un &#X2019;git pull&#X2019; depuis votre projet git des TP vous fera appara&#XEE;tre le
+dossier mini-projet. C&#X2019;est dans ce dossier qu&#X2019;il faut travailler et rendre
+les deux versions de votre mini-projet. Vous recevrez aussi des retours
+via Git.
+</p><p><span style="font-weight:bold">V&#XE9;rification des normes de programmation avec checkstyle :</span>
+checkstyle est un outil pour automatiser la v&#XE9;rification des standards de
+programmation. Il permettra par exemple de v&#XE9;rifier le nom des identifiants
+(mais pas leur sens !), les commentaires de documentation, l&#X2019;utilisation des
+espaces, etc.</p><p>Pour lancer checkstyle, faire depuis une machine Linux de l&#X2019;N7 :
+</p><pre class="verbatim">java -jar /mnt/n7fs/ens/tp_cregut/checkstyle.jar -c checkstyle.xml Cercle.java
+</pre><p>Le fichier <a href="CONTENU/PR01/checkstyle.xml">checkstyle.xml</a> est le fichier de
+configuration &#XE0; utiliser.</p><p>checkstyle ne sera utilis&#XE9; que sur Cercle.java.
+</p>
+<h4 id="sec66" class="subsubsection">Jalons</h4>
+<ul class="itemize"><li class="li-itemize">
+<span style="font-weight:bold">23/01/2024 :</span>
+mise en ligne du sujet.</li><li class="li-itemize"><span style="font-weight:bold">10/02/2024, en fait 08/02 :</span>
+	d&#XE9;but des retours automatiques (ils peuvent commencer avant).
+</li><li class="li-itemize"><span style="font-weight:bold">10/02/2024, d&#XE9;cal&#XE9;e au 13/02/2024 :</span> date limite pour la remise de la
+premi&#XE8;re version compl&#XE8;te.
+<p><span style="font-weight:bold">Attention :</span>
+	Cette premi&#XE8;re version doit &#XEA;tre une version compl&#XE8;te de votre
+	mini-projet. M&#XEA;me si vous aurez un retour et la possibilit&#XE9; de
+	l&#X2019;am&#XE9;liorer, ne consid&#XE9;rez pas que la seule date qui compte est
+	la date de deuxi&#XE8;me rendu !
+</p><p><span style="font-weight:bold">P&#XE9;nalit&#XE9;s :</span>
+Vous aurez des p&#XE9;nalit&#XE9;s lors de la premi&#XE8;re &#XE9;valuation si le travail
+fourni n&#X2019;est pas jug&#XE9; suffisant. En particulier, les p&#XE9;nalit&#XE9;s
+suivantes s&#X2019;appliqueront :
+</p><ul class="itemize"><li class="li-itemize">
+	3 points : pas de rendu sur Gitlab. Vous devez r&#XE9;ussir &#XE0; rendre
+	 votre travail sur Gitlab. Le travail rendu par courriel
+	 ne sera pas &#XE9;valu&#XE9;.<p>	 <span style="font-weight:bold">Attention :</span>
+		Il ne faut pas d&#XE9;placer les fichiers sinon les tests
+		automatiques ne fonctionneront pas.
+	 </p></li><li class="li-itemize">	2 points : la classe Cercle ne compile pas.</li><li class="li-itemize">	1 point : la classe SujetCercleTest ne compile pas.</li><li class="li-itemize">	1 point : la classe CercleTest ne compile pas (ou est vide).</li><li class="li-itemize">	0.5 point : la classe CercleTest s&#X2019;ex&#XE9;cute avec des erreurs.</li><li class="li-itemize">	1 point : pas de commentaire de documentation.</li></ul></li><li class="li-itemize"><span style="font-weight:bold">semaine du 12/02/2024 :</span> &#XE9;valuation de la premi&#XE8;re version par les enseignants de TP.</li><li class="li-itemize"><span style="font-weight:bold">24/02/2024 :</span> date limite pour la remise de la deuxi&#XE8;me et
+derni&#XE8;re version (toujours sur Gitlab).</li></ul>
+<h4 id="sec67" class="subsubsection">&#XC9;valuation automatique</h4>
+<p>Le r&#XE9;sultat des tests automatiques est disponible dans votre projet Git, sur
+la branche "evaluations", dans le fichier
+<code>&#X200B;</code><code>evaluations</code><code>&#X200B;/&#X200B;</code><code>evaluation1</code><code>&#X200B;.&#X200B;</code><code>txt</code> (et dans le dossier
+<code>&#X200B;</code><code>evaluations</code><code>&#X200B;/&#X200B;</code><code>evaluation1</code>). Les v&#XE9;rifications faites sont
+d&#XE9;taill&#XE9;es dans les paragraphes suivants.</p><p>Le plus simple est de consulter ces r&#XE9;sultats via Gitlab et en s&#XE9;lectionnant
+la branche "evaluations" au lieu de "main". Vous pouvez aussi les
+consulter via eclipse en changeant de branche ou depuis un terminal (git
+switch evaluations). Attention, cependant, vous ne pouvez pas pousser de
+modifications sur la branche evaluations. Il faudra donc revenir &#XE0; la
+branche main pour modifier votre code. Si vous voulez avoir les remarques
+en locale, le plus simplet et le plus s&#XFB;r est certainement de faire une
+autre copie de votre projet.</p><p>Notez bien que cette &#XE9;valuation automatique constituent une &#XE9;valuation de
+votre mini-projet. Vous n&#X2019;avez pas acc&#XE8;s au code source de certains de ces
+tests et vous ne pouvez donc pas les lancer vous-m&#XEA;me. Cependant, les
+tests sont lanc&#XE9;s de temps en temps. Aussi si vous faites un commit, lors
+du prochain lancement
+des tests, les r&#XE9;sultats seront disponibles sur votre projet (r&#XE9;cup&#XE9;rables
+via un pull).
+</p><p>L&#X2019;&#XE9;valuation automatique est lanc&#XE9;e de temps en temps sur le code qui a &#XE9;t&#XE9;
+pouss&#XE9; sur Gitlab.
+</p><p><span style="font-weight:bold">Attention, les tests fournis ne sont pas exhaustifs et de nouveaux tests
+pourront &#XEA;tre ajout&#XE9;s pour l&#X2019;&#XE9;valuation finale.</span></p><p>La classe RobustesseCercleTest permet de v&#XE9;rifier
+l&#X2019;instrumentation des pr&#XE9;conditions avec <code>&#X200B;</code><code>assert</code>.
+Votre classe Cercle doit r&#XE9;ussir ces
+tests (voir <code>&#X200B;</code><code>evaluation1</code><code>&#X200B;.&#X200B;</code><code>txt</code>).</p><p>Attention, pour <code>&#X200B;</code><code>RobustesseCercleTest</code>, il faut activer la
+v&#XE9;rification des assertions en utilisant <code>&#X200B;-&#X200B;</code><code>ea</code> en ligne de commande
+ou, sous Eclipse, faire <em>Run As -&gt; RUN Configuration -&gt; Arguments</em>
+ajouter <code>&#X200B;-&#X200B;</code><code>ea</code> dans <span style="font-weight:bold"><em>VM Arguments</em></span>.</p><p>Les classes FormeCercleTest et Forme2CercleTest permettent de faire des
+v&#XE9;rifications sur la mani&#XE8;re dont votre programme est &#XE9;crit. Nous avons
+d&#XE9;cid&#XE9; de ne pas vous donner ces classes. Vous ne pourrez donc pas rejouer
+ces tests quand vous le souhaitez.</p><p>Vous ne pouvez pas non plus rejouer les tests qui concernent votre classe
+CercleTest. En effet, pour tester cette classe, nous nous
+servons de classes Cercle contenant des erreurs (dites mutantes) et v&#XE9;rifions
+si votre classe de test d&#XE9;tecte ces erreurs.
+Ainsi, les tests CercleMutant# permettent de tester la classe
+CercleTest. Le principe est le suivant : chaque classe
+CercleMutant# est la classe Cercle avec une erreur. Cette erreur ne concerne
+bien s&#XFB;r que E12, E13 ou E14 (voir la contrainte C6 du sujet). Si votre
+classe CercleTest ne d&#XE9;tecte pas l&#X2019;erreur, c&#X2019;est qu&#X2019;elle est incompl&#XE8;te : les
+tests qu&#X2019;elle fait ne sont pas suffisants. C&#X2019;est &#XE0; vous de voir comment la
+compl&#XE9;ter.</p><p>La classe CercleMini est une classe Cercle sans erreur.
+La classe CercleTest ne doit donc pas signaler d&#X2019;erreurs sur cette
+classe. Pour v&#XE9;rifier que vous ne testez que les &#XE9;l&#XE9;ments de E12, E13 et E14,
+certaines m&#XE9;thodes ont &#XE9;t&#XE9; &#XAB; d&#XE9;sactiv&#XE9;es &#XBB; : elles l&#XE8;vent une exception.</p><p>Nous ne pouvons pas vous donner les classes CercleMini et CercleMutant#.
+ce serait trop facile ! Quand on &#XE9;crit un programme de test, on ne connait
+pas les erreurs qui ont &#XE9;t&#XE9; ou seront commises lors de l&#X2019;&#XE9;criture du code &#XE0;
+tester.</p><p><span style="font-weight:bold">D&#XE9;tection de similitudes :</span>
+Pour vous aider &#XE0; identifier les redondances dans votre classe Cercle, nous
+avons ex&#XE9;cut&#XE9; <code>&#X200B;</code><code>sim_java</code> dessus (voir fichier
+<code>&#X200B;</code><code>evaluation1</code><code>&#X200B;.&#X200B;</code><code>txt</code>).</p><p>Attention, les portions de code qui sont indiqu&#XE9;es comme &#XE9;tant similaires ne
+correspondent pas toujours &#XE0; de la redondance de code !
+</p>
+<h4 id="sec68" class="subsubsection">Premi&#XE8;re &#XE9;valuation</h4>
+<p><span style="font-weight:bold">P&#XE9;nalit&#XE9;s sur le premier rendu :</span>
+Les p&#XE9;nalit&#XE9;s automatiques sur le premier rendu ont &#XE9;t&#XE9; calcul&#XE9;es.
+Elles sont disponibles sur votre d&#XE9;p&#XF4;t dans le fichier
+evaluations/penalites1.txt (et le d&#XE9;tail dans le dossier
+evaluations/penalites1).
+</p><p><span style="font-weight:bold">Retours sur la premi&#XE8;re version :</span>
+Voici les <a href="CONTENU/PR01/PR01-retours.md">retours</a> en
+<a href="CONTENU/PR01/PR01-retours.md.html">html</a> et en
+<a href="CONTENU/PR01/PR01-retours.pdf">(</a>pdf).</p><p>Il s&#X2019;agit d&#X2019;une compilation des erreurs ou maladresses rencontr&#XE9;es. Vous
+devez donc les lire et, si elles s&#X2019;appliquent &#XE0; votre mini-projet, en tenir
+compte pour la version finale. L&#X2019;int&#XE9;r&#XEA;t de cette approche est que chacun,
+quelque soit son niveau d&#X2019;avancement dans le mini-projet, a acc&#XE8;s &#XE0; toutes
+les remarques.</p><p>Bien s&#XFB;r, votre intervenant de TP peut vous faire des remarques sp&#XE9;cifiques
+si vous avez commis une maladresse tr&#XE8;s particuli&#XE8;re qui n&#X2019;a donc pas
+d&#X2019;int&#XE9;r&#XEA;t pour les autres &#XE9;tudiants.</p><p>Les tests automatiques constituent aussi une &#XE9;valuation de votre mini-projet.</p>
+<h4 id="sec69" class="subsubsection">FAQ</h4>
+<h5 id="sec70" class="paragraph">Comment seront comptabilis&#XE9;es les p&#XE9;nalit&#XE9;s ?</h5>
+<p>
+Les p&#XE9;nalit&#XE9;s limitent la note que vous pourrez avoir. Par exemple, si vous
+avez eu 4 points de p&#XE9;nalit&#XE9;, donc 2 points sur 20, la note finale sera la
+plus petite de la note obtenue sur la version V2 et de 18.</p><p>La formule est donc la suivante :
+</p><pre class="verbatim">    note_finale = Min(note_V2, 20 - penalites1 / 2)
+
+    note_V2 = Max(0, 20 - retour2 - penalites2 / 2)
+</pre>
+<hr>
+<a href="to-1sn-2023-deroulement-corrige027.html"><img src="previous_motif.svg" alt="Previous"></a>
+<a href="to-1sn-2023-deroulement-corrige-index.html"><img src="contents_motif.svg" alt="Up"></a>
+<a href="to-1sn-2023-deroulement-corrige029.html"><img src="next_motif.svg" alt="Next"></a>
+</body>
+</html>

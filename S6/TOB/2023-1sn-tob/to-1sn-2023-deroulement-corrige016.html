@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="generator" content="hevea 2.35">
+<link rel="stylesheet" type="text/css" href="to-1sn-2023-deroulement-corrige.css">
+<title>S&#XE9;ance TP 6 (04/03/2024, 08:00 au 04/03/2024, 16:15)</title>
+</head>
+<body >
+<a href="to-1sn-2023-deroulement-corrige015.html"><img src="previous_motif.svg" alt="Previous"></a>
+<a href="to-1sn-2023-deroulement-corrige-index.html"><img src="contents_motif.svg" alt="Up"></a>
+<a href="to-1sn-2023-deroulement-corrige017.html"><img src="next_motif.svg" alt="Next"></a>
+<hr>
+<h3 id="sec38" class="subsection">1.2.16&#X2003;<a id="TOB:SeanceTP6">S&#XE9;ance TP 6 (04/03/2024, 08:00 au 04/03/2024, 16:15)</a></h3>
+<ul class="itemize"><li class="li-itemize">
+1SNA : 04/03/2024, 10:15 &#XE0; 12:00, C203 (32), Bonnet Louis
+</li><li class="li-itemize">1SNB : 04/03/2024, 10:15 &#XE0; 12:00, C205 (32), Singh Neeraj
+</li><li class="li-itemize">1SNC : 04/03/2024, 08:00 &#XE0; 09:45, C201 (18), Charles William
+</li><li class="li-itemize">1SND : 04/03/2024, 08:00 &#XE0; 09:45, C202 (18), Gasparini Simone
+</li><li class="li-itemize">1SNE : 04/03/2024, 08:00 &#XE0; 09:45, C204 (32), Ouederni Meriem
+</li><li class="li-itemize">1SNF : 04/03/2024, 08:00 &#XE0; 09:45, C206 (32), Lebegue Jean-Claude
+</li><li class="li-itemize">1SNG : 04/03/2024, 16:15 &#XE0; 18:00, C216a, Chigot Estelle
+</li><li class="li-itemize">1SNH : 04/03/2024, 16:15 &#XE0; 18:00, C216b, Gasparini Simone
+</li><li class="li-itemize">1SNI : 04/03/2024, 16:15 &#XE0; 18:00, C201 (18), Pelissier-Combescure Marie
+</li><li class="li-itemize">1SNJ : 04/03/2024, 16:15 &#XE0; 18:00, C202 (18), Megna Anael
+</li><li class="li-itemize">1SNK : 04/03/2024, 14:00 &#XE0; 15:45, C204 (32), Dupont Guillaume
+</li><li class="li-itemize">1SNL : 04/03/2024, 14:00 &#XE0; 15:45, C206 (32), Riviere Peter
+</li></ul>
+<h4 id="sec39" class="subsubsection"><a id="TOB:ThèmeTP10">TP 10 : Un &#XE9;diteur orient&#XE9; ligne</a></h4>
+<p>	Le <a href="CONTENU/to-1sn-2023-tp-10-sujet.pdf">TP 10</a> consiste &#XE0; compl&#XE9;ter l&#X2019;&#XE9;diteur orient&#XE9; ligne.</p><p>	Voici les <a href="CONTENU/TP10/">fichiers fournis</a>.</p><p>	</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+	Voici une solution possible pour l&#X2019;</span><a href="CONTENU/TP10solution1"><span style="color:green">exercice 1</span></a><span style="color:green">,
+	l&#X2019;</span><a href="CONTENU/TP10solution2.1"><span style="color:green">exercice 2.1</span></a><span style="color:green">,
+	l&#X2019;</span><a href="CONTENU/TP10solution2.2"><span style="color:green">exercice 2.2</span></a><span style="color:green"> et
+	l&#X2019;</span><a href="CONTENU/TP10solution3"><span style="color:green">exercice 3</span></a><span style="color:green">.
+	</span></p>
+<h4 id="sec40" class="subsubsection"><a id="TOB:ThèmeTP11">TP 11 : Pouvoir annuler les op&#XE9;rations de l&#X2019;&#XE9;diteur</a></h4>
+<p>Le <a href="CONTENU/to-1sn-2023-tp-11-sujet.pdf">TP 11</a> propose de compl&#XE9;ter l&#X2019;&#XE9;diteur
+orient&#XE9; ligne pour donner la possibilit&#XE9; &#XE0; l&#X2019;utilisateur d&#X2019;annuler les
+derni&#XE8;res op&#XE9;rations qu&#X2019;il a r&#XE9;alis&#XE9;es.</p><p>Le point de d&#XE9;part peut &#XEA;tre la solution du TP10.
+	</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+La solution propos&#XE9;e est en deux parties.
+</span></p><ul class="itemize"><li class="li-itemize"><span style="color:green">
+</span><span style="color:green">La </span><a href="CONTENU/TP11solution1"><span style="color:green">premi&#XE8;re solution</span></a><span style="color:green"> consiste simplement &#XE0;
+d&#XE9;finir la notion de CommandeReversible. Il s&#X2019;agit d&#X2019;une commande que l&#X2019;on
+peut annuler. Dans le menu, on teste le type de la commande pour voir s&#X2019;il
+faut l&#X2019;ajouter dans l&#X2019;historique.</span><p><span style="color:green">On d&#XE9;finit une commande CommandeDefaire qui est ajout&#XE9;e au menu en position
+-1 (et raccourci &#XAB; - &#XBB;). De la m&#XEA;me mani&#XE8;re, on d&#XE9;finit une commande
+CommandeRefaire (position -2 et raccourci "+").</span></p><p><span style="color:green"><span style="font-weight:bold">Remarque :</span></span><span style="color:green">
+	Il faut faire des copies des commandes car les attributs de la commande
+	sont utilis&#XE9;s pour conserver les informations n&#XE9;cessaires &#XE0; annuler (et
+	refaire la commande).
+</span></p></li><li class="li-itemize"><span style="color:green">La </span><a href="CONTENU/TP11solution2"><span style="color:green">deuxi&#XE8;me solution</span></a><span style="color:green"> est une extension de
+la premi&#XE8;re. On constate que dans le valider de Menu, on fait un test sur
+le type de la commande. La solution objet consisterait &#XE0; red&#XE9;finir la
+m&#XE9;hode ex&#XE9;cuter dans CommandeReversible. C&#X2019;est ce qui est propos&#XE9; ici.
+Pour que le traitement puisse &#XEA;tre g&#XE9;n&#XE9;ralis&#XE9; au niveau du menu, il faut
+quand m&#XEA;me faire une copie de la commande. Cette m&#XE9;thode (copie) est donc
+ajout&#XE9;e sur Commande au lieu d&#X2019;&#XEA;tre seulement pr&#XE9;sente sur
+CommandeReversible.
+Notons que le code par d&#XE9;faut retourne le m&#XEA;me objet (et ne cr&#XE9;e donc pas
+de nouveaux objets).</span></li></ul>
+<hr>
+<a href="to-1sn-2023-deroulement-corrige015.html"><img src="previous_motif.svg" alt="Previous"></a>
+<a href="to-1sn-2023-deroulement-corrige-index.html"><img src="contents_motif.svg" alt="Up"></a>
+<a href="to-1sn-2023-deroulement-corrige017.html"><img src="next_motif.svg" alt="Next"></a>
+</body>
+</html>

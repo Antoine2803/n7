@@ -1,0 +1,58 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+' SEGMENT START DELETE
+class Segment {
+	--
+	+ majLongueur()
+	__constructeurs__
+	+ Segment(e1: Point, e2: Point)
+}
+
+' SEGMENT STOP DELETE
+class Point {
+	--
+	+translater(dx: double, dy: double)
+	' NO_INITIALE START DELETE
+	+inscrire(s: Segment)
+	' NO_INITIALE STOP DELETEE
+}
+' SEGMENT START DELETE
+
+Segment "0..1\n-segment" o-right- "2\n-extrémité1,\n-extrémité2" Point: "                                     "
+' SEGMENT STOP DELETE
+' SEGMENT START DELETE
+note top of Segment
+	majLongeur():
+		longueur = extrémité1.distance(extrémité2)
+end note
+
+note bottom of Segment
+	Segment(e1, e2):
+		this.extrémité1 = e1
+		this.extrémité2 = e2
+		longueur = extrémité1.distance(extrémité2)
+		this.extrémité1.inscrire(this)
+		this.extrémité2.inscrire(this)
+end note
+
+' SEGMENT STOP DELETE
+' NOTES_POINT START DELETE
+note top of Point
+	class Point:
+		private Segment segment
+end note
+
+note bottom of Point
+	translater(dx, dy):
+		x += dx
+		y += dy
+		if (segment != null):
+			segment.majLongueur()
+
+	inscrire(s):
+		segment = s
+end note
+' NOTES_POINT STOP DELETE
+@enduml
+' vim: sw=4 ts=4:

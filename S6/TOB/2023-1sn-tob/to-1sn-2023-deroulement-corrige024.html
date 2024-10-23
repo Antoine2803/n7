@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="generator" content="hevea 2.35">
+<link rel="stylesheet" type="text/css" href="to-1sn-2023-deroulement-corrige.css">
+<title>S&#XE9;ance TP 9 (26/03/2024, 10:15 au 27/03/2024, 14:00)</title>
+</head>
+<body >
+<a href="to-1sn-2023-deroulement-corrige023.html"><img src="previous_motif.svg" alt="Previous"></a>
+<a href="to-1sn-2023-deroulement-corrige-index.html"><img src="contents_motif.svg" alt="Up"></a>
+<a href="to-1sn-2023-deroulement-corrige025.html"><img src="next_motif.svg" alt="Next"></a>
+<hr>
+<h3 id="sec56" class="subsection">1.2.24&#X2003;<a id="TOB:SeanceTP9">S&#XE9;ance TP 9 (26/03/2024, 10:15 au 27/03/2024, 14:00)</a></h3>
+<ul class="itemize"><li class="li-itemize">
+1SNA : 26/03/2024, 10:15 &#XE0; 12:00, C214a, Bonnet Louis
+</li><li class="li-itemize">1SNB : 26/03/2024, 10:15 &#XE0; 12:00, C214b, Singh Neeraj
+</li><li class="li-itemize">1SNC : 26/03/2024, 10:15 &#XE0; 12:00, C203 (32), Charles William
+</li><li class="li-itemize">1SND : 26/03/2024, 10:15 &#XE0; 12:00, C205 (32), Gasparini Simone
+</li><li class="li-itemize">1SNE : 26/03/2024, 10:15 &#XE0; 12:00, C301(18), Ouederni Meriem
+</li><li class="li-itemize">1SNF : 26/03/2024, 10:15 &#XE0; 12:00, C304 (32), Lebegue Jean-Claude
+</li><li class="li-itemize">1SNG : 27/03/2024, 14:00 &#XE0; 15:45, C216a, Chigot Estelle
+</li><li class="li-itemize">1SNH : 27/03/2024, 14:00 &#XE0; 15:45, C216b, Gasparini Simone
+</li><li class="li-itemize">1SNI : 27/03/2024, 14:00 &#XE0; 15:45, C201 (18), Pelissier-Combescure Marie
+</li><li class="li-itemize">1SNJ : 27/03/2024, 14:00 &#XE0; 15:45, C202 (18), Megna Anael
+</li><li class="li-itemize">1SNK : 27/03/2024, 14:00 &#XE0; 15:45, C204 (32), Dupont Guillaume
+</li><li class="li-itemize">1SNL : 27/03/2024, 14:00 &#XE0; 15:45, C206 (32), Riviere Peter
+</li></ul>
+<h4 id="sec57" class="subsubsection"><a id="TOB:ThèmeTP14">TP 14 : Jeu du Morpion</a></h4>
+<p>Le <a href="CONTENU/to-1sn-2023-tp-14-sujet.pdf">TP 14</a> consiste &#XE0; construire une premi&#XE8;re application Java/Swing
+simple en programmant un jeu de Morpion avec une interface graphique.</p><p>Une fois cette application d&#XE9;velopp&#XE9;e, on pourra essayer de mettre en
+pratique le patron MVC...</p><p>Voici les <a href="CONTENU/TP14/">fichiers fournis</a>.</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+Si le mod&#XE8;le du jeu de Morpion n&#X2019;avait pas &#XE9;t&#XE9; donn&#XE9;, on aurait pu avoir
+une </span><a href="CONTENU/TP14simpliste/"><span style="color:green">premi&#XE8;re version tr&#XE8;s simple</span></a><span style="color:green">,
+n&#X2019;utilisant pas de mod&#XE8;le.
+Le principal inconv&#XE9;nient de cette approche est que si l&#X2019;interface avec
+l&#X2019;utilisateur change (une interface en texte seul, type terminal ou avec
+avec une autre API graphique, Android par exemple), on ne peut rien (ou
+presque) r&#XE9;utiliser de cette premi&#XE8;re application.</span></p><p><span style="color:green">On doit au moins d&#XE9;finir dans une ou plusieurs classes (ici une seule) le
+mod&#XE8;le, la partie m&#XE9;tier, de l&#X2019;application. C&#X2019;est le point de d&#XE9;part qui
+a &#XE9;t&#XE9; donn&#XE9;. Voici une </span><a href="CONTENU/TP14modelePassif/"><span style="color:green">solution
+possible</span></a><span style="color:green">.</span></p><p><span style="color:green">Il est souvent souhaitable que le code des &#XE9;couteurs (Listener) reste
+simple. Aussi, il est pr&#XE9;f&#XE9;rable de d&#XE9;finir des m&#XE9;thodes auxiliaires dans
+la classe que les &#XE9;couteurs utilisent. Ceci avait &#XE9;t&#XE9; fait pour
+"recommencer" qui &#XE9;tait utilis&#XE9;e &#XE0; la fois dans le constructeur
+(initialiser le jeu) et dans un &#XE9;couteur (recommencer). On peut aussi le
+faire pour les deux autres. Voici une
+</span><a href="CONTENU/TP14modelePassif2/"><span style="color:green">solution possible</span></a><span style="color:green">.</span></p><p><span style="color:green">Pour ces deux derni&#XE8;res solutions, on parle de </span><span style="color:green"><em>mod&#XE8;le passif</em></span><span style="color:green"> car
+c&#X2019;est le contr&#XF4;leur qui met &#XE0; jour le mod&#XE8;le d&#X2019;une part et la vue (ou les
+vues) d&#X2019;autre part. On remarque alors que le traitement qui est fait dans
+le contr&#XF4;leur pour jouer est tr&#XE8;s proche de celui qui est fait dans le
+mod&#XE8;le pour cocher.</span></p><p><span style="color:green">Une autre solution est d&#X2019;avoir un </span><a href="CONTENU/TP14modeleActif/"><span style="color:green"><em>mod&#XE8;le
+actif</em></span></a><span style="color:green">. Dans ce cas le mod&#XE8;le est &#XE9;quip&#XE9; d&#X2019;un syst&#XE8;me d&#X2019;observateurs :
+le mod&#XE8;le signale ses modifications &#XE0; des observateurs
+(VueMorpion). Un contr&#XF4;leur n&#X2019;aura plus qu&#X2019;&#XE0; modifier le mod&#XE8;le qui
+signalera les modifications aux vues sans plus d&#X2019;intervention du contr&#XF4;leur.
+Cette solution permet facilement d&#X2019;ajouter plusieurs vues. De la m&#XEA;me
+fa&#XE7;on, il est facile de d&#XE9;finir plusieurs contr&#XF4;leurs. C&#X2019;est alors le
+mod&#XE8;le qui devient central. Notons que les contr&#XF4;leurs sont enregistr&#XE9;s
+aupr&#XE8;s du mod&#XE8;le. Ainsi quand le jeu est quitt&#XE9; depuis un contr&#XF4;leur, les
+autres contr&#XF4;leurs peuvent aussi &#XEA;tre avertis (ControleurMorpion est en
+quelque sorte un deuxi&#XE8;me observateur du mod&#XE8;le &#XE0; destination des
+contr&#XF4;leurs). Dans cette derni&#XE8;re solution, deux vues graphiques simples
+(sans possiblit&#XE9; de cliquer pour jouer), deux contr&#XF4;leurs graphiques avec
+cases &#XE0; cocher sont d&#XE9;finis, la classe MorpionSwing pr&#XE9;c&#XE9;dente (qui est &#XE0;
+la fois Vue et Controleur) et, enfin, une vue textuelle sur le score qui en
+fin d&#X2019;une partie annonce les scores sur les parties pass&#XE9;es. 
+</span></p>
+<hr>
+<a href="to-1sn-2023-deroulement-corrige023.html"><img src="previous_motif.svg" alt="Previous"></a>
+<a href="to-1sn-2023-deroulement-corrige-index.html"><img src="contents_motif.svg" alt="Up"></a>
+<a href="to-1sn-2023-deroulement-corrige025.html"><img src="next_motif.svg" alt="Next"></a>
+</body>
+</html>

@@ -1,0 +1,72 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Segment implements Observateur {
+	--
+	- majLongueur()
+	+ maj()
+	+ detruire()
+	__constructeurs__
+	+ Segment(e1: Point, e2: Point)
+}
+
+interface Observateur {
+	+ maj()
+}
+
+class Point {
+	--
+	+translater(dx: double, dy: double)
+	+inscrire(obs: Observateur)
+	+supprimer(obs: Observateur)
+	__constructeurs__
+	+Point(x: double, y: double)
+}
+Segment  o-right-> "2\n-extrémité1,\n-extrémité2" Point: "                                     "
+
+Point o-up-> "*" Observateur
+note top of Segment
+	majLongeur():
+		longueur = extrémité1.distance(extrémité2)
+	maj():
+		majLongeur()
+end note
+
+note bottom of Segment
+	detruire():
+		this.extrémité1.supprimer(this)
+		this.extrémité2.supprimer(this)
+
+	Segment(e1, e2):
+		this.extrémité1 = e1
+		this.extrémité2 = e2
+		longueur = extrémité1.distance(extrémité2)
+		this.extrémité1.inscrire(this)
+		this.extrémité2.inscrire(this)
+end note
+
+note top of Point
+	class Point:
+		private List<Observateur> observateurs
+end note
+
+note bottom of Point
+	translater(dx, dy):
+		x += dx
+		y += dy
+		for (Observateur obs : observateurs):
+			obs.maj()
+
+	inscrire(obs):
+		observateurs.add(obs)
+
+	supprimer(obs):
+		observateurs.remove(obs)
+
+	Point(x, y):
+		this.x = x
+		this.y = y
+		this.observateurs = new ArrayList<>()
+end note
+@enduml
+' vim: sw=4 ts=4:

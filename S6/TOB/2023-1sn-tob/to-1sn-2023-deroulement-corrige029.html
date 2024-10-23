@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="generator" content="hevea 2.35">
+<link rel="stylesheet" type="text/css" href="to-1sn-2023-deroulement-corrige.css">
+<title>Projet court</title>
+</head>
+<body >
+<a href="to-1sn-2023-deroulement-corrige028.html"><img src="previous_motif.svg" alt="Previous"></a>
+<a href="to-1sn-2023-deroulement-corrige-index.html"><img src="contents_motif.svg" alt="Up"></a>
+<a href="to-1sn-2023-deroulement-corrige030.html"><img src="next_motif.svg" alt="Next"></a>
+<hr>
+<h3 id="sec71" class="subsection">1.3.2&#X2003;Projet court</h3>
+<h4 id="sec72" class="subsubsection">Sujet</h4>
+<p>Le <a href="CONTENU/to-1sn-2023-pr-02-sujet.pdf">projet
+court</a> doit &#XEA;tre fait &#XE0; partir des &#XE9;l&#XE9;ments fournis dans votre d&#XE9;p&#XF4;t Git
+(dossier &#X2019;projet-court&#X2019;) et rendu via ce m&#XEA;me d&#XE9;p&#XF4;t Git sur Gitlab.</p><p>Il ne faut pas d&#XE9;placer les fichiers fournis !</p>
+<h4 id="sec73" class="subsubsection">Jalons</h4>
+<p>Les principales dates concernant ce projet sont :
+</p><ul class="itemize"><li class="li-itemize">
+19 f&#XE9;vrier 2024 :
+	mise en ligne (et mise &#XE0; disposition) du sujet.
+	Le descriptif en ligne du module explique comment r&#XE9;cup&#XE9;rer les
+	fichiers fournis.</li><li class="li-itemize">9 mars 2024 :
+	remise des livrables (version compl&#XE8;te pour
+	premi&#XE8;re &#XE9;valuation) ;<p>
+	Cette premi&#XE8;re version n&#X2019;est pas not&#XE9;e. Cependant, vous pouvez avoir
+	des points de p&#XE9;nalit&#XE9; (qui ne pourront donc pas &#XEA;tre rattrap&#XE9;s avec
+	la deuxi&#XE8;me version) si le travail n&#X2019;est pas fait s&#XE9;rieusement.
+</p></li><li class="li-itemize">avant le 19 mars 2024 :
+	retour de la premi&#XE8;re &#XE9;valuation ;</li><li class="li-itemize">23 mars 2024 :
+	remise de la deuxi&#XE8;me version.</li></ul>
+<h4 id="sec74" class="subsubsection">Tests en bo&#XEE;te noire</h4>
+<p>Pour que vous sachiez comment votre programme sera test&#XE9;, nous vous
+fournissons quelques tests ainsi qu&#X2019;un script qui permet de les lancer
+(testeur.sh). Ils sont sur votre projet Git dans le dossier tests/.
+</p><p>Chaque test est d&#XE9;fini par deux fichiers. Le premier a l&#X2019;extension .run et est
+le test &#XE0; lancer (par exemple en faisant : sh testeur.sh leTest.run). Le
+second a l&#X2019;extension .expected. Il contient le r&#XE9;sultat attendu, ce que le
+programme doit afficher dans le terminal.</p><p>Le fichier testeur.sh est le testeur. Il prend en argument les tests &#XE0;
+ex&#XE9;cuter (fichier avec l&#X2019;extension .run).</p><pre class="verbatim">    # Lancer le seul test exempleTricheurSujet.run
+    sh testeur.sh tests/exempleTricheurSujet.run
+
+    # Lancer tous les tests du dossier courant
+    sh testeur.sh tests/*.run
+</pre><p>Il lance chaque test (fichier .run) et enregistre son r&#XE9;sultat avec
+l&#X2019;extension .computed. La commande diff permet de calculer la diff&#XE9;rence
+entre les deux fichiers (.expected et .computed). Les options -Bbw de diff
+sont utilis&#XE9;es pour ignorer les lignes vides et les blancs. Le verdict est
+enfin affich&#XE9;, &#X2019;ok&#X2019; ou &#X2019;ERREUR&#X2019;. Dans le cas d&#X2019;une erreur, le contenu du
+fichier diff est affich&#XE9;.</p><p>Les tests peuvent &#XEA;tre lanc&#XE9;s depuis le dossier &#X2019;projet-court&#X2019; ou le dossier
+&#X2019;projet-court/src&#X2019;.</p><p>Attention &#XE0; ne pas ajouter les fichiers .diff ou .computed sur Git car ce
+sont des fichiers engendr&#XE9;s. On peut ajouter les lignes suivantes dans le
+fichier .gitignore (&#XE0; la racine de votre projet) :
+</p><pre class="verbatim">*.diff
+*.computed
+</pre>
+<h4 id="sec75" class="subsubsection">&#XC9;valuation automatique</h4>
+<p>L&#X2019;&#XE9;valuation automatique du projet a d&#XE9;marr&#XE9;.</p><p>Les r&#XE9;sultats sont dans le dossier <code class="verb">evaluations/evaluation1.txt</code>.
+Il faut regarder le d&#XE9;tails dans les fichiers mentionn&#XE9;s quand une erreur est
+signal&#XE9;e (ils dont dans <code class="verb">evaluations/evaluation1</code>.)</p><p>L&#X2019;&#XE9;valuation automatique est lanc&#XE9;e de temps en temps sur le code qui a &#XE9;t&#XE9;
+pouss&#XE9; sur Gitlab.
+</p>
+<h4 id="sec76" class="subsubsection">R&#XE9;ponses &#XE0; vos questions</h4>
+<h5 id="sec77" class="paragraph">Recommencer une partie</h5>
+<p><span style="font-weight:bold">Doit on pouvoir recommencer une partie une fois l&#X2019;actuelle termin&#XE9;e ?
+(avec alternance du d&#XE9;part entre joueur 1 et joueur 2 ?)</span></p><p>Non. Une seule partie.</p>
+<h5 id="sec78" class="paragraph">NoSuchElementException.</h5>
+<p><span style="font-weight:bold">j&#X2019;ai aujourd&#X2019;hui effectu&#XE9; les tests boites noires que vous nous avez fournis.</span></p><p><span style="font-weight:bold">Je n&#X2019;ai qu&#X2019;une seule erreur que je n&#X2019;arrive pas &#XE0; comprendre : il semblerait
+que dans exemplePresqueSujet, vous testiez avec les entr&#XE9;es suivantes : 2 - X
+- 5 - 3 - 1.</span></p><p><span style="font-weight:bold">Sous Eclipse, comme sur un terminal, je peux tout &#XE0; fait lancer une partie
+avec Toto@humain et Titi@rapide puis saisir ces 5 arguments au fur et &#XE0; mesure
+sans avoir d&#X2019;erreur et ainsi finir la partie.
+Cependant, avec la commande sh testeur.sh tests/*.run, l&#X2019;exemplePresqueSujet me l&#XE8;ve
+une erreur "NoSuchElementException" dans le Scanner de ma classe Humain. Il
+semblerait que ce soit &#XE0; la saisie du deux&#XE8;me caract&#XE8;re (X).</span></p><p><span style="font-weight:bold">Il semblerait &#XE9;galement pour en avoir discut&#XE9; avec mes camarades que je ne sois pas le seul &#XE0; avoir cette exception. Ne peut-elle pas venir du test ? 
+</span></p><p>NoSuchElementException se produit quand il n&#X2019;y a plus de donn&#XE9;es en entr&#XE9;e.
+Vous pouvez le reproduire en tapant un CTRL-D au clavier (qui ferme l&#X2019;entr&#XE9;e
+standard).</p><p>Le probl&#XE8;me vient de la mani&#XE8;re dont vous utilisez Scanner.
+Vous cr&#XE9;ez un nouveau Scanner &#XE0; chaque getPrise(). Le Scanner pr&#XE9;c&#XE9;dent
+a consomm&#XE9; les caract&#XE8;res (lecture en avant). Ils ne sont donc plus
+disponibles pour les lectures suivantes.</p><p>Vous pouvez le v&#XE9;rifier en ajoutant, juste avant la cr&#XE9;ation du Scanner
+et juste apr&#XE8;s une saisie :
+</p><div class="mouselstlisting">&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;<span style="font-weight:bold">try</span>&#X2004;&#X200D;{<br>
+&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;System&#X200B;.&#X200B;out&#X200B;.&#X200B;println&#X200B;(&#X200B;"&#X200B;available&#X2004;&#X200D;:&#X2004;&#X200D;"&#X2004;&#X200D;+&#X2004;&#X200D;System&#X200B;.&#X200B;in&#X200B;.&#X200B;available&#X200B;());<br>
+&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;}&#X2004;&#X200D;<span style="font-weight:bold">catch</span>&#X2004;&#X200D;(&#X200B;java&#X200B;.&#X200B;io&#X200B;.&#X200B;IOException&#X2004;&#X200D;e&#X200B;)&#X2004;&#X200D;{<br>
+&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;System&#X200B;.&#X200B;out&#X200B;.&#X200B;println&#X200B;(&#X200B;e&#X200B;);<br>
+&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;}</div><p>qui affiche le nombre de caract&#XE8;res disponibles sur l&#X2019;entr&#XE9;e standard.</p><p>Vous verrez que s&#X2019;il y a 10 caract&#XE8;res disponibles avant la cr&#XE9;ation du
+Scanner, d&#XE8;s qu&#X2019;une lecture est faite, il n&#X2019;y a plus de caract&#XE8;res
+disponibles sur l&#X2019;entr&#XE9;e standard. D&#X2019;o&#XF9; le NoSuchElementException.</p><p>Ce qu&#X2019;il faut faire, c&#X2019;est ne cr&#XE9;er qu&#X2019;un seul Scanner pour toute
+l&#X2019;application.</p>
+<h5 id="sec79" class="paragraph">Tests fournis. Que fait l&#X2019;utilisateur ?</h5>
+<p><span style="font-weight:bold">Vous nous avez fourni un fichier contenant des exemples de tests.</span></p><p><span style="font-weight:bold">Lors de l&#X2019;exemple "exemplePresqueSujet.expected", ligne 12, je ne suis pas s&#XFB;re de ce que fait l&#X2019;utilisateur.
+Est-ce bien un " " ?
+</span></p><p>Pour savoir ce que fait l&#X2019;utilisateur il faut regarder le fichier en
+.run. Ce que fournit l&#X2019;utilisateur n&#X2019;appara&#XEE;t pas sur la sortie (et
+donc pas non plus dans .expected) car ce n&#X2019;est pas saisi au clavier
+(donc pas d&#X2019;&#XE9;cho dans le terminal) mais r&#XE9;cup&#XE9;r&#XE9; gr&#XE2;ce &#XE0; la redirection
+de l&#X2019;entr&#XE9;e standard avec &#X2019;&lt;&lt;EOF&#X2019;. Ce qui est fourni au programme est
+donc entre les deux EOF dans le .run. L&#X2019;utilisateur rentre donc
+successivement :
+</p><pre class="verbatim">2
+X
+5
+3
+1
+</pre>
+<h5 id="sec80" class="paragraph">Probl&#XE8;me de compilation.</h5>
+<p><span style="font-weight:bold">J&#X2019;ai voulu compiler (juste compiler)
+la classe
+Jouer sans rien modifier et elle ne compile pas car la classe
+ConfigurationException est introuvable alors qu&#X2019;elle est dans le m&#XEA;me
+paquetage.
+</span></p><p>Il faut &#XEA;tre dans le dossier qui contient le dossier "allumettes" (le plus
+simple)... Ou d&#XE9;finir le CLASSPATH ou utiliser l&#X2019;option &#X2019;-cp&#X2019; de javac et
+java.</p><pre class="verbatim">cd ...../projet-court/src
+javac allumettes/Jouer.java
+java allumettes.Jouer
+</pre><p>Utiliser Eclipse est certainement une bonne id&#XE9;e ! Il est important de savoir
+utiliser ce type d&#X2019;outil qui peut, par bien des aspects, vous faciliter la
+gestion du code Java (ou d&#X2019;autres langages).</p>
+<h5 id="sec81" class="paragraph">Mon programme boucle avec le message "vous devez donner un entier"
+avec exemplePresqueSujet</h5>
+<p><span style="font-weight:bold">
+J&#X2019;ai un probl&#XE8;me dans le projet court, c&#X2019;est que j&#X2019;ai ex&#XE9;cut&#XE9; les tests
+fournis et ils marchent tr&#XE8;s bien mais quand j&#XB4;ex&#XE9;cute le test avec
+exemplePresqueSujet je trouve dans le fichier.computed une boucle infinie
+avec le message "vous devez donner un entier" apr&#XE8;s la saisie de &#X2019;X&#X2019; alors
+que dans eclipse &#XE7;a marche tr&#XE8;s bien avec les m&#XEA;mes entr&#XE9;es.
+</span></p><p>Lors d&#X2019;une saisie incorrecte, il faut consommer les caract&#XE8;res qui posent
+probl&#XE8;mes, ici "X". On peut utiliser la m&#XE9;thode nextLine() de Scanner pour le
+faire.</p>
+<hr>
+<a href="to-1sn-2023-deroulement-corrige028.html"><img src="previous_motif.svg" alt="Previous"></a>
+<a href="to-1sn-2023-deroulement-corrige-index.html"><img src="contents_motif.svg" alt="Up"></a>
+<a href="to-1sn-2023-deroulement-corrige030.html"><img src="next_motif.svg" alt="Next"></a>
+</body>
+</html>

@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="generator" content="hevea 2.35">
+<style type="text/css">
+.equationcontainer{position:relative;}
+.equationnumber{float:right;left:auto;position:absolute;right:0}
+.equationnumber-valign{float:right;left:auto;position:absolute;right:0;margin-top:-0.5em;}
+.floatrule{background-color: black; border: none; height: 1px; width: 80%}
+.phantom{display: inline-block; visibility: hidden}
+.hphantom{display: inline-block; height: 0; visibility: hidden}
+.vphantom{display: inline-block; visibility: hidden; width: 0}
+.smash{display: inline-block; height: 0; line-height: 0}
+.li-itemize{margin:1ex 0ex;}
+.li-enumerate{margin:1ex 0ex;}
+.dd-description{margin:0ex 0ex 1ex 4ex;}
+.dt-description{margin:0ex;}
+.toc{list-style:none;}
+.footnotetext{margin:0ex; padding:0ex;}
+div.footnotetext P{margin:0px; text-indent:1em;}
+.thefootnotes{text-align:left;margin:0ex;}
+.dt-thefootnotes{margin:0em;}
+.dd-thefootnotes{margin:0em 0em 0em 2em;}
+.footnoterule{background-color: black; border: none; height: 1px; margin: 1em auto 1em 0px; width: 40%}
+.caption{padding-left:2ex; padding-right:2ex; margin-left:auto; margin-right:auto}
+.title{margin:2ex auto;text-align:center}
+.titlemain{margin:1ex 2ex 2ex 1ex;}
+.titlerest{margin:0ex 2ex;}
+.center{text-align:center;margin-left:auto;margin-right:auto;}
+.flushleft{text-align:left;margin-left:0ex;margin-right:auto;}
+.flushright{text-align:right;margin-left:auto;margin-right:0ex;}
+div table{margin-left:inherit;margin-right:inherit;margin-bottom:2px;margin-top:2px}
+td table{margin:auto;}
+table{border-collapse:collapse;}
+td{padding:0;}
+.cellpadding0 tr td{padding:0;}
+.cellpadding1 tr td{padding:1px;}
+pre{text-align:left;margin-left:0ex;margin-right:auto;}
+blockquote{margin-left:4ex;margin-right:4ex;text-align:left;}
+td p{margin:0px;}
+.quote{margin-left:3em;margin-right:3em;text-align:inherit;text-indent:0pt}
+.quotation{margin-left:3em;margin-right:3em;text-align:inherit;text-indent:1.5em}
+.verse{margin-left:3em;margin-right:3em;text-indent:1.5em hanging each-line}
+.parbox{box-sizing: border-box;
+display: inline-block;
+text-indent: 0;
+}
+.rule-rect{fill: black;}
+.lrbox{box-sizing:border-box;display:inline-block;overflow:visible;white-space:nowrap;}
+.center-lrbox{display:inline-block;margin-left:50%;transform:translateX(-50%);}
+.makebox{}
+.framebox{border:1px solid black;padding:0.25em;}
+.vertical-rule{border:none;width:2px;background-color:black;}
+.horizontal-rule{border:none;background-color:black;}
+.hrule{border:none;height:2px;width:100%;background-color:black;}
+.hfill{border:none;height:1px;width:200%;background-color:black;}
+.vdisplay{border-collapse:separate;border-spacing:2px;line-height:1.1;width:auto; empty-cells:show; border:2px solid red;}
+.vdcell{white-space:nowrap;padding:0px; border:2px solid green;}
+.display{border-collapse:separate;border-spacing:2px;line-height:1.1;width:auto; border:none;}
+.dcell{white-space:nowrap;padding:0px; border:none;}
+.dcenter{margin:0ex auto;}
+.vdcenter{border:solid #FF8000 2px; margin:0ex auto;}
+.minipage{text-align:left; margin-left:0em; margin-right:auto;}
+.marginpar{border:solid thin black; margin-bottom:1ex; width:20%; text-align:left;}
+.marginparleft{float:left; clear:left; margin-left:0ex; margin-right:1ex;}
+.marginparright{float:right; clear:right; margin-left:1ex; margin-right:0ex;}
+.theorem{text-align:left;margin:1ex auto 1ex 0ex;}
+.lstlisting{font-family:monospace;white-space:pre;margin-right:auto;margin-left:0pt;text-align:left}
+.part{margin:2ex auto;text-align:center}
+.mouselstlisting{font-family:monospace;margin-right:auto;margin-left:0pt;text-align:left}
+.profonly{background-color:#ccffcc;display:inline-block;}
+</style>
+<title>ENSEEIHT 1SN  
+Déroulement du module Technologie Objet  
+Java, UML, etc.
+</title>
+</head>
+<body >
+<!--HEVEA command line is: hevea -exec xxdate.exe listings.hva -I /home/cregut/usr/TeX/lib/tex/macros/latex/personnel xcweb.sty -fix png.hva macros.hva eleves.hva to-1sn-2023-deroulement-corrige.tex -o to-1sn-2023-deroulement-corrige.html -->
+<!--CUT STYLE book--><!--CUT DEF subsection 1 --><table class="title"><tr><td style="padding:1ex"><h1 class="titlemain">ENSEEIHT 1SN <br>
+D&#XE9;roulement du module Technologie Objet <br>
+Java, UML, etc.</h1><h3 class="titlerest">31&#X2004;&#X200D;mars&#X2004;&#X200D;2024</h3></td></tr>
+</table><p>Ce document d&#XE9;crit le d&#XE9;roulement chronologique du cours de Technologie Objet
+dispens&#XE9; &#XE0; l&#X2019;ENSEEIHT en 1i&#XE8;re ann&#XE9;e Sciences du Num&#XE9;rique (1SN).</p><p>Les sujets sont disponibles au format PDF (pdf).
+</p><p>Les programmes donn&#XE9;s ont &#XE9;t&#XE9; test&#XE9;s en utilisant le JDK (version 8 ou 11).
+Nous nous limiterons cependant aux concepts pr&#XE9;sents dans la version 1.7 du
+langage Java (Java 7).</p><p>Vous avez &#XE0; votre disposition une version de ce document sous la forme
+d&#X2019;<a href="to-1sn-2023-deroulement-corrige.html">un seul fichier HTML</a> et
+<a href="index.html">une version d&#XE9;coup&#XE9;e en parties</a>.</p><p>Ce document et les documents associ&#XE9;s (sujets, transparents, etc.) contiennent
+encore certainement des erreurs et/ou des impr&#XE9;cisions. Merci de signaler vos
+remarques, vos suggestions ou vos interrogations &#XE0;
+<a href="mailto:Xavier.Cregut@enseeiht.fr">Xavier Cr&#XE9;gut
+&lt;Prenom.Nom@enseeiht.fr&gt;</a>.</p><p><br>
+<br>
+</p><p>Ce module est compos&#XE9; de :
+</p><ul class="itemize"><li class="li-itemize">
+<a href="#CMNP">Cours asynchrones (pas de pr&#XE9;sentiel)</a>
+</li><li class="li-itemize"><a href="#SN1ATOB">S&#XE9;ances</a>
+</li><li class="li-itemize"><a href="#Projets">Projets</a>
+</li><li class="li-itemize"><a href="#Ressources">Ressources</a>
+</li></ul><p><br>
+</p>
+<!--TOC chapter id="sec1" Technologie Objet-->
+<h1 id="sec1" class="chapter">Chapitre&#X2004;&#X200D;1&#X2003;Technologie Objet</h1><!--SEC END -->
+<!--TOC section id="sec2" Cours asynchrones-->
+<h2 id="sec2" class="section">1.1&#X2003;<a id="CMNP">Cours asynchrones</a></h2><!--SEC END --><p>Voici les supports de cours qui sont &#XE0; lire avant les TD/TP.
+Ces consignes peuvent &#XEA;tre retrouv&#XE9;es dans le fichier
+<a href="CONTENU/cours-consignes-main.pdf">cours-consignes-main.pdf</a></p><ul class="itemize"><li class="li-itemize">
+<a href="CONTENU/to-1sn-2023-cm-introduction-sujet.pdf">Pr&#XE9;sentation de l&#X2019;UE</a>.</li><li class="li-itemize"><a href="CONTENU/to-1sn-2023-cm-classes-sujet.pdf">Classes</a> (environ 90&#X2019;) et les
+	<a href="CONTENU/to-1sn-2023-questions-classes-sujet.pdf">quelques questions sur le
+	cours</a> : avant le TD 1 (23 janvier) :
+	<ol class="enumerate" type=1><li class="li-enumerate">
+		 Modularite : Classe (22)<p>	</p></li><li class="li-enumerate">	 Constructeurs et destructeur (46)<p>	</p></li><li class="li-enumerate">	 Masquage d&#X2019;information (61)<p>	</p></li><li class="li-enumerate">	 Membres de classe : 82<p>	</p></li><li class="li-enumerate">	 Programmation imp&#XE9;rative : 92 (le petit questionnaire au d&#XE9;but est
+		l&#XE0; pour v&#XE9;rifier que vous avez compris les points
+		essentiels)
+	</li><li class="li-enumerate">	 Tests unitaires avec JUnit : 156 (utilis&#XE9;s au TP 2)<p>	</p></li><li class="li-enumerate">	 Fabriques statiques (207, abord&#XE9;es au TD 1), ellipse (211)...<p>	</p></li><li class="li-enumerate">	 Il est bien s&#XFB;r conseill&#XE9; de lire tous les transparents du
+		support m&#XEA;me s&#X2019;ils ne sont pas mentionn&#XE9;s explicitement dans la
+		liste ci-dessus.<p>	</p></li></ol></li><li class="li-itemize"><a href="CONTENU/to-1sn-2023-cm-relations-sujet.pdf">Relations entre classes</a> (environ 30&#X2019;) : avant
+		le TD 2 (6 f&#XE9;vrier).</li><li class="li-itemize"><a href="CONTENU/to-1sn-2023-cm-interfaces-genericite-sujet.pdf">Interface et G&#XE9;n&#XE9;ricit&#XE9;</a> (environ 90&#X2019;) :
+	avant le TD 2 et TP 4 (6 f&#XE9;vrier). Ces deux notions sont
+	ind&#XE9;pendantes m&#XEA;me si elles sont regroup&#XE9;es sur le m&#XEA;me support.
+	La partie interface sera un peu utilis&#XE9;e sur le mini-projet (PR01).</li><li class="li-itemize"><a href="CONTENU/to-1sn-2023-cm-heritage-sujet.pdf">H&#XE9;ritage &#X2013; Classes abstraites &#X2013;
+	R&#XE9;utilisation</a> (120&#X2019;) : avant le TP 5 (11 f&#XE9;vrier) et le TD 3
+	(11 f&#XE9;vrier).</li><li class="li-itemize"><a href="CONTENU/to-1sn-2023-cm-exceptions-sujet.pdf">Exceptions</a> (environ 1h30) :
+	avant le TD 4 (20 f&#XE9;vrier).</li><li class="li-itemize">(r&#XE9;visions) <a href="CONTENU/to-1sn-2023-cm-relations-sujet.pdf">Relations entre classes</a> (environ 30&#X2019;) : avant
+		le TD 5 (27 f&#XE9;vrier).</li><li class="li-itemize">UML <a href="CONTENU/to-1sn-2023-cm-use-case-sujet.pdf">diagramme de cas
+	d&#X2019;utilisation</a>, <a href="CONTENU/to-1sn-2023-cm-sequence-sujet.pdf">diagrammes de
+	s&#XE9;quence</a>,
+	
+	<a href="https://www.calameo.com/read/005322362cd27f26b4830">diagramme
+	d&#X2019;&#XE9;tats et diagrammes d&#X2019;activit&#XE9;</a><sup><a id="text1" href="#note1">1</a></sup>, accessible depuis
+<a href="https://www.eyrolles.com/Informatique/Livre/uml-2-par-la-pratique-9782212116809/">la
+page d&#X2019;Eyrolles, UML 2 par la pratique de Pascal Roques</a> (environ 1h45) :
+avant le TD 6 (5 mars). </li><li class="li-itemize"><a href="CONTENU/to-1sn-2023-cm-collections-sujet.pdf">Patrons, Structures de donn&#XE9;es et
+	Collections</a> (environ 2h30) : avant le TD 8 (11 mars) et le TP 12 (12
+	mars).
+	</li><li class="li-itemize"><a href="CONTENU/to-1sn-2023-cm-swing-sujet.pdf">Interfaces graphiques avec Java/Swing</a>
+	(environ 1h45) : avant le TD 9 (19 mars) et le TP 14 (26 mars). Il
+	est conseill&#XE9; de lire et travailler ce cours apr&#XE8;s le TD 8 &#XAB; Encore les
+	segments et les points &#XBB; (s&#XE9;ance TD 7, 13 mars).
+	<br>
+	Pour valider la compr&#XE9;hension de ce cours, il est conseill&#XE9; de faire
+	<a href="CONTENU/to-1sn-2023-tuto-swing-sujet.pdf">les exercices suivants</a> avec comme
+	point de d&#XE9;part la classe
+	<a href="CONTENU/TUTO-Swing/ComprendreSwing.java">ComprendreSwing</a>.<p>	 </p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+	 Voici un
+	 </span><a href="CONTENU/to-1sn-2023-tuto-swing-corrige.pdf"><span style="color:green">corrig&#XE9;</span></a><span style="color:green"> et les
+	 </span><a href="CONTENU/TUTO-Swingsolution/"><span style="color:green">fichiers correspondants</span></a><span style="color:green">.
+	 </span>
+	 </p></li></ul>
+<!--TOC section id="sec3" S&#XE9;ances-->
+<h2 id="sec3" class="section">1.2&#X2003;<a id="SN1ATOB">S&#XE9;ances</a></h2><!--SEC END -->
+<!--TOC subsection id="sec4" S&#XE9;ance Pr&#XE9;sentation 1 (16/01/2024, 16:15)-->
+<h3 id="sec4" class="subsection">1.2.1&#X2003;<a id="TOB:SeancePrésentation1">S&#XE9;ance Pr&#XE9;sentation 1 (16/01/2024, 16:15)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SN : 16/01/2024, 16:15 &#XE0; 17:00, B00, Cregut Xavier
+</li></ul>
+<!--TOC subsubsection id="sec5" Introduction 1 : Pr&#XE9;sentation de l&#X2019;UE-->
+<h4 id="sec5" class="subsubsection"><a id="TOB:ThèmeIntroduction1">Introduction 1 : Pr&#XE9;sentation de l&#X2019;UE</a></h4><!--SEC END --><p>Voir Moodle...</p>
+<!--TOC subsection id="sec6" S&#XE9;ance CM 1 (22/01/2024, 08:00)-->
+<h3 id="sec6" class="subsection">1.2.2&#X2003;<a id="TOB:SeanceCM1">S&#XE9;ance CM 1 (22/01/2024, 08:00)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SN : 22/01/2024, 08:00 &#XE0; 09:45, B00 (389), Cregut Xavier
+</li></ul>
+<!--TOC subsubsection id="sec7" CM 1 : Abstraction et modularit&#XE9; : classes-->
+<h4 id="sec7" class="subsubsection"><a id="TOB:ThèmeCM1">CM 1 : Abstraction et modularit&#XE9; : classes</a></h4><!--SEC END --><p>	Le <a href="CONTENU/to-1sn-2023-cm-classes-sujet.pdf">cours</a> pr&#XE9;sente la classe comme un moyen d&#X2019;abstraction et de
+	modularit&#XE9;. L&#X2019;objectif est de savoir faire en objet ce que vous
+	savez d&#XE9;j&#XE0; faire en programmation imp&#XE9;rative.</p>
+<!--TOC subsection id="sec8" S&#XE9;ance TD 1 (22/01/2024, 14:00 au 24/01/2024, 14:00)-->
+<h3 id="sec8" class="subsection">1.2.3&#X2003;<a id="TOB:SeanceTD1">S&#XE9;ance TD 1 (22/01/2024, 14:00 au 24/01/2024, 14:00)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SNA, 1SNB : 22/01/2024, 14:00 &#XE0; 15:45, B006 (27), Cregut Xavier
+</li><li class="li-itemize">1SNC, 1SND : 22/01/2024, 14:00 &#XE0; 15:45, B208 (42), Bedouet Judicael
+</li><li class="li-itemize">1SNE, 1SNF : 22/01/2024, 14:00 &#XE0; 15:45, A302 (64), Ouederni Meriem
+</li><li class="li-itemize">1SNG, 1SNH : 24/01/2024, 14:00 &#XE0; 15:45, B007 (28), Cregut Xavier
+</li><li class="li-itemize">1SNI, 1SNJ : 23/01/2024, 16:15 &#XE0; 18:00, B208 (42), Bedouet Judicael
+</li><li class="li-itemize">1SNK, 1SNL : 24/01/2024, 14:00 &#XE0; 15:45, A301 (40), Dupont Guillaume
+</li></ul>
+<!--TOC subsubsection id="sec9" TD 1 : Sp&#XE9;cification et implantation-->
+<h4 id="sec9" class="subsubsection"><a id="TOB:ThèmeTD1">TD 1 : Sp&#XE9;cification et implantation</a></h4><!--SEC END --><p>Le <a href="CONTENU/to-1sn-2023-td-01-sujet.pdf">TD 1</a> concerne la sp&#XE9;cification et l&#X2019;implantation d&#X2019;une classe.
+Il permet de d&#XE9;montrer l&#X2019;int&#XE9;r&#XEA;t de d&#XE9;clarer les attributs priv&#XE9;s et
+explique le principe de l&#X2019;acc&#XE8;s uniforme et la r&#XE8;gle de protection en
+&#XE9;criture des attributs.</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+	Voici un </span><a href="CONTENU/to-1sn-2023-td-01-corrige.pdf"><span style="color:green">corrig&#XE9; du TD 1</span></a><span style="color:green"> possible et les fichiers associ&#XE9;s :
+</span></p><ul class="itemize"><li class="li-itemize"><span style="color:green">
+</span><span style="color:green">
+	la </span><a href="CONTENU/TD01/exo5/"><span style="color:green">solution des exercices 1 &#XE0; 5</span></a><span style="color:green">, donc le
+	point cart&#XE9;sien et les deux programmes de test ;
+
+</span></li><li class="li-itemize"><span style="color:green">
+	la </span><a href="CONTENU/TD01/exo6.2/"><span style="color:green">version polaire du point et le premier
+	programme de test</span></a><span style="color:green"> ;
+
+</span></li><li class="li-itemize"><span style="color:green">
+	la </span><a href="CONTENU/TD01/exo6.3/"><span style="color:green">version mixte du point et le second programme
+	de test</span></a><span style="color:green">.
+
+</span></li><li class="li-itemize"><span style="color:green">
+	la </span><a href="CONTENU/TD01/exo7/"><span style="color:green">La classe Point avec les fabriques statiques pour cr&#XE9;er des points &#XE0; partir des coordonn&#XE9;es cart&#XE9;siennes ou des coordonn&#XE9;es polaires</span></a><span style="color:green">
+
+</span></li></ul><p><span style="color:green">
+</span><span style="color:green"><span style="font-weight:bold">Remarque :</span></span><span style="color:green">
+	Cette solution est partielle puisque les modifications pour les
+	exercices 4, 5 et 6 ne sont pas donn&#XE9;es.
+</span><span style="color:green">
+</span></p>
+<!--TOC subsection id="sec10" S&#XE9;ance TP 1 (23/01/2024, 08:00 au 24/01/2024, 16:15)-->
+<h3 id="sec10" class="subsection">1.2.4&#X2003;<a id="TOB:SeanceTP1">S&#XE9;ance TP 1 (23/01/2024, 08:00 au 24/01/2024, 16:15)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SNA : 23/01/2024, 08:00 &#XE0; 09:45, C203 (32), Bonnet Louis
+</li><li class="li-itemize">1SNB : 23/01/2024, 08:00 &#XE0; 09:45, C205 (32), Singh Neeraj
+</li><li class="li-itemize">1SNC : 23/01/2024, 08:00 &#XE0; 09:45, C201 (18), Charles William
+</li><li class="li-itemize">1SND : 23/01/2024, 08:00 &#XE0; 09:45, C202 (18), Gasparini Simone
+</li><li class="li-itemize">1SNE : 23/01/2024, 08:00 &#XE0; 09:45, C204 (32), Ouederni Meriem
+</li><li class="li-itemize">1SNF : 23/01/2024, 08:00 &#XE0; 09:45, C206 (32), Lebegue Jean-Claude
+</li><li class="li-itemize">1SNG : 24/01/2024, 16:15 &#XE0; 18:00, C216a, Chigot Estelle
+</li><li class="li-itemize">1SNH : 24/01/2024, 16:15 &#XE0; 18:00, C203 (32), Superman 1SN
+</li><li class="li-itemize">1SNI : 24/01/2024, 16:15 &#XE0; 18:00, C201 (18), Pelissier-Combescure Marie
+</li><li class="li-itemize">1SNJ : 24/01/2024, 16:15 &#XE0; 18:00, C202 (18), Megna Anael
+</li><li class="li-itemize">1SNK : 24/01/2024, 16:15 &#XE0; 18:00, C204 (32), Dupont Guillaume
+</li><li class="li-itemize">1SNL : 24/01/2024, 16:15 &#XE0; 18:00, C206 (32), Riviere Peter
+</li></ul>
+<!--TOC subsubsection id="sec11" TP 1 : Points et segments-->
+<h4 id="sec11" class="subsubsection"><a id="TOB:ThèmeTP1">TP 1 : Points et segments</a></h4><!--SEC END --><p>Le <a href="CONTENU/to-1sn-2023-tp-01-sujet.pdf">TP 1</a> propose d&#X2019;utiliser les principaux outils du JDK (javac,
+java et javadoc) en ligne de commande, de v&#XE9;rifier certains aspects du
+langage qui ont &#XE9;t&#XE9; pr&#XE9;sent&#XE9;s en cours, de compl&#XE9;ter une classe Segment et
+d&#X2019;&#XE9;crire un programme de test.</p><p>Ce TP peut aussi &#XEA;tre fait avec <a href="https://repl.it/"><span style="font-family:monospace">https://repl.it/</span></a> en utilisant la
+console qui se trouve &#XE0; droite de l&#X2019;&#XE9;diteur pour taper les commandes. Il est
+conseill&#XE9; de s&#X2019;inscrire de mani&#XE8;re &#XE0; pouvoir conserver ses fichiers d&#X2019;une
+connexion &#XE0; l&#X2019;autre. Dans la console, vous pouvez aussi utiliser les
+commandes de subversion...</p><p>Vous partirez des <a href="CONTENU/TP01/">classes fournies</a>.</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+	Voici un </span><a href="CONTENU/to-1sn-2023-tp-01-corrige.pdf"><span style="color:green">corrig&#XE9; du TP 1</span></a><span style="color:green"> possible et les 
+	</span><a href="CONTENU/TP01solution/"><span style="color:green">fichiers associ&#XE9;s</span></a><span style="color:green">.
+</span></p>
+<!--TOC subsection id="sec12" S&#XE9;ance Projet 1 (23/01/2024, 10:15 au 25/01/2024, 08:00)-->
+<h3 id="sec12" class="subsection">1.2.5&#X2003;<a id="TOB:SeanceProjet1">S&#XE9;ance Projet 1 (23/01/2024, 10:15 au 25/01/2024, 08:00)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SNA, 1SNB : 23/01/2024, 10:15 &#XE0; 12:00, C214a+C214b, Bonnet Louis
+</li><li class="li-itemize">1SNC, 1SND : 23/01/2024, 10:15 &#XE0; 12:00, C201 (18)+C202 (18), Gasparini Simone
+</li><li class="li-itemize">1SNE, 1SNF : 23/01/2024, 10:15 &#XE0; 12:00, C204 (32)+C206 (32), Ouederni Meriem
+</li><li class="li-itemize">1SNG, 1SNH : 25/01/2024, 08:00 &#XE0; 09:45, C216a+C216b, Chigot Estelle
+</li><li class="li-itemize">1SNI, 1SNJ : 25/01/2024, 08:00 &#XE0; 09:45, C214a+C214b, Megna Anael
+</li><li class="li-itemize">1SNK, 1SNL : 25/01/2024, 08:00 &#XE0; 09:45, C204 (32)+C206 (32), Riviere Peter
+</li></ul>
+<!--TOC subsubsection id="sec13" TP 2 : Tester la classe Point avec JUnit-->
+<h4 id="sec13" class="subsubsection"><a id="TOB:ThèmeTP2">TP 2 : Tester la classe Point avec JUnit</a></h4><!--SEC END --><p>Le <a href="CONTENU/to-1sn-2023-tp-02-sujet.pdf">TP 2</a> propose de tester la classe Point en utilisant le framework
+<a href="http://junit.org">JUnit</a>.</p><p>
+Attention, JUnit 4 est install&#XE9; dans <a href="/mnt/n7fs/ens/tp_cregut/junit4.jar"><span style="font-family:monospace">/mnt/n7fs/ens/tp_cregut/junit4.jar</span></a>
+Il faut donc faire :
+</p><div class="mouselstlisting">&#X200B;export&#X2004;&#X200D;CLASSPATH&#X200B;=/&#X200B;mnt&#X200B;/&#X200B;n7fs&#X200B;/&#X200B;ens&#X200B;/&#X200B;tp_cregut&#X200B;/&#X200B;junit4&#X200B;.&#X200B;jar&#X200B;:.</div><p>ou en csh/tcsh :
+</p><div class="mouselstlisting">&#X200B;setenv&#X2004;&#X200D;CLASSPATH&#X2004;&#X200D;/&#X200B;mnt&#X200B;/&#X200B;n7fs&#X200B;/&#X200B;ens&#X200B;/&#X200B;tp_cregut&#X200B;/&#X200B;junit4&#X200B;.&#X200B;jar&#X200B;:.</div><p>Si vous avez d&#XE9;j&#XE0; une d&#XE9;finition de CLASSPATH dans votre <code>&#X200B;~/.&#X200B;</code><code>bashrc</code>,
+il suffit de la compl&#XE9;ter pour ajouter le nouveau
+chemin d&#X2019;acc&#XE8;s : <code class="verb">/mnt/n7fs/ens/tp_cregut/junit4.jar</code>.
+</p><p>Voici les <a href="CONTENU/TP02/">fichiers fournis</a>.</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+	Voici une </span><a href="CONTENU/TP02solution/"><span style="color:green">solution possible</span></a><span style="color:green">.
+</span></p>
+<!--TOC subsubsection id="sec14" TP 3 : Introduction &#XE0; Eclipse-->
+<h4 id="sec14" class="subsubsection"><a id="TOB:ThèmeTP3">TP 3 : Introduction &#XE0; Eclipse</a></h4><!--SEC END --><p>	Le <a href="CONTENU/to-1sn-2023-tp-03-sujet.pdf">TP 3</a> vous permet de prendre en main cette plateforme de
+	d&#XE9;veloppement et de vous familiariser avec ses possiblit&#XE9;s.</p>
+<!--TOC subsubsection id="sec15" PR 1 : Mini-projet-->
+<h4 id="sec15" class="subsubsection"><a id="TOB:ThèmePR1">PR 1 : Mini-projet</a></h4><!--SEC END --><p>	La description est donn&#XE9;e dans la rubrique Projets / Mini-projet.</p>
+<!--TOC subsection id="sec16" S&#XE9;ance TP 2 (05/02/2024, 14:00 au 05/02/2024, 16:15)-->
+<h3 id="sec16" class="subsection">1.2.6&#X2003;<a id="TOB:SeanceTP2">S&#XE9;ance TP 2 (05/02/2024, 14:00 au 05/02/2024, 16:15)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SNA : 05/02/2024, 16:15 &#XE0; 18:00, C203 (32), Bonnet Louis
+</li><li class="li-itemize">1SNB : 05/02/2024, 16:15 &#XE0; 18:00, C205 (32), Pennec Galann
+</li><li class="li-itemize">1SNC : 05/02/2024, 16:15 &#XE0; 18:00, C201 (18), Charles William
+</li><li class="li-itemize">1SND : 05/02/2024, 16:15 &#XE0; 18:00, C202 (18), Gasparini Simone
+</li><li class="li-itemize">1SNE : 05/02/2024, 16:15 &#XE0; 18:00, C301(18), Ouederni Meriem
+</li><li class="li-itemize">1SNF : 05/02/2024, 16:15 &#XE0; 18:00, C304 (32), Lebegue Jean-Claude
+</li><li class="li-itemize">1SNG : 05/02/2024, 14:00 &#XE0; 15:45, C216a, Chigot Estelle
+</li><li class="li-itemize">1SNH : 05/02/2024, 14:00 &#XE0; 15:45, C216b, Gasparini Simone
+</li><li class="li-itemize">1SNI : 05/02/2024, 14:00 &#XE0; 15:45, C201 (18), Pelissier-Combescure Marie
+</li><li class="li-itemize">1SNJ : 05/02/2024, 14:00 &#XE0; 15:45, C202 (18), Megna Anael
+</li><li class="li-itemize">1SNK : 05/02/2024, 14:00 &#XE0; 15:45, C204 (32), Ouederni Meriem
+</li><li class="li-itemize">1SNL : 05/02/2024, 14:00 &#XE0; 15:45, C206 (32), Riviere Peter
+</li></ul>
+<!--TOC subsubsection id="sec17" TP 4 : Afficher graphiquement les points et les segments-->
+<h4 id="sec17" class="subsubsection"><a id="TOB:ThèmeTP4">TP 4 : Afficher graphiquement les points et les segments</a></h4><!--SEC END --><p>Le <a href="CONTENU/to-1sn-2023-tp-04-sujet.pdf">TP 4</a> propose de se familiariser avec un afficheur graphique dont
+la <a href="CONTENU/TP04/doc/index.html">documentation</a> est donn&#XE9;e puis de
+l&#X2019;utiliser pour afficher graphiquement les points et les segments.</p><p>Sous Eclipse (ou &#XE9;quivalent), on utilisera le fichier d&#X2019;archive
+<a href="CONTENU/afficheur.jar">afficheur.jar</a> qu&#X2019;il faudra ajouter comme &#XAB;
+External archive file &#XBB; au &#XAB; Build path &#XBB; du projet Java.</p><p>Voici les <a href="CONTENU/TP04/">fichiers fournis</a>.</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+	Voici un </span><a href="CONTENU/to-1sn-2023-tp-04-corrige.pdf"><span style="color:green">corrig&#XE9; du TP 4</span></a><span style="color:green"> possible et les 
+	</span><a href="CONTENU/TP04solution/"><span style="color:green">fichiers associ&#XE9;s</span></a><span style="color:green">.
+</span></p>
+<!--TOC subsection id="sec18" S&#XE9;ance Projet 2 (06/02/2024, 08:00 au 07/02/2024, 14:00)-->
+<h3 id="sec18" class="subsection">1.2.7&#X2003;<a id="TOB:SeanceProjet2">S&#XE9;ance Projet 2 (06/02/2024, 08:00 au 07/02/2024, 14:00)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SNA, 1SNB : 06/02/2024, 08:00 &#XE0; 09:45, C214a+C214b, Cregut Xavier
+</li><li class="li-itemize">1SNC, 1SND : 06/02/2024, 08:00 &#XE0; 09:45, C201 (18)+C202 (18), Charles William
+</li><li class="li-itemize">1SNE, 1SNF : 06/02/2024, 08:00 &#XE0; 09:45, C204 (32)+C206 (32), Ouederni Meriem
+</li><li class="li-itemize">1SNG, 1SNH : 07/02/2024, 14:00 &#XE0; 15:45, C216a+C216b, Gasparini Simone
+</li><li class="li-itemize">1SNI, 1SNJ : 07/02/2024, 14:00 &#XE0; 15:45, C214a+C214b, Pelissier-Combescure Marie
+</li><li class="li-itemize">1SNK, 1SNL : 07/02/2024, 14:00 &#XE0; 15:45, C204 (32)+C206 (32), Dupont Guillaume
+</li></ul>
+<!--TOC subsubsection id="sec19" PR 1 : Mini-projet (fin)-->
+<h4 id="sec19" class="subsubsection">PR 1 : Mini-projet (fin)</h4><!--SEC END --><p>Continuation du th&#XE8;me <a href="#TOB%3ATh%E8mePR1">PR 1</a> de la s&#XE9;ance <a href="#TOB%3ASeanceProjet1">S&#XE9;ance Projet 1</a></p>
+<!--TOC subsection id="sec20" S&#XE9;ance TD 2 (06/02/2024, 10:15 au 07/02/2024, 16:15)-->
+<h3 id="sec20" class="subsection">1.2.8&#X2003;<a id="TOB:SeanceTD2">S&#XE9;ance TD 2 (06/02/2024, 10:15 au 07/02/2024, 16:15)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SNA, 1SNB : 06/02/2024, 10:15 &#XE0; 12:00, B006 (27), Cregut Xavier
+</li><li class="li-itemize">1SNC, 1SND : 06/02/2024, 10:15 &#XE0; 12:00, C101 (90), Bedouet Judicael
+</li><li class="li-itemize">1SNE, 1SNF : 06/02/2024, 10:15 &#XE0; 12:00, A302 (64), Ouederni Meriem
+</li><li class="li-itemize">1SNG, 1SNH : 07/02/2024, 16:15 &#XE0; 18:00, B007 (28), Cregut Xavier
+</li><li class="li-itemize">1SNI, 1SNJ : 07/02/2024, 16:15 &#XE0; 18:00, A301 (40), Bedouet Judicael
+</li><li class="li-itemize">1SNK, 1SNL : 07/02/2024, 16:15 &#XE0; 18:00, A303 (64), Dupont Guillaume
+</li></ul>
+<!--TOC subsubsection id="sec21" TD 2 : Ensemble ordonn&#XE9;-->
+<h4 id="sec21" class="subsubsection"><a id="TOB:ThèmeTD2">TD 2 : Ensemble ordonn&#XE9;</a></h4><!--SEC END --><p>Le <a href="CONTENU/to-1sn-2023-td-02-sujet.pdf">TD 2</a> propose de mod&#XE9;liser un ensemble ordonn&#XE9; utilis&#XE9; dans la
+r&#XE9;solution (na&#XEF;ve) du crible d&#X2019;&#XC9;ratosth&#XE8;ne.</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+	Voici un </span><a href="CONTENU/to-1sn-2023-td-02-corrige.pdf"><span style="color:green">corrig&#XE9; du TD 2</span></a><span style="color:green"> possible.
+	Les ensembles seront repris en TP et sur le cours sur les collections.
+</span>
+</p>
+<!--TOC subsection id="sec22" S&#XE9;ance TP 3 (12/02/2024, 08:00 au 14/02/2024, 14:00)-->
+<h3 id="sec22" class="subsection">1.2.9&#X2003;<a id="TOB:SeanceTP3">S&#XE9;ance TP 3 (12/02/2024, 08:00 au 14/02/2024, 14:00)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SNA : 13/02/2024, 10:15 &#XE0; 12:00, C216b, Bonnet Louis
+</li><li class="li-itemize">1SNB : 13/02/2024, 10:15 &#XE0; 12:00, C216a, Pennec Galann
+</li><li class="li-itemize">1SNC : 13/02/2024, 08:00 &#XE0; 09:45, C201 (18), Charles William
+</li><li class="li-itemize">1SND : 13/02/2024, 08:00 &#XE0; 09:45, C202 (18), Gasparini Simone
+</li><li class="li-itemize">1SNE : 13/02/2024, 08:00 &#XE0; 09:45, C204 (32), Superman 1SN
+</li><li class="li-itemize">1SNF : 13/02/2024, 08:00 &#XE0; 09:45, C206 (32), Lebegue Jean-Claude
+</li><li class="li-itemize">1SNG : 14/02/2024, 14:00 &#XE0; 15:45, C216a, Chigot Estelle
+</li><li class="li-itemize">1SNH : 14/02/2024, 14:00 &#XE0; 15:45, C216b, Gasparini Simone
+</li><li class="li-itemize">1SNI : 14/02/2024, 14:00 &#XE0; 15:45, C201 (18), Pelissier-Combescure Marie
+</li><li class="li-itemize">1SNJ : 14/02/2024, 14:00 &#XE0; 15:45, C202 (18), Megna Anael
+</li><li class="li-itemize">1SNK : 12/02/2024, 08:00 &#XE0; 09:45, C204 (32), Dupont Guillaume
+</li><li class="li-itemize">1SNL : 12/02/2024, 08:00 &#XE0; 09:45, C206 (32), Riviere Peter
+</li></ul>
+<!--TOC subsubsection id="sec23" TP 5 : H&#XE9;ritage comme sp&#XE9;cialisation-->
+<h4 id="sec23" class="subsubsection"><a id="TOB:ThèmeTP5">TP 5 : H&#XE9;ritage comme sp&#XE9;cialisation</a></h4><!--SEC END --><p>Le <a href="CONTENU/to-1sn-2023-tp-05-sujet.pdf">TP 5</a> propose de compl&#XE9;ter l&#X2019;&#XE9;diteur de sch&#XE9;mas math&#XE9;matiques en donnant la possibilit&#XE9; de nommer les points.</p><p>Sont fournies les <a href="CONTENU/TP05/">classes de l&#X2019;application</a> et toujours
+le paquetage contenant les classes de l&#X2019;afficheur et sa <a href="CONTENU/TP05/doc/index.html">documentation</a>.</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+	Voici un </span><a href="CONTENU/to-1sn-2023-tp-05-corrige.pdf"><span style="color:green">corrig&#XE9; du TP 5</span></a><span style="color:green"> possible et les 
+	</span><a href="CONTENU/TP05solution/"><span style="color:green">fichiers associ&#XE9;s</span></a><span style="color:green">.
+</span></p>
+<!--TOC subsubsection id="sec24" TP 6 : H&#XE9;ritage comme g&#XE9;n&#XE9;ralisation-->
+<h4 id="sec24" class="subsubsection"><a id="TOB:ThèmeTP6">TP 6 : H&#XE9;ritage comme g&#XE9;n&#XE9;ralisation</a></h4><!--SEC END --><p>Le <a href="CONTENU/to-1sn-2023-tp-06-sujet.pdf">TP 6</a> propose de formaliser la notion de sch&#XE9;ma math&#XE9;matique.</p><p>Sont fournies les <a href="CONTENU/TP06/">classes de l&#X2019;application</a> et toujours
+le paquetage contenant les classes de l&#X2019;afficheur et sa <a href="CONTENU/TP06/doc/index.html">documentation</a>.</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+	Voici un </span><a href="CONTENU/to-1sn-2023-tp-06-corrige.pdf"><span style="color:green">corrig&#XE9; du TP 6</span></a><span style="color:green"> possible et les 
+	</span><a href="CONTENU/TP06solution/"><span style="color:green">fichiers associ&#XE9;s</span></a><span style="color:green">.
+</span></p>
+<!--TOC subsection id="sec25" S&#XE9;ance TD 3 (13/02/2024, 08:00 au 14/02/2024, 16:15)-->
+<h3 id="sec25" class="subsection">1.2.10&#X2003;<a id="TOB:SeanceTD3">S&#XE9;ance TD 3 (13/02/2024, 08:00 au 14/02/2024, 16:15)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SNA, 1SNB : 13/02/2024, 08:00 &#XE0; 09:45, B006 (27), Cregut Xavier
+</li><li class="li-itemize">1SNC, 1SND : 13/02/2024, 10:15 &#XE0; 12:00, B306 (49), Bedouet Judicael
+</li><li class="li-itemize">1SNE, 1SNF : 13/02/2024, 10:15 &#XE0; 12:00, A302 (64), Dupont Guillaume
+</li><li class="li-itemize">1SNG, 1SNH : 13/02/2024, 10:15 &#XE0; 12:00, B006 (27), Cregut Xavier
+</li><li class="li-itemize">1SNI, 1SNJ : 14/02/2024, 16:15 &#XE0; 18:00, A301 (40), Bedouet Judicael
+</li><li class="li-itemize">1SNK, 1SNL : 14/02/2024, 14:00 &#XE0; 15:45, A303 (64), Dupont Guillaume
+</li></ul>
+<!--TOC subsubsection id="sec26" TD 3 : Comptes bancaires : une vue simplifi&#XE9;e-->
+<h4 id="sec26" class="subsubsection"><a id="TOB:ThèmeTD3">TD 3 : Comptes bancaires : une vue simplifi&#XE9;e</a></h4><!--SEC END --><p>Le <a href="CONTENU/to-1sn-2023-td-03-sujet.pdf">TD 3</a> propose de mod&#XE9;liser des comptes bancaires et une banque.
+Il permet de revoir la plupart des concepts objets, en particulier
+l&#X2019;encapsulation, l&#X2019;h&#XE9;ritage, la red&#XE9;finition et la liaison dynamique, mais
+aussi les attributs et m&#XE9;thodes de classe.</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span></p><p><span style="color:green">Voici un </span><a href="CONTENU/to-1sn-2023-td-03-corrige.pdf"><span style="color:green">corrig&#XE9; du TD 3</span></a><span style="color:green"> possible.</span></p><p><span style="color:green">Exercice 1 : </span><a href="CONTENU/TD03/exo1"><span style="color:green">fichiers fournis</span></a><span style="color:green">
+		et </span><a href="CONTENU/TD03/exo1solution"><span style="color:green">solution propos&#XE9;e</span></a><span style="color:green">.</span></p><p><span style="color:green">Exercice 2 : </span><a href="CONTENU/TD03/exo2"><span style="color:green">fichiers fournis</span></a><span style="color:green">
+		et </span><a href="CONTENU/TD03/exo2solution"><span style="color:green">solution propos&#XE9;e</span></a><span style="color:green">.</span></p><p><span style="color:green">Exercice 3 : </span><a href="CONTENU/TD03/exo3"><span style="color:green">fichiers fournis</span></a><span style="color:green">
+		et </span><a href="CONTENU/TD03/exo3solution"><span style="color:green">solution propos&#XE9;e</span></a><span style="color:green">.</span></p><p><span style="color:green">Exercice 4 : </span><a href="CONTENU/TD03/exo4"><span style="color:green">fichiers fournis</span></a><span style="color:green">
+		et </span><a href="CONTENU/TD03/exo4solution"><span style="color:green">solution propos&#XE9;e</span></a><span style="color:green">.
+</span></p>
+<!--TOC subsection id="sec27" S&#XE9;ance TP 4 (19/02/2024, 10:15 au 19/02/2024, 16:15)-->
+<h3 id="sec27" class="subsection">1.2.11&#X2003;<a id="TOB:SeanceTP4">S&#XE9;ance TP 4 (19/02/2024, 10:15 au 19/02/2024, 16:15)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SNA : 19/02/2024, 16:15 &#XE0; 18:00, C203 (32), Bonnet Louis
+</li><li class="li-itemize">1SNB : 19/02/2024, 16:15 &#XE0; 18:00, C205 (32), Pennec Galann
+</li><li class="li-itemize">1SNC : 19/02/2024, 16:15 &#XE0; 18:00, C201 (18), Charles William
+</li><li class="li-itemize">1SND : 19/02/2024, 16:15 &#XE0; 18:00, C202 (18), Gasparini Simone
+</li><li class="li-itemize">1SNE : 19/02/2024, 16:15 &#XE0; 18:00, C301(18), Ouederni Meriem
+</li><li class="li-itemize">1SNF : 19/02/2024, 16:15 &#XE0; 18:00, C206 (32), Lebegue Jean-Claude
+</li><li class="li-itemize">1SNG : 19/02/2024, 10:15 &#XE0; 12:00, C216a, Chigot Estelle
+</li><li class="li-itemize">1SNH : 19/02/2024, 10:15 &#XE0; 12:00, C216b, Gasparini Simone
+</li><li class="li-itemize">1SNI : 19/02/2024, 10:15 &#XE0; 12:00, C201 (18), Pelissier-Combescure Marie
+</li><li class="li-itemize">1SNJ : 19/02/2024, 10:15 &#XE0; 12:00, C202 (18), Megna Anael
+</li><li class="li-itemize">1SNK : 19/02/2024, 14:00 &#XE0; 15:45, C203 (32), Dupont Guillaume
+</li><li class="li-itemize">1SNL : 19/02/2024, 14:00 &#XE0; 15:45, C206 (32), Riviere Peter
+</li></ul>
+<!--TOC subsubsection id="sec28" TP 7 : Outils associ&#XE9;s &#XE0; Java Modeling Language (JML)-->
+<h4 id="sec28" class="subsubsection"><a id="TOB:ThèmeTP7">TP 7 : Outils associ&#XE9;s &#XE0; Java Modeling Language (JML)</a></h4><!--SEC END --><p>	
+	<span style="font-weight:bold">Attention :</span>
+	OpenJML n&#XE9;cessite une version 8 de Java. La version install&#XE9;e est la version 11.
+	Il serait possible d&#X2019;installer une version 8 et vous faire jongler entre Java 8 et Java 11.
+	Cependant, et parce que vous avez vu l&#X2019;int&#XE9;r&#XEA;t de la programmation par contrat en PIM avec
+	Ada et en Mod&#XE9;lisation, <span style="font-weight:bold">nous ne ferons pas ce TP</span> !
+	</p><p>	<br>
+</p><p>	</p><p>	Le <a href="CONTENU/to-1sn-2023-tp-07-sujet.pdf">TP 7</a> pr&#XE9;sente les outils associ&#XE9;s &#XE0; JML que nous utilisons
+	dans le cadre de la programmation par contrat.</p><p>	<span style="font-weight:bold">Attention :</span>
+	 Nous allons utiliser <a href="http://www.openjml.org/">OpenJML</a>
+	 qui implante <a href="http://www.jmlspecs.org/">JML</a>. Il est
+	 malheureusement tr&#XE8;s peu robuste !</p><p>	</p><p>	Voici les <a href="CONTENU/TP07/">classes fournies</a>.</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+	Voici un </span><a href="CONTENU/to-1sn-2023-tp-07-corrige.pdf"><span style="color:green">corrig&#XE9; du TP 7</span></a><span style="color:green"> possible.
+</span></p>
+<!--TOC subsubsection id="sec29" TP 8 : Ensemble et ensemble cha&#XEE;n&#XE9;-->
+<h4 id="sec29" class="subsubsection"><a id="TOB:ThèmeTP8">TP 8 : Ensemble et ensemble cha&#XEE;n&#XE9;</a></h4><!--SEC END --><p>Le <a href="CONTENU/to-1sn-2023-tp-08-sujet.pdf">TP 8</a> propose d&#X2019;implanter des ensembles et ensembles ordonn&#XE9;s
+d&#X2019;entiers en s&#X2019;appuyant sur des structures cha&#XEE;n&#XE9;es, puis de les 
+g&#XE9;n&#XE9;raliser gr&#XE2;ce &#XE0; la g&#XE9;n&#XE9;ricit&#XE9;.</p><p>Sont fournies les <a href="CONTENU/TP08/">classes de l&#X2019;application</a>.</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+Une solution </span><a href="CONTENU/TP08solution/"><span style="color:green">sans g&#XE9;n&#XE9;ricit&#XE9;</span></a><span style="color:green"> et
+et </span><a href="CONTENU/TP08generique/"><span style="color:green">avec g&#XE9;n&#XE9;ricit&#XE9;</span></a><span style="color:green">.
+</span></p>
+<!--TOC subsection id="sec30" S&#XE9;ance TD 4 (20/02/2024, 08:00 au 21/02/2024, 14:00)-->
+<h3 id="sec30" class="subsection">1.2.12&#X2003;<a id="TOB:SeanceTD4">S&#XE9;ance TD 4 (20/02/2024, 08:00 au 21/02/2024, 14:00)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SNA, 1SNB : 20/02/2024, 08:00 &#XE0; 09:45, B006 (27), Cregut Xavier
+</li><li class="li-itemize">1SNC, 1SND : 20/02/2024, 08:00 &#XE0; 09:45, B208 (42), Bedouet Judicael
+</li><li class="li-itemize">1SNE, 1SNF : 20/02/2024, 08:00 &#XE0; 09:45, A302 (64), Ouederni Meriem
+</li><li class="li-itemize">1SNG, 1SNH : 21/02/2024, 14:00 &#XE0; 15:45, C101 (90), Cregut Xavier
+</li><li class="li-itemize">1SNI, 1SNJ : 21/02/2024, 14:00 &#XE0; 15:45, C103 (88), Bedouet Judicael
+</li><li class="li-itemize">1SNK, 1SNL : 21/02/2024, 14:00 &#XE0; 15:45, A303 (64), Dupont Guillaume
+</li></ul>
+<!--TOC subsubsection id="sec31" TD 4 : Exceptions-->
+<h4 id="sec31" class="subsubsection"><a id="TOB:ThèmeTD4">TD 4 : Exceptions</a></h4><!--SEC END --><p>	Le <a href="CONTENU/to-1sn-2023-td-04-sujet.pdf">TD 4</a> propose de manipuler les exceptions sur un programme
+	simple qui calcule les somme des arguments de la ligne de commande.</p><p>	Voici les <a href="CONTENU/TD04/">fichiers fournis</a>.</p><p>	</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+	Voici un </span><a href="CONTENU/to-1sn-2023-td-04-corrige.pdf"><span style="color:green">corrig&#XE9; du TD 4</span></a><span style="color:green"> possible.</span></p><p><span style="color:green">	Voici la </span><a href="CONTENU/TD04solution/"><span style="color:green">solution propos&#XE9;e</span></a><span style="color:green">.
+	</span></p>
+<!--TOC subsection id="sec32" S&#XE9;ance Projet 3 (20/02/2024, 10:15 au 21/02/2024, 16:15)-->
+<h3 id="sec32" class="subsection">1.2.13&#X2003;<a id="TOB:SeanceProjet3">S&#XE9;ance Projet 3 (20/02/2024, 10:15 au 21/02/2024, 16:15)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SNA, 1SNB : 20/02/2024, 10:15 &#XE0; 12:00, C214a+C214b, Cregut Xavier
+</li><li class="li-itemize">1SNC, 1SND : 20/02/2024, 10:15 &#XE0; 12:00, C201 (18)+C202 (18), Charles William
+</li><li class="li-itemize">1SNE, 1SNF : 20/02/2024, 10:15 &#XE0; 12:00, C204 (32)+C206 (32), Lebegue Jean-Claude
+</li><li class="li-itemize">1SNG, 1SNH : 21/02/2024, 16:15 &#XE0; 18:00, C216a+C216b, Chigot Estelle
+</li><li class="li-itemize">1SNI, 1SNJ : 21/02/2024, 16:15 &#XE0; 18:00, C214a+C214b, Pelissier-Combescure Marie
+</li><li class="li-itemize">1SNK, 1SNL : 21/02/2024, 16:15 &#XE0; 18:00, C204 (32)+C206 (32), Dupont Guillaume
+</li></ul>
+<!--TOC subsubsection id="sec33" PR 2 : Projet court-->
+<h4 id="sec33" class="subsubsection"><a id="TOB:ThèmePR2">PR 2 : Projet court</a></h4><!--SEC END --><p>Voir la rubrique correspondante ci-dessous pour plus d&#X2019;information sur
+le projet court.</p><p>	</p>
+<!--TOC subsection id="sec34" S&#XE9;ance TP 5 (27/02/2024, 08:00 au 28/02/2024, 16:15)-->
+<h3 id="sec34" class="subsection">1.2.14&#X2003;<a id="TOB:SeanceTP5">S&#XE9;ance TP 5 (27/02/2024, 08:00 au 28/02/2024, 16:15)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SNA : 27/02/2024, 08:00 &#XE0; 09:45, C203 (32), Bonnet Louis
+</li><li class="li-itemize">1SNB : 27/02/2024, 08:00 &#XE0; 09:45, C205 (32), Cregut Xavier
+</li><li class="li-itemize">1SNC : 27/02/2024, 08:00 &#XE0; 09:45, C306 (32), Charles William
+</li><li class="li-itemize">1SND : 27/02/2024, 08:00 &#XE0; 09:45, C304 (32), Gasparini Simone
+</li><li class="li-itemize">1SNE : 27/02/2024, 08:00 &#XE0; 09:45, C301(18), Ouederni Meriem
+</li><li class="li-itemize">1SNF : 27/02/2024, 08:00 &#XE0; 09:45, C302 (18), Lebegue Jean-Claude
+</li><li class="li-itemize">1SNG : 28/02/2024, 16:15 &#XE0; 18:00, C216a, Chigot Estelle
+</li><li class="li-itemize">1SNH : 28/02/2024, 16:15 &#XE0; 18:00, C216b, Gasparini Simone
+</li><li class="li-itemize">1SNI : 28/02/2024, 16:15 &#XE0; 18:00, C201 (18), Pelissier-Combescure Marie
+</li><li class="li-itemize">1SNJ : 28/02/2024, 16:15 &#XE0; 18:00, C202 (18), Megna Anael
+</li><li class="li-itemize">1SNK : 28/02/2024, 16:15 &#XE0; 18:00, C204 (32), Dupont Guillaume
+</li><li class="li-itemize">1SNL : 28/02/2024, 16:15 &#XE0; 18:00, C206 (32), Riviere Peter
+</li></ul>
+<!--TOC subsubsection id="sec35" TP 9 : Exception : Agendas hi&#XE9;rarchiques-->
+<h4 id="sec35" class="subsubsection"><a id="TOB:ThèmeTP9">TP 9 : Exception : Agendas hi&#XE9;rarchiques</a></h4><!--SEC END --><p>	Le <a href="CONTENU/to-1sn-2023-tp-09-sujet.pdf">TP 9</a> propose de manipuler les exceptions
+	au travers de la mod&#XE9;lisation d&#X2019;agendas et de
+	groupes d&#X2019;agenda.</p><p>	Voici les <a href="CONTENU/TP09/">fichiers fournis</a>.</p><p>	</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+	Voici un </span><a href="CONTENU/to-1sn-2023-tp-09-corrige.pdf"><span style="color:green">corrig&#XE9; du TP 9</span></a><span style="color:green"> possible et
+	les </span><a href="CONTENU/TP09solution/"><span style="color:green">fichiers correspondants</span></a><span style="color:green">.
+	</span></p>
+<!--TOC subsection id="sec36" S&#XE9;ance TD 5 (27/02/2024, 10:15 au 28/02/2024, 14:00)-->
+<h3 id="sec36" class="subsection">1.2.15&#X2003;<a id="TOB:SeanceTD5">S&#XE9;ance TD 5 (27/02/2024, 10:15 au 28/02/2024, 14:00)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SNA, 1SNB : 27/02/2024, 10:15 &#XE0; 12:00, B006 (27), Cregut Xavier
+</li><li class="li-itemize">1SNC, 1SND : 27/02/2024, 10:15 &#XE0; 12:00, B306 (49), Bedouet Judicael
+</li><li class="li-itemize">1SNE, 1SNF : 27/02/2024, 10:15 &#XE0; 12:00, A302 (64), Ouederni Meriem
+</li><li class="li-itemize">1SNG, 1SNH : 28/02/2024, 14:00 &#XE0; 15:45, A301 (40), Cregut Xavier
+</li><li class="li-itemize">1SNI, 1SNJ : 28/02/2024, 14:00 &#XE0; 15:45, C002 (78), Bedouet Judicael
+</li><li class="li-itemize">1SNK, 1SNL : 28/02/2024, 14:00 &#XE0; 15:45, A303 (64), Dupont Guillaume
+</li></ul>
+<!--TOC subsubsection id="sec37" TD 5 : Un &#XE9;diteur orient&#XE9; ligne-->
+<h4 id="sec37" class="subsubsection"><a id="TOB:ThèmeTD5">TD 5 : Un &#XE9;diteur orient&#XE9; ligne</a></h4><!--SEC END --><p>	</p><p>	Le <a href="CONTENU/to-1sn-2023-td-05-sujet.pdf">TD 5</a> constitue un exercice de synth&#XE8;se qui a pour but
+	d&#X2019;illustrer les atouts de l&#X2019;approche objet. Il propose de programmer
+	un (mini-)&#XE9;diteur orient&#XE9; ligne pilot&#XE9; par un menu textuel.</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+	Voici un </span><a href="CONTENU/to-1sn-2023-td-05-corrige.pdf"><span style="color:green">corrig&#XE9; du TD 5</span></a><span style="color:green"> possible et la classe </span><a href="CONTENU/TD05tradi/EditeurTraditionnel.java"><span style="color:green">EditeurTraditionnel.java</span></a><span style="color:green">.
+</span></p>
+<!--TOC subsection id="sec38" S&#XE9;ance TP 6 (04/03/2024, 08:00 au 04/03/2024, 16:15)-->
+<h3 id="sec38" class="subsection">1.2.16&#X2003;<a id="TOB:SeanceTP6">S&#XE9;ance TP 6 (04/03/2024, 08:00 au 04/03/2024, 16:15)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SNA : 04/03/2024, 10:15 &#XE0; 12:00, C203 (32), Bonnet Louis
+</li><li class="li-itemize">1SNB : 04/03/2024, 10:15 &#XE0; 12:00, C205 (32), Singh Neeraj
+</li><li class="li-itemize">1SNC : 04/03/2024, 08:00 &#XE0; 09:45, C201 (18), Charles William
+</li><li class="li-itemize">1SND : 04/03/2024, 08:00 &#XE0; 09:45, C202 (18), Gasparini Simone
+</li><li class="li-itemize">1SNE : 04/03/2024, 08:00 &#XE0; 09:45, C204 (32), Ouederni Meriem
+</li><li class="li-itemize">1SNF : 04/03/2024, 08:00 &#XE0; 09:45, C206 (32), Lebegue Jean-Claude
+</li><li class="li-itemize">1SNG : 04/03/2024, 16:15 &#XE0; 18:00, C216a, Chigot Estelle
+</li><li class="li-itemize">1SNH : 04/03/2024, 16:15 &#XE0; 18:00, C216b, Gasparini Simone
+</li><li class="li-itemize">1SNI : 04/03/2024, 16:15 &#XE0; 18:00, C201 (18), Pelissier-Combescure Marie
+</li><li class="li-itemize">1SNJ : 04/03/2024, 16:15 &#XE0; 18:00, C202 (18), Megna Anael
+</li><li class="li-itemize">1SNK : 04/03/2024, 14:00 &#XE0; 15:45, C204 (32), Dupont Guillaume
+</li><li class="li-itemize">1SNL : 04/03/2024, 14:00 &#XE0; 15:45, C206 (32), Riviere Peter
+</li></ul>
+<!--TOC subsubsection id="sec39" TP 10 : Un &#XE9;diteur orient&#XE9; ligne-->
+<h4 id="sec39" class="subsubsection"><a id="TOB:ThèmeTP10">TP 10 : Un &#XE9;diteur orient&#XE9; ligne</a></h4><!--SEC END --><p>	Le <a href="CONTENU/to-1sn-2023-tp-10-sujet.pdf">TP 10</a> consiste &#XE0; compl&#XE9;ter l&#X2019;&#XE9;diteur orient&#XE9; ligne.</p><p>	Voici les <a href="CONTENU/TP10/">fichiers fournis</a>.</p><p>	</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+	Voici une solution possible pour l&#X2019;</span><a href="CONTENU/TP10solution1"><span style="color:green">exercice 1</span></a><span style="color:green">,
+	l&#X2019;</span><a href="CONTENU/TP10solution2.1"><span style="color:green">exercice 2.1</span></a><span style="color:green">,
+	l&#X2019;</span><a href="CONTENU/TP10solution2.2"><span style="color:green">exercice 2.2</span></a><span style="color:green"> et
+	l&#X2019;</span><a href="CONTENU/TP10solution3"><span style="color:green">exercice 3</span></a><span style="color:green">.
+	</span></p>
+<!--TOC subsubsection id="sec40" TP 11 : Pouvoir annuler les op&#XE9;rations de l&#X2019;&#XE9;diteur-->
+<h4 id="sec40" class="subsubsection"><a id="TOB:ThèmeTP11">TP 11 : Pouvoir annuler les op&#XE9;rations de l&#X2019;&#XE9;diteur</a></h4><!--SEC END --><p>Le <a href="CONTENU/to-1sn-2023-tp-11-sujet.pdf">TP 11</a> propose de compl&#XE9;ter l&#X2019;&#XE9;diteur
+orient&#XE9; ligne pour donner la possibilit&#XE9; &#XE0; l&#X2019;utilisateur d&#X2019;annuler les
+derni&#XE8;res op&#XE9;rations qu&#X2019;il a r&#XE9;alis&#XE9;es.</p><p>Le point de d&#XE9;part peut &#XEA;tre la solution du TP10.
+	</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+La solution propos&#XE9;e est en deux parties.
+</span></p><ul class="itemize"><li class="li-itemize"><span style="color:green">
+</span><span style="color:green">La </span><a href="CONTENU/TP11solution1"><span style="color:green">premi&#XE8;re solution</span></a><span style="color:green"> consiste simplement &#XE0;
+d&#XE9;finir la notion de CommandeReversible. Il s&#X2019;agit d&#X2019;une commande que l&#X2019;on
+peut annuler. Dans le menu, on teste le type de la commande pour voir s&#X2019;il
+faut l&#X2019;ajouter dans l&#X2019;historique.</span><p><span style="color:green">On d&#XE9;finit une commande CommandeDefaire qui est ajout&#XE9;e au menu en position
+-1 (et raccourci &#XAB; - &#XBB;). De la m&#XEA;me mani&#XE8;re, on d&#XE9;finit une commande
+CommandeRefaire (position -2 et raccourci "+").</span></p><p><span style="color:green"><span style="font-weight:bold">Remarque :</span></span><span style="color:green">
+	Il faut faire des copies des commandes car les attributs de la commande
+	sont utilis&#XE9;s pour conserver les informations n&#XE9;cessaires &#XE0; annuler (et
+	refaire la commande).
+</span></p></li><li class="li-itemize"><span style="color:green">La </span><a href="CONTENU/TP11solution2"><span style="color:green">deuxi&#XE8;me solution</span></a><span style="color:green"> est une extension de
+la premi&#XE8;re. On constate que dans le valider de Menu, on fait un test sur
+le type de la commande. La solution objet consisterait &#XE0; red&#XE9;finir la
+m&#XE9;hode ex&#XE9;cuter dans CommandeReversible. C&#X2019;est ce qui est propos&#XE9; ici.
+Pour que le traitement puisse &#XEA;tre g&#XE9;n&#XE9;ralis&#XE9; au niveau du menu, il faut
+quand m&#XEA;me faire une copie de la commande. Cette m&#XE9;thode (copie) est donc
+ajout&#XE9;e sur Commande au lieu d&#X2019;&#XEA;tre seulement pr&#XE9;sente sur
+CommandeReversible.
+Notons que le code par d&#XE9;faut retourne le m&#XEA;me objet (et ne cr&#XE9;e donc pas
+de nouveaux objets).</span></li></ul>
+<!--TOC subsection id="sec41" S&#XE9;ance TD 6 (05/03/2024, 08:00 au 06/03/2024, 14:00)-->
+<h3 id="sec41" class="subsection">1.2.17&#X2003;<a id="TOB:SeanceTD6">S&#XE9;ance TD 6 (05/03/2024, 08:00 au 06/03/2024, 14:00)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SNA, 1SNB : 05/03/2024, 08:00 &#XE0; 09:45, B006 (27), Cregut Xavier
+</li><li class="li-itemize">1SNC, 1SND : 05/03/2024, 08:00 &#XE0; 09:45, A303 (64), Bedouet Judicael
+</li><li class="li-itemize">1SNE, 1SNF : 05/03/2024, 08:00 &#XE0; 09:45, A302 (64), Ouederni Meriem
+</li><li class="li-itemize">1SNG, 1SNH : 06/03/2024, 14:00 &#XE0; 15:45, B007 (28), Cregut Xavier
+</li><li class="li-itemize">1SNI, 1SNJ : 06/03/2024, 14:00 &#XE0; 15:45, B306 (49), Bedouet Judicael
+</li><li class="li-itemize">1SNK, 1SNL : 06/03/2024, 14:00 &#XE0; 15:45, A303 (64), Dupont Guillaume
+</li></ul>
+<!--TOC subsubsection id="sec42" TD 6 : Variations autour de la relation Segment-Point-->
+<h4 id="sec42" class="subsubsection"><a id="TOB:ThèmeTD6">TD 6 : Variations autour de la relation Segment-Point</a></h4><!--SEC END --><p>Le <a href="CONTENU/to-1sn-2023-td-06-sujet.pdf">TD 6</a> s&#X2019;int&#XE9;resse &#XE0; la relation entre les segments et les points.
+Il permet ainsi de pr&#XE9;senter les diff&#XE9;rentes relations d&#X2019;UML (association,
+agr&#XE9;gation et composition) et leur traduction en Java.</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+	Voici un </span><a href="CONTENU/to-1sn-2023-td-06-corrige.pdf"><span style="color:green">corrig&#XE9; du TD 6</span></a><span style="color:green"> possible.
+</span></p>
+<!--TOC subsubsection id="sec43" TD 7 : &#XC9;galit&#XE9; entre points et point nomm&#XE9;s-->
+<h4 id="sec43" class="subsubsection"><a id="TOB:ThèmeTD7">TD 7 : &#XC9;galit&#XE9; entre points et point nomm&#XE9;s</a></h4><!--SEC END --><p>Le <a href="CONTENU/to-1sn-2023-td-07-sujet.pdf">TD 7</a> propose de d&#XE9;finir une m&#XE9;thode testant l&#X2019;&#XE9;galit&#XE9; entre deux
+points.</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+	Voici un </span><a href="CONTENU/to-1sn-2023-td-07-corrige.pdf"><span style="color:green">corrig&#XE9; du TD 7</span></a><span style="color:green"> possible.
+</span></p>
+<!--TOC subsection id="sec44" S&#XE9;ance Projet 4 (05/03/2024, 10:15 au 06/03/2024, 16:15)-->
+<h3 id="sec44" class="subsection">1.2.18&#X2003;<a id="TOB:SeanceProjet4">S&#XE9;ance Projet 4 (05/03/2024, 10:15 au 06/03/2024, 16:15)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SNA, 1SNB : 05/03/2024, 10:15 &#XE0; 12:00, C214a+C214b, Bonnet Louis
+</li><li class="li-itemize">1SNC, 1SND : 05/03/2024, 10:15 &#XE0; 12:00, C201 (18)+C202 (18), Gasparini Simone
+</li><li class="li-itemize">1SNE, 1SNF : 05/03/2024, 10:15 &#XE0; 12:00, C204 (32)+C206 (32), Lebegue Jean-Claude
+</li><li class="li-itemize">1SNG, 1SNH : 06/03/2024, 08:00 &#XE0; 09:45, C216a+C216b, Gasparini Simone
+</li><li class="li-itemize">1SNI, 1SNJ : 06/03/2024, 16:15 &#XE0; 18:00, C201 (18)+C202 (18), Megna Anael
+</li><li class="li-itemize">1SNK, 1SNL : 06/03/2024, 16:15 &#XE0; 18:00, C204 (32)+C206 (32), Riviere Peter
+</li></ul>
+<!--TOC subsubsection id="sec45" PR 2 : Projet court (fin)-->
+<h4 id="sec45" class="subsubsection">PR 2 : Projet court (fin)</h4><!--SEC END --><p>Continuation du th&#XE8;me <a href="#TOB%3ATh%E8mePR2">PR 2</a> de la s&#XE9;ance <a href="#TOB%3ASeanceProjet3">S&#XE9;ance Projet 3</a></p>
+<!--TOC subsection id="sec46" S&#XE9;ance TD 7 (11/03/2024, 08:00 au 11/03/2024, 10:15)-->
+<h3 id="sec46" class="subsection">1.2.19&#X2003;<a id="TOB:SeanceTD7">S&#XE9;ance TD 7 (11/03/2024, 08:00 au 11/03/2024, 10:15)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SNA, 1SNB : 11/03/2024, 10:15 &#XE0; 12:00, B006 (27), Cregut Xavier
+</li><li class="li-itemize">1SNC, 1SND : 11/03/2024, 10:15 &#XE0; 12:00, B306 (49), Bedouet Judicael
+</li><li class="li-itemize">1SNE, 1SNF : 11/03/2024, 10:15 &#XE0; 12:00, A302 (64), Ouederni Meriem
+</li><li class="li-itemize">1SNG, 1SNH : 11/03/2024, 08:00 &#XE0; 09:45, B007 (28), Cregut Xavier
+</li><li class="li-itemize">1SNI, 1SNJ : 11/03/2024, 08:00 &#XE0; 09:45, B306 (49), Bedouet Judicael
+</li><li class="li-itemize">1SNK, 1SNL : 11/03/2024, 08:00 &#XE0; 09:45, A303 (64), Dupont Guillaume
+</li></ul>
+<!--TOC subsubsection id="sec47" TD 8 : Encore les segments et les points !-->
+<h4 id="sec47" class="subsubsection"><a id="TOB:ThèmeTD8">TD 8 : Encore les segments et les points !</a></h4><!--SEC END --><p>Le <a href="CONTENU/to-1sn-2023-td-08-sujet.pdf">TD 8</a> propose de r&#XE9;fl&#XE9;chir &#XE0; une nouvelle mani&#XE8;re d&#X2019;&#XE9;crire les
+points et les segments en respectant une contrainte de r&#XE9;alisation : la
+longueur du segment est stock&#XE9;e dans un attribut.</p><p>Ce &#XAB; cas d&#X2019;&#XE9;cole &#XBB; permet de pr&#XE9;senter une solution int&#XE9;ressante qui, en
+particulier, est utilis&#XE9;e pour la programmation des interfaces graphiques
+en Java.</p><p>Voici les <a href="CONTENU/TD08">fichiers mentionn&#XE9;s dans le sujet</a>.</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+Voici un </span><a href="CONTENU/to-1sn-2023-td-08-corrige.pdf"><span style="color:green">corrig&#XE9; du TD 8</span></a><span style="color:green"> possible et les </span><a href="CONTENU/TD08solution"><span style="color:green">fichiers correspodants</span></a><span style="color:green">, plus pr&#XE9;cis&#XE9;ment :
+</span></p><ul class="itemize"><li class="li-itemize"><span style="color:green">
+</span><span style="color:green">	</span><a href="CONTENU/TD08exo3"><span style="color:green">solution de l&#X2019;exercice 3</span></a><span style="color:green"> (un point ne
+	conna&#XEE;t qu&#X2019;un seul segment),
+</span></li><li class="li-itemize"><span style="color:green">	</span><a href="CONTENU/TD08exo4.1"><span style="color:green">solution de la question 4.1</span></a><span style="color:green"> (un m&#XEA;me
+	point peut &#XEA;tre extr&#XE9;mit&#XE9; de plusieurs segments),
+</span></li><li class="li-itemize"><span style="color:green">	</span><a href="CONTENU/TD08exo4.2"><span style="color:green">solution de la question 4.2</span></a><span style="color:green"> (possibilit&#XE9;
+	d&#X2019;annuler l&#X2019;inscription d&#X2019;un segment),
+</span></li><li class="li-itemize"><span style="color:green">	</span><a href="CONTENU/TD08exo5a"><span style="color:green">solution de l&#X2019;exercice 5</span></a><span style="color:green"> (introduction de
+	l&#X2019;interface Observateur, le Segment est observateur, majLongueur/maj est
+	publique dans Segment),
+</span></li><li class="li-itemize"><span style="color:green">	</span><a href="CONTENU/TD08exo5b"><span style="color:green">solution de l&#X2019;exercice 5</span></a><span style="color:green"> (D&#XE9;finition de
+	l&#X2019;observateur comme classe sp&#XE9;cifique, pas de maj sur Segment mais
+	toujours majLongueur),
+</span></li><li class="li-itemize"><span style="color:green">	</span><a href="CONTENU/TD08exo5c"><span style="color:green">solution de l&#X2019;exercice 5</span></a><span style="color:green"> (utilisation
+	d&#X2019;une classe interne membre, majLongueur est priv&#XE9;e),
+</span></li></ul>
+<!--TOC subsection id="sec48" S&#XE9;ance TP 7 (11/03/2024, 10:15 au 18/03/2024, 08:00)-->
+<h3 id="sec48" class="subsection">1.2.20&#X2003;<a id="TOB:SeanceTP7">S&#XE9;ance TP 7 (11/03/2024, 10:15 au 18/03/2024, 08:00)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SNA : 12/03/2024, 10:15 &#XE0; 12:00, C203 (32), Bonnet Louis
+</li><li class="li-itemize">1SNB : 12/03/2024, 10:15 &#XE0; 12:00, C205 (32), Singh Neeraj
+</li><li class="li-itemize">1SNC : 12/03/2024, 08:00 &#XE0; 09:45, C204 (32), Charles William
+</li><li class="li-itemize">1SND : 12/03/2024, 08:00 &#XE0; 09:45, C205 (32), Superman 1SN
+</li><li class="li-itemize">1SNE : 12/03/2024, 08:00 &#XE0; 09:45, C301(18), Ouederni Meriem
+</li><li class="li-itemize">1SNF : 12/03/2024, 08:00 &#XE0; 09:45, C302 (18), Lebegue Jean-Claude
+</li><li class="li-itemize">1SNG : 13/03/2024, 16:15 &#XE0; 18:00, C216a, Chigot Estelle
+</li><li class="li-itemize">1SNH : 13/03/2024, 16:15 &#XE0; 18:00, C216b, Gasparini Simone
+</li><li class="li-itemize">1SNI : 11/03/2024, 10:15 &#XE0; 12:00, C203 (32), Pelissier-Combescure Marie
+</li><li class="li-itemize">1SNJ : 18/03/2024, 08:00 &#XE0; 09:45, C202 (18), Megna Anael
+</li><li class="li-itemize">1SNK : 13/03/2024, 14:00 &#XE0; 15:45, C204 (32), Dupont Guillaume
+</li><li class="li-itemize">1SNL : 13/03/2024, 14:00 &#XE0; 15:45, C206 (32), Riviere Peter
+</li></ul>
+<!--TOC subsubsection id="sec49" TP 12 : API Collection : prix des carburants-->
+<h4 id="sec49" class="subsubsection"><a id="TOB:ThèmeTP12">TP 12 : API Collection : prix des carburants</a></h4><!--SEC END --><p>	Le <a href="CONTENU/to-1sn-2023-tp-12-sujet.pdf">TP 12</a> propose de manipuler les structures de donn&#XE9;es de l&#X2019;API
+	Collection de Java.</p><p>	Voici les <a href="CONTENU/TP12/">fichiers fournis</a>.</p><p>	</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+	 Voici une </span><a href="CONTENU/TP12solution/"><span style="color:green">solution possible</span></a><span style="color:green">.
+	</span></p>
+<!--TOC subsection id="sec50" S&#XE9;ance TD 8 (12/03/2024, 08:00 au 13/03/2024, 16:15)-->
+<h3 id="sec50" class="subsection">1.2.21&#X2003;<a id="TOB:SeanceTD8">S&#XE9;ance TD 8 (12/03/2024, 08:00 au 13/03/2024, 16:15)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SNA, 1SNB : 12/03/2024, 08:00 &#XE0; 09:45, B006 (27), Cregut Xavier
+</li><li class="li-itemize">1SNC, 1SND : 12/03/2024, 10:15 &#XE0; 12:00, B306 (49), Bedouet Judicael
+</li><li class="li-itemize">1SNE, 1SNF : 12/03/2024, 10:15 &#XE0; 12:00, A302 (64), Ouederni Meriem
+</li><li class="li-itemize">1SNG, 1SNH : 13/03/2024, 14:00 &#XE0; 15:45, A303 (64), Cregut Xavier
+</li><li class="li-itemize">1SNI, 1SNJ : 13/03/2024, 14:00 &#XE0; 15:45, B306 (49), Bedouet Judicael
+</li><li class="li-itemize">1SNK, 1SNL : 13/03/2024, 16:15 &#XE0; 18:00, A303 (64), Dupont Guillaume
+</li></ul>
+<!--TOC subsubsection id="sec51" TD 9 : Un cannevas pour les tests-->
+<h4 id="sec51" class="subsubsection"><a id="TOB:ThèmeTD9">TD 9 : Un cannevas pour les tests</a></h4><!--SEC END --><p>	Le <a href="CONTENU/to-1sn-2023-td-09-sujet.pdf">TD 9</a> propose de voir de construire un cannevas
+	(framework) de test, &#XE0; l&#X2019;image de JUnit.</p><p>	</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+	 Voici un </span><a href="CONTENU/to-1sn-2023-td-09-corrige.pdf"><span style="color:green">corrig&#XE9; du TD 9</span></a><span style="color:green"> possible.</span></p><p><span style="color:green">	 Voici une solution pour
+	 l&#X2019;</span><a href="CONTENU/TD09ex2"><span style="color:green">exercice 2</span></a><span style="color:green">,
+	 pour l&#X2019;</span><a href="CONTENU/TD09ex4"><span style="color:green">exercice 4</span></a><span style="color:green">
+	 et l&#X2019;</span><a href="CONTENU/TD09ex5"><span style="color:green">exercice 5</span></a><span style="color:green">.
+	</span></p><p>	</p>
+<!--TOC subsection id="sec52" S&#XE9;ance TD 9 (18/03/2024, 08:00 au 20/03/2024, 16:15)-->
+<h3 id="sec52" class="subsection">1.2.22&#X2003;<a id="TOB:SeanceTD9">S&#XE9;ance TD 9 (18/03/2024, 08:00 au 20/03/2024, 16:15)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SNA, 1SNB : 19/03/2024, 10:15 &#XE0; 12:00, B006 (27), Cregut Xavier
+</li><li class="li-itemize">1SNC, 1SND : 19/03/2024, 10:15 &#XE0; 12:00, B306 (49), Bedouet Judicael
+</li><li class="li-itemize">1SNE, 1SNF : 19/03/2024, 10:15 &#XE0; 12:00, A302 (64), Ouederni Meriem
+</li><li class="li-itemize">1SNG, 1SNH : 18/03/2024, 08:00 &#XE0; 09:45, B007 (28), Cregut Xavier
+</li><li class="li-itemize">1SNI, 1SNJ : 20/03/2024, 16:15 &#XE0; 18:00, C002 (78), Bedouet Judicael
+</li><li class="li-itemize">1SNK, 1SNL : 20/03/2024, 16:15 &#XE0; 18:00, A303 (64), Dupont Guillaume
+</li></ul>
+<!--TOC subsubsection id="sec53" TD 10 : Interfaces graphiques avec Swing et UML (programmation &#XE9;v&#XE9;nementielle)-->
+<h4 id="sec53" class="subsubsection"><a id="TOB:ThèmeTD10">TD 10 : Interfaces graphiques avec Swing et UML (programmation &#XE9;v&#XE9;nementielle)</a></h4><!--SEC END --><p>Le <a href="CONTENU/to-1sn-2023-td-10-sujet.pdf">TD 10</a> propose de mod&#XE9;liser en UML et de programmer en Swing un
+jeu du Morpion.</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+	Voici un </span><a href="CONTENU/to-1sn-2023-td-10-corrige.pdf"><span style="color:green">corrig&#XE9; du TD 10</span></a><span style="color:green"> possible.
+</span></p>
+<!--TOC subsection id="sec54" S&#XE9;ance TP 8 (19/03/2024, 08:00 au 20/03/2024, 14:00)-->
+<h3 id="sec54" class="subsection">1.2.23&#X2003;<a id="TOB:SeanceTP8">S&#XE9;ance TP 8 (19/03/2024, 08:00 au 20/03/2024, 14:00)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SNA : 19/03/2024, 08:00 &#XE0; 09:45, C214b, Bonnet Louis
+</li><li class="li-itemize">1SNB : 19/03/2024, 08:00 &#XE0; 09:45, C216a, Singh Neeraj
+</li><li class="li-itemize">1SNC : 19/03/2024, 08:00 &#XE0; 09:45, C201 (18), Charles William
+</li><li class="li-itemize">1SND : 19/03/2024, 08:00 &#XE0; 09:45, C202 (18), Gasparini Simone
+</li><li class="li-itemize">1SNE : 19/03/2024, 08:00 &#XE0; 09:45, C204 (32), Superman 1SN
+</li><li class="li-itemize">1SNF : 19/03/2024, 08:00 &#XE0; 09:45, C206 (32), Lebegue Jean-Claude
+</li><li class="li-itemize">1SNG : 20/03/2024, 14:00 &#XE0; 15:45, C216a, Chigot Estelle
+</li><li class="li-itemize">1SNH : 20/03/2024, 14:00 &#XE0; 15:45, C216b, Gasparini Simone
+</li><li class="li-itemize">1SNI : 20/03/2024, 14:00 &#XE0; 15:45, C205 (32), Pelissier-Combescure Marie
+</li><li class="li-itemize">1SNJ : 20/03/2024, 14:00 &#XE0; 15:45, C306 (32), Megna Anael
+</li><li class="li-itemize">1SNK : 20/03/2024, 14:00 &#XE0; 15:45, C204 (32), Dupont Guillaume
+</li><li class="li-itemize">1SNL : 20/03/2024, 14:00 &#XE0; 15:45, C206 (32), Riviere Peter
+</li></ul>
+<!--TOC subsubsection id="sec55" TP 13 : Comprendre l&#X2019;API des collections-->
+<h4 id="sec55" class="subsubsection"><a id="TOB:ThèmeTP13">TP 13 : Comprendre l&#X2019;API des collections</a></h4><!--SEC END --><p>	Le <a href="CONTENU/to-1sn-2023-tp-13-sujet.pdf">TP 13</a> aborde la g&#XE9;n&#XE9;ricit&#XE9; et les patrons de conception au travers de l&#X2019;API Collection de Java.</p><p>	Voici les <a href="CONTENU/TP13/">fichiers fournis</a>.</p><p>	</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+	 Voici un </span><a href="CONTENU/to-1sn-2023-tp-13-corrige.pdf"><span style="color:green">corrig&#XE9; du TP 13</span></a><span style="color:green"> possible et les
+	 </span><a href="CONTENU/TP13solution/"><span style="color:green">fichiers associ&#XE9;s</span></a><span style="color:green">.
+</span></p>
+<!--TOC subsection id="sec56" S&#XE9;ance TP 9 (26/03/2024, 10:15 au 27/03/2024, 14:00)-->
+<h3 id="sec56" class="subsection">1.2.24&#X2003;<a id="TOB:SeanceTP9">S&#XE9;ance TP 9 (26/03/2024, 10:15 au 27/03/2024, 14:00)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SNA : 26/03/2024, 10:15 &#XE0; 12:00, C214a, Bonnet Louis
+</li><li class="li-itemize">1SNB : 26/03/2024, 10:15 &#XE0; 12:00, C214b, Singh Neeraj
+</li><li class="li-itemize">1SNC : 26/03/2024, 10:15 &#XE0; 12:00, C203 (32), Charles William
+</li><li class="li-itemize">1SND : 26/03/2024, 10:15 &#XE0; 12:00, C205 (32), Gasparini Simone
+</li><li class="li-itemize">1SNE : 26/03/2024, 10:15 &#XE0; 12:00, C301(18), Ouederni Meriem
+</li><li class="li-itemize">1SNF : 26/03/2024, 10:15 &#XE0; 12:00, C304 (32), Lebegue Jean-Claude
+</li><li class="li-itemize">1SNG : 27/03/2024, 14:00 &#XE0; 15:45, C216a, Chigot Estelle
+</li><li class="li-itemize">1SNH : 27/03/2024, 14:00 &#XE0; 15:45, C216b, Gasparini Simone
+</li><li class="li-itemize">1SNI : 27/03/2024, 14:00 &#XE0; 15:45, C201 (18), Pelissier-Combescure Marie
+</li><li class="li-itemize">1SNJ : 27/03/2024, 14:00 &#XE0; 15:45, C202 (18), Megna Anael
+</li><li class="li-itemize">1SNK : 27/03/2024, 14:00 &#XE0; 15:45, C204 (32), Dupont Guillaume
+</li><li class="li-itemize">1SNL : 27/03/2024, 14:00 &#XE0; 15:45, C206 (32), Riviere Peter
+</li></ul>
+<!--TOC subsubsection id="sec57" TP 14 : Jeu du Morpion-->
+<h4 id="sec57" class="subsubsection"><a id="TOB:ThèmeTP14">TP 14 : Jeu du Morpion</a></h4><!--SEC END --><p>Le <a href="CONTENU/to-1sn-2023-tp-14-sujet.pdf">TP 14</a> consiste &#XE0; construire une premi&#XE8;re application Java/Swing
+simple en programmant un jeu de Morpion avec une interface graphique.</p><p>Une fois cette application d&#XE9;velopp&#XE9;e, on pourra essayer de mettre en
+pratique le patron MVC...</p><p>Voici les <a href="CONTENU/TP14/">fichiers fournis</a>.</p><p><span style="color:green"><span style="font-weight:bold">Solution :</span></span><span style="color:green">
+Si le mod&#XE8;le du jeu de Morpion n&#X2019;avait pas &#XE9;t&#XE9; donn&#XE9;, on aurait pu avoir
+une </span><a href="CONTENU/TP14simpliste/"><span style="color:green">premi&#XE8;re version tr&#XE8;s simple</span></a><span style="color:green">,
+n&#X2019;utilisant pas de mod&#XE8;le.
+Le principal inconv&#XE9;nient de cette approche est que si l&#X2019;interface avec
+l&#X2019;utilisateur change (une interface en texte seul, type terminal ou avec
+avec une autre API graphique, Android par exemple), on ne peut rien (ou
+presque) r&#XE9;utiliser de cette premi&#XE8;re application.</span></p><p><span style="color:green">On doit au moins d&#XE9;finir dans une ou plusieurs classes (ici une seule) le
+mod&#XE8;le, la partie m&#XE9;tier, de l&#X2019;application. C&#X2019;est le point de d&#XE9;part qui
+a &#XE9;t&#XE9; donn&#XE9;. Voici une </span><a href="CONTENU/TP14modelePassif/"><span style="color:green">solution
+possible</span></a><span style="color:green">.</span></p><p><span style="color:green">Il est souvent souhaitable que le code des &#XE9;couteurs (Listener) reste
+simple. Aussi, il est pr&#XE9;f&#XE9;rable de d&#XE9;finir des m&#XE9;thodes auxiliaires dans
+la classe que les &#XE9;couteurs utilisent. Ceci avait &#XE9;t&#XE9; fait pour
+"recommencer" qui &#XE9;tait utilis&#XE9;e &#XE0; la fois dans le constructeur
+(initialiser le jeu) et dans un &#XE9;couteur (recommencer). On peut aussi le
+faire pour les deux autres. Voici une
+</span><a href="CONTENU/TP14modelePassif2/"><span style="color:green">solution possible</span></a><span style="color:green">.</span></p><p><span style="color:green">Pour ces deux derni&#XE8;res solutions, on parle de </span><span style="color:green"><em>mod&#XE8;le passif</em></span><span style="color:green"> car
+c&#X2019;est le contr&#XF4;leur qui met &#XE0; jour le mod&#XE8;le d&#X2019;une part et la vue (ou les
+vues) d&#X2019;autre part. On remarque alors que le traitement qui est fait dans
+le contr&#XF4;leur pour jouer est tr&#XE8;s proche de celui qui est fait dans le
+mod&#XE8;le pour cocher.</span></p><p><span style="color:green">Une autre solution est d&#X2019;avoir un </span><a href="CONTENU/TP14modeleActif/"><span style="color:green"><em>mod&#XE8;le
+actif</em></span></a><span style="color:green">. Dans ce cas le mod&#XE8;le est &#XE9;quip&#XE9; d&#X2019;un syst&#XE8;me d&#X2019;observateurs :
+le mod&#XE8;le signale ses modifications &#XE0; des observateurs
+(VueMorpion). Un contr&#XF4;leur n&#X2019;aura plus qu&#X2019;&#XE0; modifier le mod&#XE8;le qui
+signalera les modifications aux vues sans plus d&#X2019;intervention du contr&#XF4;leur.
+Cette solution permet facilement d&#X2019;ajouter plusieurs vues. De la m&#XEA;me
+fa&#XE7;on, il est facile de d&#XE9;finir plusieurs contr&#XF4;leurs. C&#X2019;est alors le
+mod&#XE8;le qui devient central. Notons que les contr&#XF4;leurs sont enregistr&#XE9;s
+aupr&#XE8;s du mod&#XE8;le. Ainsi quand le jeu est quitt&#XE9; depuis un contr&#XF4;leur, les
+autres contr&#XF4;leurs peuvent aussi &#XEA;tre avertis (ControleurMorpion est en
+quelque sorte un deuxi&#XE8;me observateur du mod&#XE8;le &#XE0; destination des
+contr&#XF4;leurs). Dans cette derni&#XE8;re solution, deux vues graphiques simples
+(sans possiblit&#XE9; de cliquer pour jouer), deux contr&#XF4;leurs graphiques avec
+cases &#XE0; cocher sont d&#XE9;finis, la classe MorpionSwing pr&#XE9;c&#XE9;dente (qui est &#XE0;
+la fois Vue et Controleur) et, enfin, une vue textuelle sur le score qui en
+fin d&#X2019;une partie annonce les scores sur les parties pass&#XE9;es. 
+</span></p>
+<!--TOC subsection id="sec58" S&#XE9;ance TP 10 (02/04/2024, 14:00 au 03/04/2024, 10:15)-->
+<h3 id="sec58" class="subsection">1.2.25&#X2003;<a id="TOB:SeanceTP10">S&#XE9;ance TP 10 (02/04/2024, 14:00 au 03/04/2024, 10:15)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SNA : 02/04/2024, 14:00 &#XE0; 15:45, C214a, Bonnet Louis
+</li><li class="li-itemize">1SNB : 02/04/2024, 14:00 &#XE0; 15:45, C214b, Singh Neeraj
+</li><li class="li-itemize">1SNC : 02/04/2024, 16:15 &#XE0; 18:00, C201 (18), Charles William
+</li><li class="li-itemize">1SND : 02/04/2024, 16:15 &#XE0; 18:00, C202 (18), Gasparini Simone
+</li><li class="li-itemize">1SNE : 02/04/2024, 16:15 &#XE0; 18:00, C203 (32), Ouederni Meriem
+</li><li class="li-itemize">1SNF : 02/04/2024, 16:15 &#XE0; 18:00, C206 (32), Lebegue Jean-Claude
+</li><li class="li-itemize">1SNG : 03/04/2024, 08:00 &#XE0; 09:45, C216a, Chigot Estelle
+</li><li class="li-itemize">1SNH : 03/04/2024, 08:00 &#XE0; 09:45, C216b, Gasparini Simone
+</li><li class="li-itemize">1SNI : 03/04/2024, 08:00 &#XE0; 09:45, C201 (18), Pelissier-Combescure Marie
+</li><li class="li-itemize">1SNJ : 03/04/2024, 08:00 &#XE0; 09:45, C202 (18), Megna Anael
+</li><li class="li-itemize">1SNK : 03/04/2024, 10:15 &#XE0; 12:00, C204 (32), Dupont Guillaume
+</li><li class="li-itemize">1SNL : 03/04/2024, 10:15 &#XE0; 12:00, C206 (32), Riviere Peter
+</li></ul>
+<!--TOC subsubsection id="sec59" TP 15 : Discussion instantan&#XE9;e : mise en pratique du MVC-->
+<h4 id="sec59" class="subsubsection"><a id="TOB:ThèmeTP15">TP 15 : Discussion instantan&#XE9;e : mise en pratique du MVC</a></h4><!--SEC END --><p>	Le <a href="CONTENU/to-1sn-2023-tp-15-sujet.pdf">TP 15</a> propose d&#X2019;appliquer le patron MVC sur une application
+	de discussion instantann&#XE9;e.</p><p>	Voici les <a href="CONTENU/TP15/">fichiers fournis</a>.</p><p>	
+</p>
+<!--TOC subsection id="sec60" S&#XE9;ance Examen 1 (13/05/2024, 10:00)-->
+<h3 id="sec60" class="subsection">1.2.26&#X2003;<a id="TOB:SeanceExamen1">S&#XE9;ance Examen 1 (13/05/2024, 10:00)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SNA, 1SNB, 1SNC, 1SND, 1SNE : 13/05/2024, 10:00 &#XE0; 11:30, C101 (90)+C103 (88), Riviere Peter, Singh Neeraj
+</li><li class="li-itemize">1SNF, 1SNG, 1SNH, 1SNI, 1SNJ, 1SNK, 1SNL : 13/05/2024, 10:00 &#XE0; 11:30, B00 (389), Alcouffe Remy, Bedouet Judicael, Ouederni Meriem, Pelissier-Combescure Marie
+</li></ul>
+<!--TOC subsubsection id="sec61" Examen 1 : Examen -->
+<h4 id="sec61" class="subsubsection"><a id="TOB:ThèmeExamen1">Examen 1 : Examen </a></h4><!--SEC END -->
+<!--TOC subsection id="sec62" S&#XE9;ance Oral 1 (28/05/2024, 10:15 au 28/05/2024, 16:15)-->
+<h3 id="sec62" class="subsection">1.2.27&#X2003;<a id="TOB:SeanceOral1">S&#XE9;ance Oral 1 (28/05/2024, 10:15 au 28/05/2024, 16:15)</a></h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+1SNA, 1SNB : 28/05/2024, 14:00 &#XE0; 15:45, C103 (88), Cregut Xavier, Duffort Olivier
+</li><li class="li-itemize">1SNC, 1SND : 28/05/2024, 14:00 &#XE0; 15:45, C101 (90), Bedouet Judicael, Francois Gilles
+</li><li class="li-itemize">1SNE, 1SNF : 28/05/2024, 16:15 &#XE0; 18:00, C103 (88), Duffort Olivier, Ouederni Meriem
+</li><li class="li-itemize">1SNG, 1SNH : 28/05/2024, 16:15 &#XE0; 18:00, C101 (90), Cregut Xavier, Francois Gilles
+</li><li class="li-itemize">1SNI, 1SNJ : 28/05/2024, 10:15 &#XE0; 12:00, C103 (88), Bedouet Judicael, Duffort Olivier
+</li><li class="li-itemize">1SNK, 1SNL : 28/05/2024, 10:15 &#XE0; 12:00, C101 (90), Dupont Guillaume, Francois Gilles
+</li></ul>
+<!--TOC section id="sec63" Projets-->
+<h2 id="sec63" class="section">1.3&#X2003;<a id="Projets">Projets</a></h2><!--SEC END -->
+<!--TOC subsection id="sec64" Mini-projet-->
+<h3 id="sec64" class="subsection">1.3.1&#X2003;Mini-projet</h3><!--SEC END -->
+<!--TOC subsubsection id="sec65" Le sujet-->
+<h4 id="sec65" class="subsubsection">Le sujet</h4><!--SEC END --><p>Le <a href="CONTENU/to-1sn-2023-pr-01-sujet.pdf">mini-projet</a>
+propose d&#X2019;&#XE9;crire une classe Cercle (y
+compris son programme de test et sa documentation !).</p><p><span style="font-weight:bold">Organisation :</span>
+Un &#X2019;git pull&#X2019; depuis votre projet git des TP vous fera appara&#XEE;tre le
+dossier mini-projet. C&#X2019;est dans ce dossier qu&#X2019;il faut travailler et rendre
+les deux versions de votre mini-projet. Vous recevrez aussi des retours
+via Git.
+</p><p><span style="font-weight:bold">V&#XE9;rification des normes de programmation avec checkstyle :</span>
+checkstyle est un outil pour automatiser la v&#XE9;rification des standards de
+programmation. Il permettra par exemple de v&#XE9;rifier le nom des identifiants
+(mais pas leur sens !), les commentaires de documentation, l&#X2019;utilisation des
+espaces, etc.</p><p>Pour lancer checkstyle, faire depuis une machine Linux de l&#X2019;N7 :
+</p><pre class="verbatim">java -jar /mnt/n7fs/ens/tp_cregut/checkstyle.jar -c checkstyle.xml Cercle.java
+</pre><p>Le fichier <a href="CONTENU/PR01/checkstyle.xml">checkstyle.xml</a> est le fichier de
+configuration &#XE0; utiliser.</p><p>checkstyle ne sera utilis&#XE9; que sur Cercle.java.
+</p>
+<!--TOC subsubsection id="sec66" Jalons-->
+<h4 id="sec66" class="subsubsection">Jalons</h4><!--SEC END --><ul class="itemize"><li class="li-itemize">
+<span style="font-weight:bold">23/01/2024 :</span>
+mise en ligne du sujet.</li><li class="li-itemize"><span style="font-weight:bold">10/02/2024, en fait 08/02 :</span>
+	d&#XE9;but des retours automatiques (ils peuvent commencer avant).
+</li><li class="li-itemize"><span style="font-weight:bold">10/02/2024, d&#XE9;cal&#XE9;e au 13/02/2024 :</span> date limite pour la remise de la
+premi&#XE8;re version compl&#XE8;te.
+<p><span style="font-weight:bold">Attention :</span>
+	Cette premi&#XE8;re version doit &#XEA;tre une version compl&#XE8;te de votre
+	mini-projet. M&#XEA;me si vous aurez un retour et la possibilit&#XE9; de
+	l&#X2019;am&#XE9;liorer, ne consid&#XE9;rez pas que la seule date qui compte est
+	la date de deuxi&#XE8;me rendu !
+</p><p><span style="font-weight:bold">P&#XE9;nalit&#XE9;s :</span>
+Vous aurez des p&#XE9;nalit&#XE9;s lors de la premi&#XE8;re &#XE9;valuation si le travail
+fourni n&#X2019;est pas jug&#XE9; suffisant. En particulier, les p&#XE9;nalit&#XE9;s
+suivantes s&#X2019;appliqueront :
+</p><ul class="itemize"><li class="li-itemize">
+	3 points : pas de rendu sur Gitlab. Vous devez r&#XE9;ussir &#XE0; rendre
+	 votre travail sur Gitlab. Le travail rendu par courriel
+	 ne sera pas &#XE9;valu&#XE9;.<p>	 <span style="font-weight:bold">Attention :</span>
+		Il ne faut pas d&#XE9;placer les fichiers sinon les tests
+		automatiques ne fonctionneront pas.
+	 </p></li><li class="li-itemize">	2 points : la classe Cercle ne compile pas.</li><li class="li-itemize">	1 point : la classe SujetCercleTest ne compile pas.</li><li class="li-itemize">	1 point : la classe CercleTest ne compile pas (ou est vide).</li><li class="li-itemize">	0.5 point : la classe CercleTest s&#X2019;ex&#XE9;cute avec des erreurs.</li><li class="li-itemize">	1 point : pas de commentaire de documentation.</li></ul></li><li class="li-itemize"><span style="font-weight:bold">semaine du 12/02/2024 :</span> &#XE9;valuation de la premi&#XE8;re version par les enseignants de TP.</li><li class="li-itemize"><span style="font-weight:bold">24/02/2024 :</span> date limite pour la remise de la deuxi&#XE8;me et
+derni&#XE8;re version (toujours sur Gitlab).</li></ul>
+<!--TOC subsubsection id="sec67" &#XC9;valuation automatique-->
+<h4 id="sec67" class="subsubsection">&#XC9;valuation automatique</h4><!--SEC END --><p>Le r&#XE9;sultat des tests automatiques est disponible dans votre projet Git, sur
+la branche "evaluations", dans le fichier
+<code>&#X200B;</code><code>evaluations</code><code>&#X200B;/&#X200B;</code><code>evaluation1</code><code>&#X200B;.&#X200B;</code><code>txt</code> (et dans le dossier
+<code>&#X200B;</code><code>evaluations</code><code>&#X200B;/&#X200B;</code><code>evaluation1</code>). Les v&#XE9;rifications faites sont
+d&#XE9;taill&#XE9;es dans les paragraphes suivants.</p><p>Le plus simple est de consulter ces r&#XE9;sultats via Gitlab et en s&#XE9;lectionnant
+la branche "evaluations" au lieu de "main". Vous pouvez aussi les
+consulter via eclipse en changeant de branche ou depuis un terminal (git
+switch evaluations). Attention, cependant, vous ne pouvez pas pousser de
+modifications sur la branche evaluations. Il faudra donc revenir &#XE0; la
+branche main pour modifier votre code. Si vous voulez avoir les remarques
+en locale, le plus simplet et le plus s&#XFB;r est certainement de faire une
+autre copie de votre projet.</p><p>Notez bien que cette &#XE9;valuation automatique constituent une &#XE9;valuation de
+votre mini-projet. Vous n&#X2019;avez pas acc&#XE8;s au code source de certains de ces
+tests et vous ne pouvez donc pas les lancer vous-m&#XEA;me. Cependant, les
+tests sont lanc&#XE9;s de temps en temps. Aussi si vous faites un commit, lors
+du prochain lancement
+des tests, les r&#XE9;sultats seront disponibles sur votre projet (r&#XE9;cup&#XE9;rables
+via un pull).
+</p><p>L&#X2019;&#XE9;valuation automatique est lanc&#XE9;e de temps en temps sur le code qui a &#XE9;t&#XE9;
+pouss&#XE9; sur Gitlab.
+</p><p><span style="font-weight:bold">Attention, les tests fournis ne sont pas exhaustifs et de nouveaux tests
+pourront &#XEA;tre ajout&#XE9;s pour l&#X2019;&#XE9;valuation finale.</span></p><p>La classe RobustesseCercleTest permet de v&#XE9;rifier
+l&#X2019;instrumentation des pr&#XE9;conditions avec <code>&#X200B;</code><code>assert</code>.
+Votre classe Cercle doit r&#XE9;ussir ces
+tests (voir <code>&#X200B;</code><code>evaluation1</code><code>&#X200B;.&#X200B;</code><code>txt</code>).</p><p>Attention, pour <code>&#X200B;</code><code>RobustesseCercleTest</code>, il faut activer la
+v&#XE9;rification des assertions en utilisant <code>&#X200B;-&#X200B;</code><code>ea</code> en ligne de commande
+ou, sous Eclipse, faire <em>Run As -&gt; RUN Configuration -&gt; Arguments</em>
+ajouter <code>&#X200B;-&#X200B;</code><code>ea</code> dans <span style="font-weight:bold"><em>VM Arguments</em></span>.</p><p>Les classes FormeCercleTest et Forme2CercleTest permettent de faire des
+v&#XE9;rifications sur la mani&#XE8;re dont votre programme est &#XE9;crit. Nous avons
+d&#XE9;cid&#XE9; de ne pas vous donner ces classes. Vous ne pourrez donc pas rejouer
+ces tests quand vous le souhaitez.</p><p>Vous ne pouvez pas non plus rejouer les tests qui concernent votre classe
+CercleTest. En effet, pour tester cette classe, nous nous
+servons de classes Cercle contenant des erreurs (dites mutantes) et v&#XE9;rifions
+si votre classe de test d&#XE9;tecte ces erreurs.
+Ainsi, les tests CercleMutant# permettent de tester la classe
+CercleTest. Le principe est le suivant : chaque classe
+CercleMutant# est la classe Cercle avec une erreur. Cette erreur ne concerne
+bien s&#XFB;r que E12, E13 ou E14 (voir la contrainte C6 du sujet). Si votre
+classe CercleTest ne d&#XE9;tecte pas l&#X2019;erreur, c&#X2019;est qu&#X2019;elle est incompl&#XE8;te : les
+tests qu&#X2019;elle fait ne sont pas suffisants. C&#X2019;est &#XE0; vous de voir comment la
+compl&#XE9;ter.</p><p>La classe CercleMini est une classe Cercle sans erreur.
+La classe CercleTest ne doit donc pas signaler d&#X2019;erreurs sur cette
+classe. Pour v&#XE9;rifier que vous ne testez que les &#XE9;l&#XE9;ments de E12, E13 et E14,
+certaines m&#XE9;thodes ont &#XE9;t&#XE9; &#XAB; d&#XE9;sactiv&#XE9;es &#XBB; : elles l&#XE8;vent une exception.</p><p>Nous ne pouvons pas vous donner les classes CercleMini et CercleMutant#.
+ce serait trop facile ! Quand on &#XE9;crit un programme de test, on ne connait
+pas les erreurs qui ont &#XE9;t&#XE9; ou seront commises lors de l&#X2019;&#XE9;criture du code &#XE0;
+tester.</p><p><span style="font-weight:bold">D&#XE9;tection de similitudes :</span>
+Pour vous aider &#XE0; identifier les redondances dans votre classe Cercle, nous
+avons ex&#XE9;cut&#XE9; <code>&#X200B;</code><code>sim_java</code> dessus (voir fichier
+<code>&#X200B;</code><code>evaluation1</code><code>&#X200B;.&#X200B;</code><code>txt</code>).</p><p>Attention, les portions de code qui sont indiqu&#XE9;es comme &#XE9;tant similaires ne
+correspondent pas toujours &#XE0; de la redondance de code !
+</p>
+<!--TOC subsubsection id="sec68" Premi&#XE8;re &#XE9;valuation-->
+<h4 id="sec68" class="subsubsection">Premi&#XE8;re &#XE9;valuation</h4><!--SEC END --><p><span style="font-weight:bold">P&#XE9;nalit&#XE9;s sur le premier rendu :</span>
+Les p&#XE9;nalit&#XE9;s automatiques sur le premier rendu ont &#XE9;t&#XE9; calcul&#XE9;es.
+Elles sont disponibles sur votre d&#XE9;p&#XF4;t dans le fichier
+evaluations/penalites1.txt (et le d&#XE9;tail dans le dossier
+evaluations/penalites1).
+</p><p><span style="font-weight:bold">Retours sur la premi&#XE8;re version :</span>
+Voici les <a href="CONTENU/PR01/PR01-retours.md">retours</a> en
+<a href="CONTENU/PR01/PR01-retours.md.html">html</a> et en
+<a href="CONTENU/PR01/PR01-retours.pdf">(</a>pdf).</p><p>Il s&#X2019;agit d&#X2019;une compilation des erreurs ou maladresses rencontr&#XE9;es. Vous
+devez donc les lire et, si elles s&#X2019;appliquent &#XE0; votre mini-projet, en tenir
+compte pour la version finale. L&#X2019;int&#XE9;r&#XEA;t de cette approche est que chacun,
+quelque soit son niveau d&#X2019;avancement dans le mini-projet, a acc&#XE8;s &#XE0; toutes
+les remarques.</p><p>Bien s&#XFB;r, votre intervenant de TP peut vous faire des remarques sp&#XE9;cifiques
+si vous avez commis une maladresse tr&#XE8;s particuli&#XE8;re qui n&#X2019;a donc pas
+d&#X2019;int&#XE9;r&#XEA;t pour les autres &#XE9;tudiants.</p><p>Les tests automatiques constituent aussi une &#XE9;valuation de votre mini-projet.</p>
+<!--TOC subsubsection id="sec69" FAQ-->
+<h4 id="sec69" class="subsubsection">FAQ</h4><!--SEC END -->
+<!--TOC paragraph id="sec70" Comment seront comptabilis&#XE9;es les p&#XE9;nalit&#XE9;s ?-->
+<h5 id="sec70" class="paragraph">Comment seront comptabilis&#XE9;es les p&#XE9;nalit&#XE9;s ?</h5><!--SEC END --><p>
+Les p&#XE9;nalit&#XE9;s limitent la note que vous pourrez avoir. Par exemple, si vous
+avez eu 4 points de p&#XE9;nalit&#XE9;, donc 2 points sur 20, la note finale sera la
+plus petite de la note obtenue sur la version V2 et de 18.</p><p>La formule est donc la suivante :
+</p><pre class="verbatim">    note_finale = Min(note_V2, 20 - penalites1 / 2)
+
+    note_V2 = Max(0, 20 - retour2 - penalites2 / 2)
+</pre>
+<!--TOC subsection id="sec71" Projet court-->
+<h3 id="sec71" class="subsection">1.3.2&#X2003;Projet court</h3><!--SEC END -->
+<!--TOC subsubsection id="sec72" Sujet-->
+<h4 id="sec72" class="subsubsection">Sujet</h4><!--SEC END --><p>Le <a href="CONTENU/to-1sn-2023-pr-02-sujet.pdf">projet
+court</a> doit &#XEA;tre fait &#XE0; partir des &#XE9;l&#XE9;ments fournis dans votre d&#XE9;p&#XF4;t Git
+(dossier &#X2019;projet-court&#X2019;) et rendu via ce m&#XEA;me d&#XE9;p&#XF4;t Git sur Gitlab.</p><p>Il ne faut pas d&#XE9;placer les fichiers fournis !</p>
+<!--TOC subsubsection id="sec73" Jalons-->
+<h4 id="sec73" class="subsubsection">Jalons</h4><!--SEC END --><p>Les principales dates concernant ce projet sont :
+</p><ul class="itemize"><li class="li-itemize">
+19 f&#XE9;vrier 2024 :
+	mise en ligne (et mise &#XE0; disposition) du sujet.
+	Le descriptif en ligne du module explique comment r&#XE9;cup&#XE9;rer les
+	fichiers fournis.</li><li class="li-itemize">9 mars 2024 :
+	remise des livrables (version compl&#XE8;te pour
+	premi&#XE8;re &#XE9;valuation) ;<p>
+	Cette premi&#XE8;re version n&#X2019;est pas not&#XE9;e. Cependant, vous pouvez avoir
+	des points de p&#XE9;nalit&#XE9; (qui ne pourront donc pas &#XEA;tre rattrap&#XE9;s avec
+	la deuxi&#XE8;me version) si le travail n&#X2019;est pas fait s&#XE9;rieusement.
+</p></li><li class="li-itemize">avant le 19 mars 2024 :
+	retour de la premi&#XE8;re &#XE9;valuation ;</li><li class="li-itemize">23 mars 2024 :
+	remise de la deuxi&#XE8;me version.</li></ul>
+<!--TOC subsubsection id="sec74" Tests en bo&#XEE;te noire-->
+<h4 id="sec74" class="subsubsection">Tests en bo&#XEE;te noire</h4><!--SEC END --><p>Pour que vous sachiez comment votre programme sera test&#XE9;, nous vous
+fournissons quelques tests ainsi qu&#X2019;un script qui permet de les lancer
+(testeur.sh). Ils sont sur votre projet Git dans le dossier tests/.
+</p><p>Chaque test est d&#XE9;fini par deux fichiers. Le premier a l&#X2019;extension .run et est
+le test &#XE0; lancer (par exemple en faisant : sh testeur.sh leTest.run). Le
+second a l&#X2019;extension .expected. Il contient le r&#XE9;sultat attendu, ce que le
+programme doit afficher dans le terminal.</p><p>Le fichier testeur.sh est le testeur. Il prend en argument les tests &#XE0;
+ex&#XE9;cuter (fichier avec l&#X2019;extension .run).</p><pre class="verbatim">    # Lancer le seul test exempleTricheurSujet.run
+    sh testeur.sh tests/exempleTricheurSujet.run
+
+    # Lancer tous les tests du dossier courant
+    sh testeur.sh tests/*.run
+</pre><p>Il lance chaque test (fichier .run) et enregistre son r&#XE9;sultat avec
+l&#X2019;extension .computed. La commande diff permet de calculer la diff&#XE9;rence
+entre les deux fichiers (.expected et .computed). Les options -Bbw de diff
+sont utilis&#XE9;es pour ignorer les lignes vides et les blancs. Le verdict est
+enfin affich&#XE9;, &#X2019;ok&#X2019; ou &#X2019;ERREUR&#X2019;. Dans le cas d&#X2019;une erreur, le contenu du
+fichier diff est affich&#XE9;.</p><p>Les tests peuvent &#XEA;tre lanc&#XE9;s depuis le dossier &#X2019;projet-court&#X2019; ou le dossier
+&#X2019;projet-court/src&#X2019;.</p><p>Attention &#XE0; ne pas ajouter les fichiers .diff ou .computed sur Git car ce
+sont des fichiers engendr&#XE9;s. On peut ajouter les lignes suivantes dans le
+fichier .gitignore (&#XE0; la racine de votre projet) :
+</p><pre class="verbatim">*.diff
+*.computed
+</pre>
+<!--TOC subsubsection id="sec75" &#XC9;valuation automatique-->
+<h4 id="sec75" class="subsubsection">&#XC9;valuation automatique</h4><!--SEC END --><p>L&#X2019;&#XE9;valuation automatique du projet a d&#XE9;marr&#XE9;.</p><p>Les r&#XE9;sultats sont dans le dossier <code class="verb">evaluations/evaluation1.txt</code>.
+Il faut regarder le d&#XE9;tails dans les fichiers mentionn&#XE9;s quand une erreur est
+signal&#XE9;e (ils dont dans <code class="verb">evaluations/evaluation1</code>.)</p><p>L&#X2019;&#XE9;valuation automatique est lanc&#XE9;e de temps en temps sur le code qui a &#XE9;t&#XE9;
+pouss&#XE9; sur Gitlab.
+</p>
+<!--TOC subsubsection id="sec76" R&#XE9;ponses &#XE0; vos questions-->
+<h4 id="sec76" class="subsubsection">R&#XE9;ponses &#XE0; vos questions</h4><!--SEC END -->
+<!--TOC paragraph id="sec77" Recommencer une partie-->
+<h5 id="sec77" class="paragraph">Recommencer une partie</h5><!--SEC END --><p><span style="font-weight:bold">Doit on pouvoir recommencer une partie une fois l&#X2019;actuelle termin&#XE9;e ?
+(avec alternance du d&#XE9;part entre joueur 1 et joueur 2 ?)</span></p><p>Non. Une seule partie.</p>
+<!--TOC paragraph id="sec78" NoSuchElementException.-->
+<h5 id="sec78" class="paragraph">NoSuchElementException.</h5><!--SEC END --><p><span style="font-weight:bold">j&#X2019;ai aujourd&#X2019;hui effectu&#XE9; les tests boites noires que vous nous avez fournis.</span></p><p><span style="font-weight:bold">Je n&#X2019;ai qu&#X2019;une seule erreur que je n&#X2019;arrive pas &#XE0; comprendre : il semblerait
+que dans exemplePresqueSujet, vous testiez avec les entr&#XE9;es suivantes : 2 - X
+- 5 - 3 - 1.</span></p><p><span style="font-weight:bold">Sous Eclipse, comme sur un terminal, je peux tout &#XE0; fait lancer une partie
+avec Toto@humain et Titi@rapide puis saisir ces 5 arguments au fur et &#XE0; mesure
+sans avoir d&#X2019;erreur et ainsi finir la partie.
+Cependant, avec la commande sh testeur.sh tests/*.run, l&#X2019;exemplePresqueSujet me l&#XE8;ve
+une erreur "NoSuchElementException" dans le Scanner de ma classe Humain. Il
+semblerait que ce soit &#XE0; la saisie du deux&#XE8;me caract&#XE8;re (X).</span></p><p><span style="font-weight:bold">Il semblerait &#XE9;galement pour en avoir discut&#XE9; avec mes camarades que je ne sois pas le seul &#XE0; avoir cette exception. Ne peut-elle pas venir du test ? 
+</span></p><p>NoSuchElementException se produit quand il n&#X2019;y a plus de donn&#XE9;es en entr&#XE9;e.
+Vous pouvez le reproduire en tapant un CTRL-D au clavier (qui ferme l&#X2019;entr&#XE9;e
+standard).</p><p>Le probl&#XE8;me vient de la mani&#XE8;re dont vous utilisez Scanner.
+Vous cr&#XE9;ez un nouveau Scanner &#XE0; chaque getPrise(). Le Scanner pr&#XE9;c&#XE9;dent
+a consomm&#XE9; les caract&#XE8;res (lecture en avant). Ils ne sont donc plus
+disponibles pour les lectures suivantes.</p><p>Vous pouvez le v&#XE9;rifier en ajoutant, juste avant la cr&#XE9;ation du Scanner
+et juste apr&#XE8;s une saisie :
+</p><div class="mouselstlisting">&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;<span style="font-weight:bold">try</span>&#X2004;&#X200D;{<br>
+&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;System&#X200B;.&#X200B;out&#X200B;.&#X200B;println&#X200B;(&#X200B;"&#X200B;available&#X2004;&#X200D;:&#X2004;&#X200D;"&#X2004;&#X200D;+&#X2004;&#X200D;System&#X200B;.&#X200B;in&#X200B;.&#X200B;available&#X200B;());<br>
+&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;}&#X2004;&#X200D;<span style="font-weight:bold">catch</span>&#X2004;&#X200D;(&#X200B;java&#X200B;.&#X200B;io&#X200B;.&#X200B;IOException&#X2004;&#X200D;e&#X200B;)&#X2004;&#X200D;{<br>
+&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;System&#X200B;.&#X200B;out&#X200B;.&#X200B;println&#X200B;(&#X200B;e&#X200B;);<br>
+&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;&#X2004;&#X200D;}</div><p>qui affiche le nombre de caract&#XE8;res disponibles sur l&#X2019;entr&#XE9;e standard.</p><p>Vous verrez que s&#X2019;il y a 10 caract&#XE8;res disponibles avant la cr&#XE9;ation du
+Scanner, d&#XE8;s qu&#X2019;une lecture est faite, il n&#X2019;y a plus de caract&#XE8;res
+disponibles sur l&#X2019;entr&#XE9;e standard. D&#X2019;o&#XF9; le NoSuchElementException.</p><p>Ce qu&#X2019;il faut faire, c&#X2019;est ne cr&#XE9;er qu&#X2019;un seul Scanner pour toute
+l&#X2019;application.</p>
+<!--TOC paragraph id="sec79" Tests fournis. Que fait l&#X2019;utilisateur ?-->
+<h5 id="sec79" class="paragraph">Tests fournis. Que fait l&#X2019;utilisateur ?</h5><!--SEC END --><p><span style="font-weight:bold">Vous nous avez fourni un fichier contenant des exemples de tests.</span></p><p><span style="font-weight:bold">Lors de l&#X2019;exemple "exemplePresqueSujet.expected", ligne 12, je ne suis pas s&#XFB;re de ce que fait l&#X2019;utilisateur.
+Est-ce bien un " " ?
+</span></p><p>Pour savoir ce que fait l&#X2019;utilisateur il faut regarder le fichier en
+.run. Ce que fournit l&#X2019;utilisateur n&#X2019;appara&#XEE;t pas sur la sortie (et
+donc pas non plus dans .expected) car ce n&#X2019;est pas saisi au clavier
+(donc pas d&#X2019;&#XE9;cho dans le terminal) mais r&#XE9;cup&#XE9;r&#XE9; gr&#XE2;ce &#XE0; la redirection
+de l&#X2019;entr&#XE9;e standard avec &#X2019;&lt;&lt;EOF&#X2019;. Ce qui est fourni au programme est
+donc entre les deux EOF dans le .run. L&#X2019;utilisateur rentre donc
+successivement :
+</p><pre class="verbatim">2
+X
+5
+3
+1
+</pre>
+<!--TOC paragraph id="sec80" Probl&#XE8;me de compilation.-->
+<h5 id="sec80" class="paragraph">Probl&#XE8;me de compilation.</h5><!--SEC END --><p><span style="font-weight:bold">J&#X2019;ai voulu compiler (juste compiler)
+la classe
+Jouer sans rien modifier et elle ne compile pas car la classe
+ConfigurationException est introuvable alors qu&#X2019;elle est dans le m&#XEA;me
+paquetage.
+</span></p><p>Il faut &#XEA;tre dans le dossier qui contient le dossier "allumettes" (le plus
+simple)... Ou d&#XE9;finir le CLASSPATH ou utiliser l&#X2019;option &#X2019;-cp&#X2019; de javac et
+java.</p><pre class="verbatim">cd ...../projet-court/src
+javac allumettes/Jouer.java
+java allumettes.Jouer
+</pre><p>Utiliser Eclipse est certainement une bonne id&#XE9;e ! Il est important de savoir
+utiliser ce type d&#X2019;outil qui peut, par bien des aspects, vous faciliter la
+gestion du code Java (ou d&#X2019;autres langages).</p>
+<!--TOC paragraph id="sec81" Mon programme boucle avec le message "vous devez donner un entier"
+avec exemplePresqueSujet-->
+<h5 id="sec81" class="paragraph">Mon programme boucle avec le message "vous devez donner un entier"
+avec exemplePresqueSujet</h5><!--SEC END --><p><span style="font-weight:bold">
+J&#X2019;ai un probl&#XE8;me dans le projet court, c&#X2019;est que j&#X2019;ai ex&#XE9;cut&#XE9; les tests
+fournis et ils marchent tr&#XE8;s bien mais quand j&#XB4;ex&#XE9;cute le test avec
+exemplePresqueSujet je trouve dans le fichier.computed une boucle infinie
+avec le message "vous devez donner un entier" apr&#XE8;s la saisie de &#X2019;X&#X2019; alors
+que dans eclipse &#XE7;a marche tr&#XE8;s bien avec les m&#XEA;mes entr&#XE9;es.
+</span></p><p>Lors d&#X2019;une saisie incorrecte, il faut consommer les caract&#XE8;res qui posent
+probl&#XE8;mes, ici "X". On peut utiliser la m&#XE9;thode nextLine() de Scanner pour le
+faire.</p>
+<!--TOC subsection id="sec82" Projet long-->
+<h3 id="sec82" class="subsection">1.3.3&#X2003;Projet long</h3><!--SEC END --><p>Nous vous proposons de d&#XE9;finir vous-m&#XEA;mes le sujet du projet long
+sur lequel vous allez travailler. Vous trouverez ici les principales
+consignes et les jalons de ce projet.</p><p><span style="font-weight:bold">Rappel :</span> Ce projet sert de support &#XE0; la mati&#XE8;re <em>Gestion de
+projet / M&#XE9;thodes agiles (SCRUM)</em> de l&#X2019;UE SHS et sera &#XE9;valu&#XE9; aussi bien par
+TOB (Projet Long) que par Gestion de projet. Vous aurez donc 2 notes.</p>
+<!--TOC subsubsection id="sec83" Constitution des &#XE9;quipes-->
+<h4 id="sec83" class="subsubsection">Constitution des &#XE9;quipes</h4><!--SEC END --><p>Une &#XE9;quipe (un groupe de projet) doit &#XEA;tre constitu&#XE9;e au sein d&#X2019;un m&#XEA;me groupe
+de TD (tous les membres d&#X2019;une &#XE9;quipe doivent appartenir au m&#XEA;me groupe de TD).</p><p>Il y aura 4 &#XE9;quipes par groupe de TD.
+Ceci fera donc des &#XE9;quipes de 7 personnes, plus ou moins une.</p><p>Vous ne pouvez pas faire partie de la m&#XEA;me &#XE9;quipe de TOB si vous &#XE9;tiez d&#XE9;j&#XE0;
+dans une m&#XEA;me &#XE9;quipe en PIM.</p><p>Chaque &#XE9;quipe sera suivie par un enseignant qui est son enseignant de TD TOB :
+</p><ul class="itemize"><li class="li-itemize">
+AB : Xavier Cr&#XE9;gut <a href=""><span style="font-family:monospace">&lt;prenom.nom@toulouse-inp.fr&gt;</span></a>
+</li><li class="li-itemize">CD : Judicael Bedouet <a href=""><span style="font-family:monospace">&lt;prenom.nom@onera.fr&gt;</span></a>
+</li><li class="li-itemize">EF : Meriem Ouederni <a href=""><span style="font-family:monospace">&lt;prenom.nom@toulouse-inp.fr&gt;</span></a>
+</li><li class="li-itemize">GH : Xavier Cr&#XE9;gut <a href=""><span style="font-family:monospace">&lt;prenom.nom@toulouse-inp.fr&gt;</span></a>
+</li><li class="li-itemize">IJ : Judicael Bedouet <a href=""><span style="font-family:monospace">&lt;prenom.nom@onera.fr&gt;</span></a>
+</li><li class="li-itemize">KL : Guillaume Dupont <a href=""><span style="font-family:monospace">&lt;prenom.nom@toulouse-inp.fr&gt;</span></a>
+</li></ul><p>Pour la partie M&#XE9;thodes agiles (SCRUM), vous pouvez poser vos questions &#XE0;
+Gilles FRANCOIS <a href=""><span style="font-family:monospace">&lt;pr&#XE9;nom.nom.e@thalesdigital.io&gt;</span></a> (quand le premier TD de la
+mati&#XE8;re aura eu lieu).</p><p>Cette ann&#XE9;e les &#XE9;quipes de projet seront choisies au hasard... Sauf si les
+groupes de TD arrivent &#XE0; former des 4 &#XE9;quipes avec comme r&#XE8;gle &#XAB;deux
+personnes dans la m&#XEA;me &#XE9;quipe en PIM ne peuvent pas &#XEA;tre dans la m&#XEA;me &#XE9;quipe
+en TOB &#XBB;.</p>
+<!--TOC subsubsection id="sec84" Notation du projet-->
+<h4 id="sec84" class="subsubsection">Notation du projet</h4><!--SEC END --><ul class="itemize"><li class="li-itemize">
+Chaque &#XE9;tape du projet (d&#XE9;crite ci-apr&#XE8;s) sera prise en compte dans la
+note du projet.</li><li class="li-itemize">&#XC0; la fin du projet, une d&#XE9;monstration, une pr&#XE9;sentation orale et un
+	compte-rendu concernant l&#X2019;organisation du projet seront faits.
+	<span style="font-weight:bold">Trois personnes seront tir&#XE9;es au sort</span>, chacune pour pr&#XE9;senter
+	l&#X2019;un des aspects. Les autres membres de l&#X2019;&#XE9;quipe r&#XE9;pondront aux
+	questions.</li><li class="li-itemize">Une partie de la note sera d&#XE9;finie par l&#X2019;&#XE9;quipe elle-m&#XEA;me.<p>Chaque membre de l&#X2019;&#XE9;quipe r&#XE9;partira un nombre de points &#XE9;gal &#XE0; 1 de moins
+	que la taille de son &#XE9;quipe entre ses co&#XE9;quipiers. Chaque co&#XE9;quipier
+	aura un nombre de points compris entre -1 et 3. Par exemple, pour une
+	&#XE9;quipe de 6 personnes, chaque &#XE9;quipier pourra r&#XE9;partir 5 points sur
+	ses co&#XE9;quipiers en donnant &#XE0; chacun un nombre de points entre -1 et 3.</p><p>La note d&#X2019;un &#XE9;tudiant sera donc : (note de l&#X2019;enseignant) + (moyenne
+	des points attribu&#XE9;es par ses co&#XE9;quipiers - 1).</p></li></ul>
+<!--TOC subsubsection id="sec85" 2024/01/26 : Jalon &#XAB; &#XC9;quipes constitu&#XE9;es &#XBB; (&#XE9;tudiants... Ou enseignants).-->
+<h4 id="sec85" class="subsubsection">2024/01/26 : Jalon &#XAB; &#XC9;quipes constitu&#XE9;es &#XBB; (&#XE9;tudiants... Ou enseignants).</h4><!--SEC END -->
+<!--TOC subsubsection id="sec86" 2024/02/05 : Jalon &#XAB; Cr&#XE9;ation projets Git &#XBB; (Xavier Cr&#XE9;gut).-->
+<h4 id="sec86" class="subsubsection">2024/02/05 : Jalon &#XAB; Cr&#XE9;ation projets Git &#XBB; (Xavier Cr&#XE9;gut).</h4><!--SEC END --><p>Cr&#XE9;ation des d&#XE9;p&#XF4;ts Git qui seront utilis&#XE9;s pour le projet. Les d&#XE9;p&#XF4;ts ne
+peuvent &#XEA;tre cr&#XE9;&#XE9;s qu&#X2019;une fois les &#XE9;quipes constitu&#XE9;es.</p>
+<!--TOC subsubsection id="sec87" 2024/02/10, d&#XE9;cal&#XE9; 2024/02/12 : Jalon &#XAB; Liste des sujets envisag&#XE9;s &#XBB; (&#XE9;quipes).-->
+<h4 id="sec87" class="subsubsection">2024/02/10, d&#XE9;cal&#XE9; 2024/02/12 : Jalon &#XAB; Liste des sujets envisag&#XE9;s &#XBB; (&#XE9;quipes).</h4><!--SEC END --><p>Chaque &#XE9;quipe d&#XE9;posera sur le d&#XE9;p&#XF4;t Git, dans le dossier
+<code>&#X200B;</code><code>livrables</code>, un document <code>&#X200B;</code><code>sujets</code><code>&#X200B;.&#X200B;</code><code>pdf</code> qui contiendra au
+moins 4 sujets de projet envisag&#XE9;s, class&#XE9;s par ordre de pr&#XE9;f&#XE9;rence
+d&#XE9;croissante de l&#X2019;&#XE9;quipe (le premier sujet est le sujet pr&#XE9;f&#XE9;r&#XE9; de l&#X2019;&#XE9;quipe).</p><p><span style="font-weight:bold">Les sujets propos&#XE9;s doivent &#XEA;tre d&#XE9;crits dans le document sujets.pdf
+(tout en minuscules) qui doit &#XEA;tre d&#XE9;pos&#XE9; dans le dossier &#XAB; livrables &#XBB;</span></p><p>Chaque sujet doit &#XEA;tre d&#XE9;crit sur une page environ dans le but de convaincre
+de la pertinence et de l&#X2019;int&#XE9;r&#XEA;t de votre projet. Vous devez consid&#XE9;rer que
+ce document s&#X2019;adresse &#XE0; des clients potentiels, &#XE0; des <em>business angels</em>,
+&#XE0; votre sup&#XE9;rieur hi&#XE9;rarchique...</p><p>Il doit y avoir suffisamment d&#X2019;information sur le projet pour que votre
+enseignant puisse le comprendre et &#XE9;valuer le travail envisag&#XE9;. Ce document
+sera le point de d&#XE9;part pour discuter de votre projet avec votre enseignant.
+C&#X2019;est lui qui validera le sujet de votre projet au final.</p><p>En aucun cas il ne faut parler des solutions informatiques qui sera apport&#XE9;es
+pour r&#XE9;aliser ce projet. Il ne s&#X2019;agit pas de d&#XE9;crire comment ce sujet sera
+trait&#XE9; d&#X2019;un point de vue programmation mais ce qu&#X2019;il apportera &#XE0; ses
+utilisateurs.</p><p>Quelques recommandations :
+</p><ol class="enumerate" type=1><li class="li-enumerate">
+Le projet doit &#XEA;tre suffisamment ambitieux puisque les &#XE9;quipes sont
+de grande taille ! Vous ne devez pas pouvoir terminer le projet dans le
+temps imparti. C&#X2019;est le but.</li><li class="li-enumerate">L&#X2019;application d&#XE9;velopp&#XE9;e devra &#XEA;tre pourvue d&#X2019;une interface graphique.</li><li class="li-enumerate">Vous ne ferez ni une application concurrente, ni une application
+distribu&#XE9;e, ni une application client/serveur (ces notions seront vues en 2A).</li></ol><p>Attention, vous ne pouvez pas prendre un sujet qui serait du type &#XAB; bo&#XEE;te
+&#XE0; jeux &#XBB; o&#XF9; chaque membre de l&#X2019;&#XE9;quipe s&#X2019;occuperait d&#X2019;un des jeux !</p><p>L&#X2019;enseignant &#XE9;valuera les sujets et donnera le feu vert &#XE0; l&#X2019;&#XE9;quipe pour
+traiter l&#X2019;un des sujets (ou vous aidera &#XE0; construire un sujet adapt&#XE9; aux
+attentes).</p><p><span style="font-weight:bold">Exemples de sujets propos&#XE9;s et choisis les ann&#XE9;es pass&#XE9;es</span>
+</p><ul class="itemize"><li class="li-itemize">
+Assistant d&#X2019;aide aux raffinages.
+</li><li class="li-itemize">Application de proposition de repas
+</li><li class="li-itemize">Gestion et maintenance d&#X2019;une maison intelligente
+</li><li class="li-itemize">Jeu guid&#XE9; pour apprendre la programmation
+</li><li class="li-itemize">Manuscript Manager (aide &#XE0; l&#X2019;&#XE9;criture d&#X2019;un roman)
+</li><li class="li-itemize">R&#XE9;alisation d&#X2019;un RayTracer
+</li><li class="li-itemize">Simulation de la propagation d&#X2019;un virus
+</li><li class="li-itemize">Escape game
+</li><li class="li-itemize">Application de gestion des cr&#XE8;ches
+</li><li class="li-itemize">Programme d&#X2019;apprentissage musical
+</li></ul>
+<!--TOC subsubsection id="sec88" 2024/02/16 : Jalon &#XAB; S&#XE9;lection du sujet de
+projet &#XBB; (enseignant responsable de l&#X2019;&#XE9;quipe de projet).-->
+<h4 id="sec88" class="subsubsection">2024/02/16 : Jalon &#XAB; S&#XE9;lection du sujet de
+projet &#XBB; (enseignant responsable de l&#X2019;&#XE9;quipe de projet).</h4><!--SEC END --><p>L&#X2019;enseignant responsable de l&#X2019;&#XE9;quipe de projet communiquera le sujet retenu.</p>
+<!--TOC subsubsection id="sec89" 2024/02/24 : Jalon &#XAB; Fonctionnalit&#XE9;s de l&#X2019;application &#XBB; (&#XE9;quipe).-->
+<h4 id="sec89" class="subsubsection">2024/02/24 : Jalon &#XAB; Fonctionnalit&#XE9;s de l&#X2019;application &#XBB; (&#XE9;quipe).</h4><!--SEC END --><p>Il s&#X2019;agit de d&#XE9;crire les fonctionnalit&#XE9;s de l&#X2019;application que vous allez
+d&#XE9;velopper dans un document appel&#XE9; fonctionnalites.pdf (nom &#XE0; respecter
+imp&#XE9;rativement, nom tout en minuscules, sans accents), &#XE0; d&#XE9;poser dans le
+dossier &#XAB; livrables &#XBB;. Il doit contenir :</p><ol class="enumerate" type=1><li class="li-enumerate">
+une page de garde qui rappelle le num&#XE9;ro de l&#X2019;&#XE9;quipe, ses membres, le
+	titre du projet, l&#X2019;objet du document...</li><li class="li-enumerate">l&#X2019;objectif g&#XE9;n&#XE9;ral du projet</li><li class="li-enumerate">une description des fonctionnalit&#XE9;s (attendues) de l&#X2019;application qui sera
+d&#XE9;velopp&#XE9;e. Il s&#X2019;agit de d&#XE9;crire le service rendu (besoin) et non la
+mani&#XE8;re dont ce service sera rendu (comment).</li><li class="li-enumerate">les interfaces utilisateur envisag&#XE9;es (esquisses r&#XE9;alis&#XE9;es &#XE0; main lev&#XE9;e ou
+avec un outil de dessin).</li><li class="li-enumerate">plusieurs cas d&#X2019;usage (sc&#XE9;narios) pour comprendre les fonctionnalit&#XE9;s (et,
+plus tard, valider l&#X2019;application d&#XE9;velopp&#XE9;e).</li><li class="li-enumerate">(facultatif) En annexe, lister les points durs, les points qui vous
+	paraissent difficiles dans le projet propos&#XE9;.</li></ol><p>Il ne faut pas h&#XE9;siter &#XE0; mettre beaucoup de fonctionnalit&#XE9;s. Les &#XE9;tapes
+suivantes consisteront &#XE0; les organiser, d&#XE9;finir des priorit&#XE9;s, etc. Tout ne
+sera pas &#XE0; d&#XE9;velopper lors du projet long !</p><p><span style="font-weight:bold">Attention :</span>
+Ici, on ne doit pas parler de programmation objet, d&#X2019;UML, de Java, etc.
+On ne veut pas savoir comment sera r&#XE9;alis&#XE9;e l&#X2019;application mais bien
+qu&#X2019;elles sont les les possibilit&#XE9;s qu&#X2019;elle offrira &#XE0; ses utilisateurs.</p><p>Ce document pourrait donc servir de trame pour le futur manuel
+utilisateur. Il restera &#XE0; ajouter quelques captures d&#X2019;&#XE9;crans pour
+remplacer les esquisses et les modes op&#XE9;ratoires tels qu&#X2019;ils ont &#XE9;t&#XE9;
+finalement r&#XE9;alis&#XE9;s.
+</p>
+<!--TOC subsubsection id="sec90" Semaines 13 &#XE0; 21 : R&#XE9;alisation du projet en 3 it&#XE9;rations.-->
+<h4 id="sec90" class="subsubsection">Semaines 13 &#XE0; 21 : R&#XE9;alisation du projet en 3 it&#XE9;rations.</h4><!--SEC END --><p>
+Le projet sera organis&#XE9; en trois it&#XE9;rations de 2 semaines (pr&#XE9;c&#XE9;d&#XE9;es d&#X2019;une it&#XE9;ration
+0).</p><p><span style="font-weight:bold">Attention : &#XE0; chaque fin d&#X2019;it&#XE9;ration, chaque membre de l&#X2019;&#XE9;quipe doit
+d&#XE9;poser un tr&#XE8;s court rapport INDIVIDUEL qui d&#XE9;crit ce qu&#X2019;il a fait lors de
+l&#X2019;it&#XE9;ration.</span> Ce rapport sera nomm&#XE9; <code class="verb">rapport#-$USER.pdf</code> (tout en
+minuscules) o&#XF9; <code class="verb">$USER</code> est votre identifiant LDAP (votre login) et
+<code>&#X200B;#</code> est le num&#XE9;ro de l&#X2019;it&#XE9;ration (1, 2 ou 3). Ce rapport doit &#XEA;tre
+court et pr&#XE9;cis et lister les activit&#XE9;s r&#XE9;alis&#XE9;es (en indiquant le degr&#XE9;
+d&#X2019;avancement) sur une page maximum. Les d&#XE9;tails de la r&#XE9;alisation seront
+donn&#XE9;s dans le rapport g&#XE9;n&#XE9;ral.</p><p>&#XC0; la fin de chaque it&#XE9;ration, il faut aussi rendre le code complet de
+l&#X2019;application dans un fichier <code>&#X200B;</code><code>source</code><code>&#X200B;#.&#X200B;</code><code>jar</code>, le manuel utilisateur
+<code>&#X200B;</code><code>manuel</code><code>&#X200B;-&#X200B;</code><code>utilisateur</code><code>&#X200B;#.&#X200B;</code><code>pdf</code> et le rapport associ&#XE9;
+<code>&#X200B;</code><code>rapport</code><code>&#X200B;#.&#X200B;</code><code>pdf</code>, <code>&#X200B;#</code> est le num&#XE9;ro de l&#X2019;it&#XE9;ration (1, 2 ou
+3).</p><p>Le rapport documente votre projet. Il doit
+inclure les &#XE9;l&#XE9;ments &#XE9;labor&#XE9;s suite aux s&#XE9;ances gestion de projet mais aussi
+les &#XE9;l&#XE9;ments de conception (diagrammes UML). Les versions interm&#XE9;diaires de
+ce rapport ne seront pas &#XE9;valu&#XE9;es. Le rapport &#XE0; la derni&#XE8;re it&#XE9;ration
+constituera le rapport final.</p><p>Le manuel utilisateur explique comment utiliser le programme livr&#XE9;. Comme
+pour le rapport, les version interm&#XE9;diaires ne seront pas &#XE9;valu&#XE9;es.</p><p>Attention &#XE0; bien v&#XE9;rifier que les .java sont pr&#XE9;sents dans l&#X2019;archive).</p><p>On peut construire un jar depuis Eclipse (il faut penser &#XE0;
+s&#XE9;lectionner l&#X2019;inclusion des sources) ou depuis la ligne de commande.
+Les options de la commande jar sont globalement les m&#XEA;mes que tar.</p>
+<!--TOC subsubsection id="sec91" Semaine 13 : 2024/03/25 au 2024/03/30, It&#XE9;ration 0-->
+<h4 id="sec91" class="subsubsection">Semaine 13 : 2024/03/25 au 2024/03/30, It&#XE9;ration 0</h4><!--SEC END --><p>.</p>
+<!--TOC subsubsection id="sec92" Semaines 14 &amp; 17 : 2024/04/02 au 2024/04/27, It&#XE9;ration 1-->
+<h4 id="sec92" class="subsubsection">Semaines 14 &amp; 17 : 2024/04/02 au 2024/04/27, It&#XE9;ration 1</h4><!--SEC END --><p>.</p>
+<!--TOC subsubsection id="sec93" 2024/04/27, Remise des livrables It&#XE9;ration 1 (rapports
+individuels + code + manuel utilisateur + rapport g&#XE9;n&#XE9;ral).-->
+<h4 id="sec93" class="subsubsection">2024/04/27, Remise des livrables It&#XE9;ration 1 (rapports
+individuels + code + manuel utilisateur + rapport g&#XE9;n&#XE9;ral).</h4><!--SEC END -->
+<!--TOC subsubsection id="sec94" Semaines 18 &amp; 19 : 2024/04/29 au 2024/05/13, It&#XE9;ration 2-->
+<h4 id="sec94" class="subsubsection">Semaines 18 &amp; 19 : 2024/04/29 au 2024/05/13, It&#XE9;ration 2</h4><!--SEC END --><p>.</p>
+<!--TOC subsubsection id="sec95" 2024/05/13, Fin It&#XE9;ration 2 : rapports individuels +
+code + manuel utilisateur + rapport g&#XE9;n&#XE9;ral.-->
+<h4 id="sec95" class="subsubsection">2024/05/13, Fin It&#XE9;ration 2 : rapports individuels +
+code + manuel utilisateur + rapport g&#XE9;n&#XE9;ral.</h4><!--SEC END -->
+<!--TOC subsubsection id="sec96" Semaines 20 &amp; 21 : 2024/05/14 au 2024/05/25, It&#XE9;ration 3-->
+<h4 id="sec96" class="subsubsection">Semaines 20 &amp; 21 : 2024/05/14 au 2024/05/25, It&#XE9;ration 3</h4><!--SEC END --><p>.</p>
+<!--TOC subsubsection id="sec97" 2024/05/25, Fin It&#XE9;ration 3 : rapports individuels + code +
+manuel utilisateur + rapport g&#XE9;n&#XE9;ral).-->
+<h4 id="sec97" class="subsubsection">2024/05/25, Fin It&#XE9;ration 3 : rapports individuels + code +
+manuel utilisateur + rapport g&#XE9;n&#XE9;ral).</h4><!--SEC END --><p>Vous devez rendre dans le dossier livrables de votre d&#XE9;p&#XF4;t SVN :
+</p><ol class="enumerate" type=1><li class="li-enumerate">
+Le rapport (rapport3.pdf) doit inclure :
+<ol class="enumerate" type=a><li class="li-enumerate">
+	Un rappel tr&#XE8;s succinct du sujet. Les d&#XE9;tails seront dans le manuel
+	 utilisateur.</li><li class="li-enumerate">	Les principales fonctionnalit&#XE9;s (user stories ou epics) identifi&#XE9;es
+	en pr&#XE9;cisant leur &#XE9;tat de r&#XE9;alisation (et dans quelle it&#XE9;ration elles
+	 ont &#XE9;t&#XE9; faites pour celles qui sont termin&#XE9;es ou commenc&#XE9;es).</li><li class="li-enumerate">	Le d&#XE9;coupage de l&#X2019;application en sous-syst&#XE8;mes (en paquetages).</li><li class="li-enumerate">	Les diagrammes de classe qui donnent l&#X2019;architecture de votre
+	 application. On pourra soit faire un diagramme de classe global,
+	 soit un diagramme de classe par fonctionnalit&#XE9;.<p>	 On ne fera appara&#XEE;tre sur ces diagrammes que les informations
+	 utiles pour comprendre l&#X2019;architecture. En particulier, il est
+	 inutile de faire appara&#XEE;tre toutes les m&#XE9;thodes de toutes les
+	 classes.</p></li><li class="li-enumerate">	La dynamique du syst&#XE8;me, toujours en s&#X2019;appuyant sur
+	les diagrammes UML.</li><li class="li-enumerate">	Les principaux choix de conception et r&#XE9;alisation, les probl&#XE8;mes
+	 rencontr&#XE9;s et les solutions apport&#XE9;es, etc.</li><li class="li-enumerate">	L&#X2019;organisation de l&#X2019;&#XE9;quipe et la mise en &#X153;uvre des m&#XE9;thodes
+	 agiles.</li></ol><p>Il n&#X2019;y a pas de nombre de pages &#XE0; respecter. Il faut &#XEA;tre concis et
+	pr&#XE9;cis. Sachez que ce rapport est le point d&#X2019;entr&#XE9;e sur votre code.
+	Il doit permettre au lecteur de comprendre comment vous avez trait&#XE9;
+	votre sujet et donc de savoir ce que vous avez fait sans avoir &#XE0;
+	consulter le code. Si le lecteur est int&#XE9;ress&#XE9; par un aspect
+	particulier, la lecture du rapport devrait l&#X2019;&#XE9;clairer sur ce qui a &#XE9;t&#XE9;
+	fait, comment &#XE7;a a &#XE9;t&#XE9; fait et les sources &#XE0; lire pour avoir tous les
+	d&#XE9;tails d&#X2019;implantation.</p></li><li class="li-enumerate">le manuel utilisateur : manuel-utilisateur3.pdf</li><li class="li-enumerate">les sources de votre projet : sources3.jar.</li></ol>
+<!--TOC subsubsection id="sec98" 2024/05/29, 8h : Remise du support pour la pr&#XE9;sentation orale-->
+<h4 id="sec98" class="subsubsection">2024/05/29, 8h : Remise du support pour la pr&#XE9;sentation orale</h4><!--SEC END --><p>Le support de pr&#XE9;sentation utilis&#XE9; pour l&#X2019;oral du projet : presentation.pdf
+(voir ci-dessous pour les consignes) doit &#XEA;tre d&#XE9;pos&#XE9; dans le dossier
+livrables.</p>
+<!--TOC subsubsection id="sec99" 2024/05/29, 8h : Points d&#X2019;&#XE9;quipe-->
+<h4 id="sec99" class="subsubsection">2024/05/29, 8h : Points d&#X2019;&#XE9;quipe</h4><!--SEC END --><p>Modalit&#XE9; &#XE0; venir...</p>
+<!--TOC subsubsection id="sec100" 2024/05/29 : Pr&#XE9;sentation orale.-->
+<h4 id="sec100" class="subsubsection">2024/05/29 : Pr&#XE9;sentation orale.</h4><!--SEC END --><p>Pour la <span style="font-weight:bold">pr&#XE9;sentation orale</span>, le d&#XE9;roulement sera le suivant :
+</p><ol class="enumerate" type=1><li class="li-enumerate">
+14 minutes (maximum &#XE0; ne pas d&#XE9;passer !) &#XE0; utiliser pour :
+<ul class="itemize"><li class="li-itemize">
+	une d&#XE9;monstration de l&#X2019;application r&#XE9;alis&#XE9;e</li><li class="li-itemize">	une pr&#XE9;sentation technique du travail r&#XE9;alis&#XE9; (architecture, choix de
+	 conception et r&#XE9;alisation, etc.). UML est certainement un outil
+	 utile pour cette pr&#XE9;sentation...</li><li class="li-itemize">	une pr&#XE9;sentation de l&#X2019;organisation de l&#X2019;&#XE9;quipe et la mise en &#X153;uvre
+	des m&#XE9;thodes agiles.</li></ul>
+Vous devriez passer de 3 &#XE0; 6 minutes sur chacune de ces trois parties.<p><span style="font-weight:bold">Attention :</span> Les trois orateurs seront tir&#XE9;s au sort. Chacun doit
+donc &#XEA;tre pr&#XEA;t &#XE0; pr&#XE9;senter chacune des trois parties.</p><p>Vous &#XEA;tes libres d&#X2019;organiser ces trois pr&#XE9;sentations dans l&#X2019;ordre que vous
+souhaitez (m&#XEA;me s&#X2019;il para&#XEE;t logique de commencer par la d&#XE9;monstration car
+	tous les membres du jury ne connaitront pas votre sujet).</p></li><li class="li-enumerate">10-15 minutes de questions/discussions.</li></ol><p>Il peut &#XEA;tre int&#XE9;ressant de commencer par la d&#XE9;monstration car c&#X2019;est
+l&#X2019;occasion de rappeler le p&#XE9;rim&#XE8;tre du projet et comment il a &#XE9;t&#XE9; trait&#XE9; du
+point de vue des utilisateurs. La pr&#XE9;sentation orale se concentrera sur
+les aspects techniques et organisationnels du projet.</p><p>La <span style="font-weight:bold">pr&#XE9;sentation technique</span> doit &#XEA;tre technique ! Il n&#X2019;est pas utile
+de nous d&#XE9;tailler le sujet (la d&#XE9;monstration l&#X2019;a fait). Ce qu&#X2019;il faut faire,
+c&#X2019;est nous expliquer comment vous l&#X2019;avez trait&#XE9; : quels sont les choix faits ?
+Quels sont les probl&#XE8;mes rencontr&#XE9;s et les solutions apport&#XE9;es. Nous vous
+rappelons qu&#X2019;UML est un bon outil pour communiquer !</p><p>La <span style="font-weight:bold">gestion de projet</span> doit expliquer comment l&#X2019;&#XE9;quipe s&#X2019;est organis&#XE9;e,
+les outils utilis&#XE9;s en accord avec ce qui a &#XE9;t&#XE9; pr&#XE9;sent&#XE9; en gestion de projet.</p><p><span style="font-weight:bold">Horaires de passage pour l&#X2019;oral</span></p><p>Toutes les &#XE9;quipes assistent &#XE0; toutes les pr&#XE9;sentations de leur groupe de TD.</p><p>L&#X2019;ordre de passage des &#XE9;quipes sera choisi au fur et &#XE0; mesure.</p>
+<!--TOC section id="sec101" Ressources-->
+<h2 id="sec101" class="section">1.4&#X2003;<a id="Ressources">Ressources</a></h2><!--SEC END --><p>En suivant les liens, vous trouverez :
+</p><ul class="itemize"><li class="li-itemize">
+l&#X2019;archive <a href="CONTENU/afficheur.jar">afficheur.jar</a>
+
+et sa <a href="CONTENU/afficheur-doc">documentation</a>.</li><li class="li-itemize">Une version de junit4 : <a href="CONTENU/junit4.jar">junit4.jar</a>.</li><li class="li-itemize"><a href="CONTENU/EXAMENS/">quelques annales</a></li><li class="li-itemize">Le <a href="CONTENU/agile/carnet-de-bord-Agile.pdf">carnet de bord Agile</a> fourni
+par Gille FRAN&#XC7;OIS, son
+<a href="CONTENU/agile/TD3-FormationAgileN7-Produit.pdf">suppl&#XE9;ment (en particulier la charte produit)</a> et le lien
+	sur la vid&#XE9;o
+<a href="https://www.youtube.com/watch?v=3qMpB-UH9kA">&#XAB; La Gestion de
+Projet Agile en deux mots &#XBB;</a> ainsi que le
+<a href="CONTENU/agile/Formation-Agile-N7-TD-2.pptx">support utilis&#XE9; pour le TD 2</a>.</li></ul>
+<!--TOC subsection id="sec102" R&#XE9;ponses &#XE0; quelques questions fr&#XE9;quentes-->
+<h3 id="sec102" class="subsection">1.4.1&#X2003;R&#XE9;ponses &#XE0; quelques questions fr&#XE9;quentes</h3><!--SEC END --><p><br>
+</p><p><span style="font-weight:bold">Comment s&#X2019;identifier sur les QCM de TD ?</span></p><p>Pour vous identifier, nous utilisons votre num&#XE9;ro Apog&#XE9;e que vous trouvez sur
+plan&#XE8;te dans <em>Mon dossier Web</em> ou <em>Mes notes</em>. C&#X2019;est un 
+num&#XE9;ro a 8 chiffres qui commence par leur ann&#XE9;e de premi&#XE8;re inscription.
+On utilisera les 5 derniers chiffres et on codera un chiffre par ligne en haut
+du QCM. Le chiffre des unit&#XE9;s est sur la derni&#XE8;re ligne : le nombre se lit de
+haut en bas.</p><p>Par exemple, si votre num&#XE9;ro Apog&#XE9;e est 20230471, les 5 derniers chiffres sont
+30471. Il faut donc cocher le 3 sur la premi&#XE8;re ligne, le 0 sur la deuxi&#XE8;me,
+le 4 sur la troisi&#XE8;me, le 7 sur la quatri&#XE8;me et le 1 sur la derni&#XE8;re.</p><p>Il est aussi important de mettre votre nom (en majuscules !) et votre pr&#XE9;nom
+dans le cadre pr&#XE9;vu &#XE0; cet effet.</p><p><br>
+</p><p><span style="font-weight:bold">Comment cocher une case sur un QCM ?</span></p><p>Il faut utiliser un stylo noir ou bleu, pas de rouge, pas de vert, pas de
+crayon &#XE0; papier. </p><p>Il faut mettre suffisamment de mati&#XE8;re dans la case (croix large, case
+noirci).</p><p><br>
+</p><p><span style="font-weight:bold">Comment corriger une case coch&#XE9;e par erreur sur un QCM ?</span></p><p>Il faut utiliser du blanc pour effacer la case et son contenu et, surtout, il
+ne faut pas redessiner la case. Ceci conduirait certainement &#XE0; la consid&#XE9;r&#XE9;e
+comme coch&#XE9;e.</p><p><span style="font-weight:bold">Comment v&#XE9;rifier que j&#X2019;ai r&#XE9;ussi &#XE0; mettre mes fichiers sur le
+Gitlab ?</span></p><p>Plusieurs solutions sont possibles :
+</p><ol class="enumerate" type=1><li class="li-enumerate">
+Vous pouvez taper la commande (&#XE0; la racine de votre d&#XE9;p&#XF4;t) :
+	<code class="verb">git status</code></li><li class="li-enumerate">Vous pouvez utiliser un navigateur pour aller sur Gitlab, sur votre projet
+et v&#XE9;rifier que tous les fichiers y sont, avec vos derni&#XE8;res
+	modifications.</li><li class="li-enumerate">Vous pouvez faire une nouvelle copie locale de votre d&#XE9;p&#XF4;t (<code class="verb">git clone</code>)
+	dans un nouveau dossier (par exemple /tmp) et voir ce qui remonte.
+	Vous pouvez en profiter pour v&#XE9;rifier que le projet compile, les tests
+	passent, etc.</li><li class="li-enumerate">...</li></ol><!--BEGIN NOTES chapter-->
+<hr class="footnoterule"><dl class="thefootnotes"><dt class="dt-thefootnotes">
+<a id="note1" href="#text1">1</a></dt><dd class="dd-thefootnotes"><div class="footnotetext"><a href="https://www.calameo.com/read/005322362cd27f26b4830"><span style="font-family:monospace">https://www.calameo.com/read/005322362cd27f26b4830</span></a></div></dd></dl>
+<!--END NOTES-->
+<!--CUT END -->
+<!--HTMLFOOT-->
+<!--ENDHTML-->
+<!--FOOTER-->
+<hr class="horizontal-rule" style="height:2px"><blockquote class="quote"><em>Ce document a &#XE9;t&#XE9; traduit de L<sup>A</sup>T<sub>E</sub>X par </em><a href="http://hevea.inria.fr"><em>H</em><em><span style="font-size:small"><sup>E</sup></span></em><em>V</em><em><span style="font-size:small"><sup>E</sup></span></em><em>A</em></a></blockquote></body>
+</html>

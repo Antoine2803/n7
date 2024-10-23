@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="" />
+  <title>Remarques suite à première évaluation de la classe Cercle.</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Remarques suite à première évaluation de la classe
+Cercle.</h1>
+<p class="author"></p>
+</header>
+<p>Bien noter que de nombreuses recommandations (indentation, pertinence
+des variables locales, choix de noms significatifs, etc.) ne sont pas
+nouvelles : elles ont déjà été faites dans les modules déjà suivis (PIM,
+Langage C…).</p>
+<ol type="1">
+<li><p>Quelques conventions :</p>
+<ul>
+<li><p>Même si le langage Java n’impose pas d’ordre, la convention est
+de mettre d’abord les attributs, puis les constructeurs, puis les
+méthodes. On conseille parfois de mettre les membres de classe (static)
+avant les membres d’instance.</p></li>
+<li><p>Les variables locales, les paramètres, les attributs, les
+méthodes ont des noms qui commencent par une minuscule (centre, rayon,
+leCentre, translater, getCentre…) !</p></li>
+<li><p>Les types que l’on définit (classe, interface, type énuméré)
+commencent par un majuscule (String, Math, Comparateur, Point,
+PointCartesien…).</p></li>
+<li><p>Les constantes de classe s’écrivent toutes en majuscules (PI,
+MAX, TAILLE_MAX…).</p></li>
+<li><p>On utilise une majuscule pour mettre en évidence les morceaux
+d’un identifiant composé de plusieurs mots (getCentre, nouvelleCouleur,
+lAgeDuCapitaine…) sauf pour les constantes où le souligné est utilisé
+(TAILLE_MAX…).</p></li>
+<li><p>On met un espace avant et après les opérateurs binaires.</p></li>
+</ul></li>
+<li><p>Attention à l’indentation !</p></li>
+<li><p>Laisser au moins une ligne vide entre deux méthodes ou
+constructeurs.</p></li>
+<li><p>Ne pas confondre variable locale et attribut (voire paramètre et
+attribut). Une information qui n’est utile qu’au sein d’une même méthode
+(ou constructeur) est une variable locale (ou un paramètre) et non un
+attribut. Un attribut est une information qui stocke l’état d’un objet,
+au moins entre deux appels de méthodes, généralement sur la durée de vie
+d’un objet.</p></li>
+<li><p>Utiliser des variables locales pour gagner en lisibilité :</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode java"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>    <span class="kw">this</span><span class="op">.</span><span class="fu">centre</span> <span class="op">=</span> <span class="kw">new</span> <span class="bu">Point</span><span class="op">(</span> <span class="op">(</span>point1<span class="op">.</span><span class="fu">getX</span><span class="op">()</span> <span class="op">+</span> point2<span class="op">.</span><span class="fu">getX</span><span class="op">())/</span><span class="dv">2</span><span class="op">,</span> <span class="op">(</span>point1<span class="op">.</span><span class="fu">getY</span><span class="op">()</span> <span class="op">+</span> point2<span class="op">.</span><span class="fu">getY</span><span class="op">())/</span><span class="dv">2</span><span class="op">);</span> </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="op">==&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">double</span> cx <span class="op">=</span> <span class="op">(</span>point1<span class="op">.</span><span class="fu">getX</span><span class="op">()</span> <span class="op">+</span> point2<span class="op">.</span><span class="fu">getX</span><span class="op">())</span> <span class="op">/</span> <span class="dv">2</span><span class="op">;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">double</span> cy <span class="op">=</span> <span class="op">(</span>point1<span class="op">.</span><span class="fu">getY</span><span class="op">()</span> <span class="op">+</span> point2<span class="op">.</span><span class="fu">getY</span><span class="op">())</span> <span class="op">/</span> <span class="dv">2</span><span class="op">;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">this</span><span class="op">.</span><span class="fu">centre</span> <span class="op">=</span> <span class="kw">new</span> <span class="bu">Point</span><span class="op">(</span>cx<span class="op">,</span> cy<span class="op">);</span></span></code></pre></div></li>
+<li><p>Mais attention, TROP de variables locales peut nuir à la
+lisibilité !</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode java"><code class="sourceCode java"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>    <span class="dt">double</span> x1 <span class="op">=</span> c<span class="op">.</span><span class="fu">getX</span><span class="op">();</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">double</span> x2 <span class="op">=</span> d<span class="op">.</span><span class="fu">getX</span><span class="op">();</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">double</span> y1 <span class="op">=</span> c<span class="op">.</span><span class="fu">getY</span><span class="op">();</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">double</span> y2 <span class="op">=</span> d<span class="op">.</span><span class="fu">getY</span><span class="op">();</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">double</span> x <span class="op">=</span> <span class="op">(</span>x1 <span class="op">+</span> x2<span class="op">)/</span><span class="dv">2</span><span class="op">;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">double</span> y <span class="op">=</span> <span class="op">(</span>y1 <span class="op">+</span> y2<span class="op">)/</span><span class="dv">2</span><span class="op">;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">this</span><span class="op">.</span><span class="fu">centre</span> <span class="op">=</span> <span class="kw">new</span> <span class="bu">Point</span><span class="op">(</span>x<span class="op">,</span>y<span class="op">);</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="op">==&gt;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">double</span> x <span class="op">=</span> <span class="op">(</span>c<span class="op">.</span><span class="fu">getX</span><span class="op">()</span> <span class="op">+</span> d<span class="op">.</span><span class="fu">getX</span><span class="op">())</span> <span class="op">/</span> <span class="dv">2</span><span class="op">;</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">double</span> y <span class="op">=</span> <span class="op">(</span>c<span class="op">.</span><span class="fu">getY</span><span class="op">()</span> <span class="op">+</span> d<span class="op">.</span><span class="fu">getY</span><span class="op">())</span> <span class="op">/</span> <span class="dv">2</span><span class="op">;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">this</span><span class="op">.</span><span class="fu">centre</span> <span class="op">=</span> <span class="kw">new</span> <span class="bu">Point</span><span class="op">(</span>x<span class="op">,</span>y<span class="op">);</span></span></code></pre></div>
+<p>Est-ce que x1, x2, y1 et y2 sont vraiment utiles ? Quel gain ?<br />
+Au passage, est-ce que c et d sont des noms significatifs ?</p></li>
+<li><p>Éviter les variables locales inutiles :</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode java"><code class="sourceCode java"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>    <span class="op">{</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>        <span class="bu">Point</span> pt <span class="op">=</span> <span class="kw">new</span> <span class="bu">Point</span> <span class="op">(</span><span class="kw">this</span><span class="op">.</span><span class="fu">centre</span><span class="op">.</span><span class="fu">getX</span><span class="op">(),</span> <span class="kw">this</span><span class="op">.</span><span class="fu">centre</span><span class="op">.</span><span class="fu">getY</span><span class="op">());</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> pt<span class="op">;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="op">==&gt;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">{</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="kw">new</span> <span class="bu">Point</span><span class="op">(</span><span class="kw">this</span><span class="op">.</span><span class="fu">centre</span><span class="op">.</span><span class="fu">getX</span><span class="op">(),</span> <span class="kw">this</span><span class="op">.</span><span class="fu">centre</span><span class="op">.</span><span class="fu">getY</span><span class="op">());</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span></code></pre></div>
+<p>La variable locale pt ne sert à rien (elle permet de nommer le
+résultat, mais le nom de la méthode le fait déjà) ! Autant la supprimer
+!</p></li>
+<li><p>Noms peu significatifs : point1, point2 ou p1, p2 en paramètre de
+creerCercle !</p></li>
+<li><p>Un identifiant à une seule lettre (r, c, etc.) est une mauvaise
+idée. Il faut prendre des noms <strong>significatifs</strong>. Comme
+souvent, il y a des exceptions à la règle, en particulier quand une
+convention est bien admise. C’est le cas de x et y sur les points qui
+sont utilisés pour l’abscisse et l’ordonnée. Il faut le considérer comme
+un contre-exemple !</p></li>
+<li><p>Est-ce que les noms choisis pour les paramètres de creerCercle
+sont significatifs ?</p></li>
+<li><p>Si possible, ne déclarer une variable que quand on sait
+l’initialiser.</p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode java"><code class="sourceCode java"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>    <span class="dt">double</span> r<span class="op">;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> p1<span class="op">.</span><span class="fu">distance</span><span class="op">(</span>p2<span class="op">);</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="op">==&gt;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">double</span> r <span class="op">=</span> p1<span class="op">.</span><span class="fu">distance</span><span class="op">(</span>p2<span class="op">);</span></span></code></pre></div></li>
+<li><p>Éviter les parenthèses inutiles :</p>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode java"><code class="sourceCode java"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">return</span> <span class="op">(</span><span class="kw">this</span><span class="op">.</span><span class="fu">rayon</span><span class="op">)</span> <span class="op">*</span> <span class="op">(</span><span class="kw">this</span><span class="op">.</span><span class="fu">rayon</span><span class="op">)</span> <span class="op">*</span> PI<span class="op">;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="op">==&gt;</span> <span class="cf">return</span> <span class="kw">this</span><span class="op">.</span><span class="fu">rayon</span> <span class="op">*</span> <span class="kw">this</span><span class="op">.</span><span class="fu">rayon</span> <span class="op">*</span> PI<span class="op">;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="kw">this</span><span class="op">.</span><span class="fu">rayon</span> <span class="op">=</span> <span class="op">(</span>point1<span class="op">.</span><span class="fu">distance</span><span class="op">(</span>point2<span class="op">))/</span><span class="dv">2</span><span class="op">;</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="op">==&gt;</span> <span class="kw">this</span><span class="op">.</span><span class="fu">rayon</span> <span class="op">=</span> point1<span class="op">.</span><span class="fu">distance</span><span class="op">(</span>point2<span class="op">)</span> <span class="op">/</span> <span class="dv">2</span><span class="op">;</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="op">(</span><span class="kw">this</span><span class="op">.</span><span class="fu">centre</span><span class="op">).</span><span class="fu">getX</span><span class="op">()</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">==&gt;</span> <span class="kw">this</span><span class="op">.</span><span class="fu">centre</span><span class="op">.</span><span class="fu">getX</span><span class="op">()</span></span></code></pre></div></li>
+<li><p>Éviter les if else inutiles (et gagner en lisiblité) :</p>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode java"><code class="sourceCode java"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="op">(</span>condition<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="op">==&gt;</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> condition<span class="op">;</span></span></code></pre></div>
+<p>La reformulation est équivalente… et plus lisible !</p></li>
+<li><p>assert (comme return) est un opérateur du langage et non une
+méthode. Il n’est donc pas nécessaire de mettre des parenthèses.</p>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode java"><code class="sourceCode java"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span><span class="op">(</span>p <span class="op">!=</span> <span class="kw">null</span><span class="op">)</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="op">==&gt;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> p <span class="op">!=</span> <span class="kw">null</span><span class="op">;</span></span></code></pre></div></li>
+<li><p>La précondition “this != null” (et donc assert this != null;) est
+inutile car this ne peut pas avoir la valeur “null” dans une méthode
+d’instance ou un constructeur. C’est une précondition garantie par le
+langage Java :</p>
+<ul>
+<li>si le récepteur d’une méthode vaut “null”, on aura
+NullPointerException et la méthode ne sera pas appelée,</li>
+<li>si new n’a pas réussi à allouer de la mémoire pour l’objet, on aura
+l’exception OutOfMemoryError et le constructeur ne sera pas
+exécuté.</li>
+</ul></li>
+<li><p>L’appel explicite à toString() est généralement inutile :</p>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode java"><code class="sourceCode java"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">&quot;C&quot;</span> <span class="op">+</span> <span class="kw">this</span><span class="op">.</span><span class="fu">rayon</span> <span class="op">+</span> <span class="st">&quot;@&quot;</span> <span class="op">+</span> <span class="kw">this</span><span class="op">.</span><span class="fu">centre</span><span class="op">.</span><span class="fu">toString</span><span class="op">();</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="op">==&gt;</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">&quot;C&quot;</span> <span class="op">+</span> <span class="kw">this</span><span class="op">.</span><span class="fu">rayon</span> <span class="op">+</span> <span class="st">&quot;@&quot;</span> <span class="op">+</span> <span class="kw">this</span><span class="op">.</span><span class="fu">centre</span><span class="op">;</span></span></code></pre></div>
+<p><strong>Justification :</strong> c’est plus concis et ça marchera
+même si ‘centre’ est ‘null’. La version initiale provoquera
+NullPointerException si ‘centre’ est ‘null’.</p></li>
+<li><p>Éviter la redondance de code entre constructeurs : Si un
+constructeur contient les mêmes instructions qu’un autre, on peut
+certainement (et on doit) utiliser this(…).</p></li>
+<li><p>Utiliser les méthodes de Point et non réécrire leur code dans
+Cercle.</p></li>
+<li><p>Plus généralement, il faut utiliser les méthodes existantes
+plutôt que de réécrire leur code.</p></li>
+<li><p>Un moyen de factoriser du code (plusieurs instructions proches à
+des endroits différents) est de définir une nouvelle méthode.</p></li>
+<li><p>Vérifier que tous les commentaires de documentation (javadoc)
+sont donnés. Il en faut au moins un pour la classe et un pour chaque
+méthode. Pour les méthodes, il faut utiliser <span class="citation"
+data-cites="param">@param</span>, <span class="citation"
+data-cites="return">@return</span>. Le commentaire doit être pertinent :
+expliquer la méthode, le paramètre, la valeur de retour…</p></li>
+<li><p>Pour les tests unitaires, il faut faire une méthode de test par
+exigence à tester (ou par méthode à tester). On doit faire plusieurs
+méthodes de test pour une même exigence (même méthode), si plusieurs
+aspects sont à tester.</p></li>
+<li><p>Les tests réalisés par les classes de test fournies ne sont pas
+exhaustifs. Vous avez donc certainement des tests supplémentaires à
+faire que vous devez mettre dans ComplementsCercleTest. Mais cette
+classe peut rester vide. Il n’y aura pas de pénalité. En revanche, si
+elle est définie elle doit réussir sur votre classe Cercle.</p></li>
+<li><p>L’orthographe peut être prise en compte dans la
+notation.</p></li>
+</ol>
+</body>
+</html>

@@ -1,0 +1,12 @@
+#!/bin/bash
+ip link set eth0 up
+ip link set eth1 up
+ip link set eth2 up
+
+ip addr add 129.30.247.177/28 dev eth0
+ip addr add 129.30.247.146/28 dev eth1
+ip addr add 129.30.247.204/28 dev eth2
+
+ip route add 129.30.247.128/28 via 129.30.247.145
+ip route add 129.30.247.0/25 via 129.30.247.145
+ip route add default via 129.30.247.178

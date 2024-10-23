@@ -1,0 +1,6 @@
+ExemplePoint2.java:8: error: cannot find symbol
+		p.x = 10;
+		 ^
+  symbol:   variable x
+  location: variable p of type Point
+1 error

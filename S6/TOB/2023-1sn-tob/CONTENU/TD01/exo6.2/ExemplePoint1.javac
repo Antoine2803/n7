@@ -1,0 +1,6 @@
+ExemplePoint1.java:8: error: cannot find symbol
+		System.out.println("abscisse = " + p.x);
+		                                    ^
+  symbol:   variable x
+  location: variable p of type Point
+1 error

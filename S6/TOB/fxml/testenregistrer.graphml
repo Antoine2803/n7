@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+	   http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+	<key id="attr0000" for="node" attr.name="x" attr.type="double"/>
+	<key id="attr0001" for="node" attr.name="y" attr.type="double"/>
+	<key id="attr0002" for="node" attr.name="weighting" attr.type="double"/>
+	<graph id="Graphe importé" edgedefault="undirected">
+		<node id="0">
+			<data key="attr0000">10.0</data>
+			<data key="attr0001">10.0</data>
+			<data key="attr0002">1.0</data>
+		</node>
+		<node id="1">
+			<data key="attr0000">20.0</data>
+			<data key="attr0001">20.0</data>
+			<data key="attr0002">1.0</data>
+		</node>
+		<node id="2">
+			<data key="attr0000">30.0</data>
+			<data key="attr0001">30.0</data>
+			<data key="attr0002">1.0</data>
+		</node>
+		<edge id="0" source="0" target="1" directed="false">
+		</edge>
+		<edge id="1" source="1" target="2" directed="false">
+		</edge>
+	</graph>
+</graphml>

@@ -1,0 +1,64 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Segment {
+	--
+	+ majLongueur()
+	+ detruire()
+	__constructeurs__
+	+ Segment(e1: Point, e2: Point)
+}
+
+class Point {
+	--
+	+translater(dx: double, dy: double)
+	+inscrire(s: Segment)
+	+supprimer(s: Segment)
+	__constructeurs__
+	+Point(x: double, y: double)
+}
+
+Segment "*\n-segment" o-right- "2\n-extrémité1,\n-extrémité2" Point: "                                     "
+note top of Segment
+	majLongeur():
+		longueur = extrémité1.distance(extrémité2)
+end note
+
+note bottom of Segment
+	detruire():
+		this.extrémité1.supprimer(this)
+		this.extrémité2.supprimer(this)
+
+	Segment(e1, e2):
+		this.extrémité1 = e1
+		this.extrémité2 = e2
+		longueur = extrémité1.distance(extrémité2)
+		this.extrémité1.inscrire(this)
+		this.extrémité2.inscrire(this)
+end note
+
+note top of Point
+	class Point:
+		private List<Segment> segments
+end note
+
+note bottom of Point
+	translater(dx, dy):
+		x += dx
+		y += dy
+		for (Segment s : segments):
+			s.majLongueur()
+
+	inscrire(s):
+		segments.add(s)
+
+	supprimer(s):
+		segments.remove(s)
+
+	Point(x, y):
+		this.x = x
+		this.y = y
+		this.segments = new ArrayList<>()
+end note
+@enduml
+' vim: sw=4 ts=4:

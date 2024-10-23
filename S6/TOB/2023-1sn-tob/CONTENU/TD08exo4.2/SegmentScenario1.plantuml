@@ -1,0 +1,71 @@
+@startuml
+'!pragma teoz true
+hide footbox
+
+' les this devraient être des self en UML
+
+participant "Scénario1" as sc1
+participant "s: Segment" as s
+participant "p2: Point" as p2
+participant ": List<Segment>" as l2
+participant "p1: Point" as p1
+participant ": List<Segment>" as l1
+
+''' create "Scénario1" as sc1
+'[->sc1: run
+activate sc1
+
+create p1
+sc1 -> p1: «create»(0, 0)
+activate p1
+create l1
+p1 -> l1: «create»()
+deactivate p1
+
+create p2
+sc1 -> p2: «create»(5, 0)
+activate p2
+create l2
+p2 -> l2: «create»()
+deactivate p2
+
+create s
+sc1 -> s: «create»(p1, p2)
+activate s
+s -> p1: longueur := distance(p2)
+s -> p1: inscrire(this)
+activate p1
+p1 -> l1: add(s)
+deactivate p1
+s -> p2: inscrire(this)
+activate p2
+p2 -> l2: add(s)
+deactivate p2
+deactivate s
+
+sc1 -> p2: afficher()
+sc1 -> s: afficher()
+activate s
+s -> p1: afficher()
+s -> p2: afficher()
+deactivate s
+sc1 -> s: lg := getLongueur()
+
+sc1 -> p2: translater(-2, 0)
+activate p2
+p2 -> s: * majLongueur()
+activate s
+s -> p1: distance(p2)
+deactivate s
+deactivate p2
+
+sc1 -> p2: afficher()
+sc1 -> s: afficher()
+activate s
+s -> p1: afficher()
+s -> p2: afficher()
+deactivate s
+sc1 -> s: lg := getLongueur()
+deactivate sc1
+
+@enduml
